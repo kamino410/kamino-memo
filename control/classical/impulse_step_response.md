@@ -1,0 +1,88 @@
+# インパルス・ステップ応答
+
+## インパルス応答
+
+システムの初期状態が0のときに入力を単位インパルス関数としたときのシステムの出力を **インパルス応答** という。
+
+>単位インパルス関数（デルタ関数）とは
+
+><center>
+$$
+\int_{-\infty}^\infty \delta(t)dt = 1, \ \ \ \delta(t)|_ {t \neq 0} = 0
+$$
+</center>
+
+>を満たす関数。
+
+>面積1の三角形を用いた定義として
+
+><center>
+$$
+\lim_{\varepsilon \to 0} \delta_\varepsilon(t)
+$$
+</center>
+
+><center>
+$$
+\delta_\varepsilon(t) = 
+\begin{cases}
+1/\varepsilon & 0<t<\varepsilon \\
+0 & else
+\end{cases}
+$$
+</center>
+
+>などがある。
+
+伝達関数 $$G(s)$$ のシステムのインパルス応答は
+
+<center>
+$$
+y(t) = \mathscr{L}^{-1}[G(s)]
+$$
+</center>
+
+によって得られる。
+
+----
+
+任意の入力 $$u(t)$$ に対する応答 $$y(t)$$ はインパルス応答 $$g(t)$$ の畳み込み積分で表現できる。
+
+直観的には、インパルス信号に重み関数をかけて重ね合わせて入力を作ると、線形性により、インパルス応答に重み関数をかけて重ね合わせたものが応答になる、という理解になる。
+
+<center>
+$$
+\begin{eqnarray}
+y(t) &=& \mathscr{L}^{-1} [G(s)u(s)] \\
+&=& \int_0^t g(t-\tau)u(\tau)d\tau
+\end{eqnarray}
+$$
+</center>
+
+## ステップ応答
+
+システムの初期状態が0のときに入力を単位ステップ関数としたときのシステムの出力を **ステップ応答** という。
+
+>単位ステップ関数とは
+
+><center>
+$$
+u_s(t) =
+\begin{cases}
+1 & t>0 \\
+0 & t<0
+\end{cases}
+$$
+</center>
+
+>を満たす関数。
+
+伝達関数 $$G(s)$$ のシステムのステップ応答は
+
+<center>
+$$
+y(t) = \mathscr{L}^{-1}[G(s)\frac{1}{s}]
+$$
+</center>
+
+によって得られる。

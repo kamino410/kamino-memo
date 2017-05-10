@@ -1,0 +1,43 @@
+# 伝達関数２（Transfer Function）
+
+## 伝達関数とブロック線図
+
+ブロック線図のパターンと伝達関数の演算の対応表を示す。
+
+![alt text](fig2.png)
+
+## むだ時間（dead time）を含む系
+
+入力に対する応答に一定のラグ（むだ時間）を含む系は伝達関数表現と相性が悪い。
+
+というのも、このケースでは伝達関数が指数関数となってしまうため。
+
+### 例
+
+$$y(t) = u(t-L)$$ は信号の伝達を$$L$$だけ遅延させるシステム。
+
+これをラプラス変換すると
+
+<center>
+$$
+\begin{eqnarray}
+  Y(s) &=& e^{-sL}U(s) \\
+  G(s) &=& e^{-sL}
+\end{eqnarray}
+$$
+</center>
+
+となる。
+
+### パデー近似（Pade approximation）
+
+むだ時間を無視できない場合、次のような有利関数への近似を行うことがある。
+
+<center>
+$$
+\begin{eqnarray}
+  e^{-sL} &\simeq& \frac{1-Ls/2}{1+Ls/2} \\
+  e^{-sL} &\simeq& \frac{1-Ls/2+(Ls)^2/12}{1+Ls/2+(Ls)^2/12}
+\end{eqnarray}
+$$
+</center>

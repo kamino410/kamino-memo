@@ -1,0 +1,7 @@
+{
+  "plugins":["mathjax-commonhtml","expandable-chapters"],
+  "styles": {
+    "website": "my_style.css",
+    "pdf": "my_style.css"
+  }
+}
