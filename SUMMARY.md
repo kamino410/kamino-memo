@@ -37,6 +37,7 @@
   * 言語処理
     * [言語処理100本ノック1](computer_science/language_processing/nlp100_1.md)
     * [言語処理100本ノック2](computer_science/language_processing/nlp100_2.md)
+    * [言語処理100本ノック3](computer_science/language_processing/nlp100_3.md)
 * ネットワーク
   * プロトコル
     * [参照モデル](network/protocol/reference_model.md)
