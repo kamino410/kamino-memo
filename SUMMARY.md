@@ -34,6 +34,7 @@
     * [貪欲法](computer_science/algorithm/greedy.md)
     * [動的計画法１](computer_science/algorithm/dynamic_programming1.md)
     * [動的計画法２](computer_science/algorithm/dynamic_programming2.md)
+    * [二分探索木](computer_science/algorithm/binary_search_tree.md)
   * 言語処理
     * [言語処理100本ノック1](computer_science/language_processing/nlp100_1.md)
     * [言語処理100本ノック2](computer_science/language_processing/nlp100_2.md)
