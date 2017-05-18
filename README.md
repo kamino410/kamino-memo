@@ -47,6 +47,9 @@
 ### 論理
 * [論理演算](computer_science/logic/operation.md)
 
+### グラフ理論
+* [概要](computer_science/graph_theory/intro.md)
+
 ### アルゴリズム
 * [アルゴリズムのコスト](computer_science/algorithm/execution_cost.md)
 * [全探索](computer_science/algorithm/exhaustive_search.md)
