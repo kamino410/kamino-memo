@@ -65,6 +65,10 @@
 * [言語処理100本ノック2](computer_science/language_processing/nlp100_2.md)
 * [言語処理100本ノック3](computer_science/language_processing/nlp100_3.md)
 
+### セキュリティ
+* [サイバー攻撃](computer_science/security/cyber-terrorism.md)
+* [マルウェア](computer_science/security/malware.md)
+
 ----
 
 ## ネットワーク
@@ -86,4 +90,5 @@
 
 * 中山 司, 『流れ解析のための有限要素法入門』, 東京大学出版会, 2008
 * 宇野 俊夫, 『独習 TCP/IP～IPv6対応～』, 翔泳社, 2010
-* 秋葉拓哉/岩田陽一/北川宣稔, 『プログラミングコンテストチャレンジブック 第2版』, マイナビ出版, 2012
+* 秋葉 拓哉/岩田 陽一/北川 宣稔, 『プログラミングコンテストチャレンジブック 第2版』, マイナビ出版, 2012
+* J. Glenn Brookshear (神林 靖/長尾 高宏 訳),  『入門コンピュータ科学～ITを支える技術と理論の基礎知識～』, アスキー・メディアワークス, 2014
