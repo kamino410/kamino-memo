@@ -46,9 +46,5 @@
   * プロトコル
     * [参照モデル](network/protocol/reference_model.md)
 * 開発関係
-  * Linux
-    * [ssh](develop/linux/ssh.md)
-    * [Vim](develop/linux/vim.md)
-    * [init.vim](develop/linux/init_vim.md)
   * Python
     * [環境](develop/python/environment.md)
