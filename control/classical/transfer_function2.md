@@ -6,6 +6,8 @@
 
 ![alt text](fig2.png)
 
+（出典：[http://ysserve.wakasato.jp/Lecture/ControlMecha1/node10.html](http://ysserve.wakasato.jp/Lecture/ControlMecha1/node10.html)）
+
 ## むだ時間（dead time）を含む系
 
 入力に対する応答に一定のラグ（むだ時間）を含む系は伝達関数表現と相性が悪い。
