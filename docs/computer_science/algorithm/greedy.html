@@ -1,0 +1,1014 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>貪欲法 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-mathjax-commonhtml/mathjax.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../my_style.css">
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="dynamic_programming1.html" />
+    
+    
+    <link rel="prev" href="exhaustive_search.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    トップ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    数学
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" >
+            
+                <span>
+            
+                    
+                    線形代数
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../../mathematics/linear_algebra/determinant.html">
+            
+                <a href="../../mathematics/linear_algebra/determinant.html">
+            
+                    
+                    行列式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" >
+            
+                <span>
+            
+                    
+                    解析学
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../mathematics/analysis/laplace_transform.html">
+            
+                <a href="../../mathematics/analysis/laplace_transform.html">
+            
+                    
+                    ラプラス変換
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../../mathematics/analysis/fourier_transform.html">
+            
+                <a href="../../mathematics/analysis/fourier_transform.html">
+            
+                    
+                    フーリエ変換
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    数値解析
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" >
+            
+                <span>
+            
+                    
+                    有限要素法
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../../numerical_analysis/finite_element_method/1-dimention.html">
+            
+                <a href="../../numerical_analysis/finite_element_method/1-dimention.html">
+            
+                    
+                    1次元の重み付き残差法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../../numerical_analysis/finite_element_method/laplaces_equation.html">
+            
+                <a href="../../numerical_analysis/finite_element_method/laplaces_equation.html">
+            
+                    
+                    2次元の重み付き残差法（ラプラス方程式）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    制御理論
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" >
+            
+                <span>
+            
+                    
+                    概論
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../../control/classical_vs_modern.html">
+            
+                <a href="../../control/classical_vs_modern.html">
+            
+                    
+                    古典制御理論と現代制御理論
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../../control/linear_system.html">
+            
+                <a href="../../control/linear_system.html">
+            
+                    
+                    線形システム
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" >
+            
+                <span>
+            
+                    
+                    古典制御理論
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../../control/classical/transfer_function1.html">
+            
+                <a href="../../control/classical/transfer_function1.html">
+            
+                    
+                    伝達関数１
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../../control/classical/transfer_function2.html">
+            
+                <a href="../../control/classical/transfer_function2.html">
+            
+                    
+                    伝達関数２
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="../../control/classical/transfer_function3.html">
+            
+                <a href="../../control/classical/transfer_function3.html">
+            
+                    
+                    伝達関数３
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.4" data-path="../../control/classical/impulse_step_response.html">
+            
+                <a href="../../control/classical/impulse_step_response.html">
+            
+                    
+                    インパルス応答とステップ応答
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.5" data-path="../../control/classical/first_order_system.html">
+            
+                <a href="../../control/classical/first_order_system.html">
+            
+                    
+                    1次系の応答
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6" data-path="../../control/classical/second_order_system.html">
+            
+                <a href="../../control/classical/second_order_system.html">
+            
+                    
+                    2次系の応答
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" >
+            
+                <span>
+            
+                    
+                    現代制御理論
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="../../control/modern/state_space_equation.html">
+            
+                <a href="../../control/modern/state_space_equation.html">
+            
+                    
+                    状態方程式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2" data-path="../../control/modern/controllability_observability.html">
+            
+                <a href="../../control/modern/controllability_observability.html">
+            
+                    
+                    可制御性・可観測性
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    計算機科学
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" >
+            
+                <span>
+            
+                    
+                    論理
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="../logic/operation.html">
+            
+                <a href="../logic/operation.html">
+            
+                    
+                    論理演算
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" >
+            
+                <span>
+            
+                    
+                    グラフ理論
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../graph_theory/intro.html">
+            
+                <a href="../graph_theory/intro.html">
+            
+                    
+                    概要
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" >
+            
+                <span>
+            
+                    
+                    アルゴリズム
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="execution_cost.html">
+            
+                <a href="execution_cost.html">
+            
+                    
+                    アルゴリズムのコスト
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="exhaustive_search.html">
+            
+                <a href="exhaustive_search.html">
+            
+                    
+                    全探索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.3.3" data-path="greedy.html">
+            
+                <a href="greedy.html">
+            
+                    
+                    貪欲法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.4" data-path="dynamic_programming1.html">
+            
+                <a href="dynamic_programming1.html">
+            
+                    
+                    動的計画法１
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.5" data-path="dynamic_programming2.html">
+            
+                <a href="dynamic_programming2.html">
+            
+                    
+                    動的計画法２
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.6" data-path="heap.html">
+            
+                <a href="heap.html">
+            
+                    
+                    ヒープ・プライオリティキュー
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.7" data-path="binary_search_tree.html">
+            
+                <a href="binary_search_tree.html">
+            
+                    
+                    二分探索木
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" >
+            
+                <span>
+            
+                    
+                    言語処理
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.4.1" data-path="../language_processing/nlp100_1.html">
+            
+                <a href="../language_processing/nlp100_1.html">
+            
+                    
+                    言語処理100本ノック1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4.2" data-path="../language_processing/nlp100_2.html">
+            
+                <a href="../language_processing/nlp100_2.html">
+            
+                    
+                    言語処理100本ノック2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4.3" data-path="../language_processing/nlp100_3.html">
+            
+                <a href="../language_processing/nlp100_3.html">
+            
+                    
+                    言語処理100本ノック3
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    ネットワーク
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" >
+            
+                <span>
+            
+                    
+                    プロトコル
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="../../network/protocol/reference_model.html">
+            
+                <a href="../../network/protocol/reference_model.html">
+            
+                    
+                    参照モデル
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    開発関係
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" >
+            
+                <span>
+            
+                    
+                    Python
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.1" data-path="../../develop/python/environment.html">
+            
+                <a href="../../develop/python/environment.html">
+            
+                    
+                    環境
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >貪欲法</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x8CAA;&#x6B32;&#x6CD5;&#xFF08;greedy-algorithm&#xFF09;">&#x8CAA;&#x6B32;&#x6CD5;&#xFF08;Greedy algorithm&#xFF09;</h1>
+<p>&#x554F;&#x984C;&#x3092;&#x90E8;&#x5206;&#x554F;&#x984C;&#x306B;&#x5206;&#x5272;&#x3057;&#x305F;&#x3046;&#x3048;&#x3067;&#x3001;&#x305D;&#x306E;&#x5834;&#x306E;&#x8A55;&#x4FA1;&#x5024;&#x304C;&#x6700;&#x5927;&#x306B;&#x306A;&#x308B;&#x9078;&#x629E;&#x80A2;&#x3092;&#x9078;&#x3073;&#x306A;&#x304C;&#x3089;&#x90E8;&#x5206;&#x554F;&#x984C;&#x3092;&#x89E3;&#x3044;&#x3066;&#x3044;&#x304F;&#x624B;&#x6CD5;&#x3002;
+&#x6B32;&#x5F35;&#x308A;&#x6CD5;&#x3001;&#x30B0;&#x30EA;&#x30FC;&#x30C7;&#x30A3;&#x7B97;&#x6CD5;&#x3068;&#x3082;&#x3002;</p>
+<p>&#x7279;&#x5FB4;&#x3068;&#x3057;&#x3066;&#x306F;</p>
+<ul>
+<li>&#x624B;&#x7D9A;&#x304D;&#x306E;&#x4E2D;&#x3067;&#x73FE;&#x5728;&#x89E3;&#x3044;&#x3066;&#x3044;&#x308B;&#x554F;&#x984C;&#x3057;&#x304B;&#x4FDD;&#x6301;&#x3057;&#x306A;&#x3044;&#x30FB;&#x4E00;&#x5EA6;&#x9078;&#x629E;&#x3057;&#x305F;&#x8981;&#x7D20;&#x3092;&#x518D;&#x8003;&#x3057;&#x306A;&#x3044;<ul>
+<li>&#x3064;&#x307E;&#x308A;&#x554F;&#x984C;&#x306E;&#x300C;&#x4FDD;&#x7559;&#x300D;&#x306F;&#x3057;&#x306A;&#x3044;</li>
+</ul>
+</li>
+<li>&#x90E8;&#x5206;&#x554F;&#x984C;&#x306E;&#x8A55;&#x4FA1;&#x5024;&#x306E;&#x8A08;&#x7B97;&#x65B9;&#x6CD5;&#x30FB;&#x30BD;&#x30FC;&#x30C8;&#x306E;&#x30A2;&#x30EB;&#x30B4;&#x30EA;&#x30BA;&#x30E0;&#x3060;&#x3051;&#x3067;&#x5B9F;&#x88C5;&#x3067;&#x304D;&#x308B;</li>
+<li>&#x591A;&#x9805;&#x5F0F;&#x6642;&#x9593;&#x3067;&#x89E3;&#x3051;&#x308B;</li>
+<li>&#x5F97;&#x3089;&#x308C;&#x308B;&#x89E3;&#x304C;&#x6700;&#x9069;&#x89E3;&#x3067;&#x3042;&#x308B;&#x4FDD;&#x8A3C;&#x306F;&#x306A;&#x3044;</li>
+</ul>
+<h2 id="&#x53B3;&#x5BC6;&#x89E3;&#x304C;&#x6C42;&#x307E;&#x308B;&#x554F;&#x984C;&#x306E;&#x4F8B;">&#x53B3;&#x5BC6;&#x89E3;&#x304C;&#x6C42;&#x307E;&#x308B;&#x554F;&#x984C;&#x306E;&#x4F8B;</h2>
+<pre><code>n&#x500B;&#x306E;&#x4ED5;&#x4E8B;&#x304C;&#x3042;&#x308B;&#x3002;
+&#x5404;&#x4ED5;&#x4E8B;&#x306F;&#x6642;&#x523B;{% math %}s_i{% endmath %}&#x306B;&#x59CB;&#x307E;&#x308A;{% math %}t_i{% endmath %}&#x306B;&#x7D42;&#x308F;&#x308B;&#x3002;
+&#x307E;&#x305F;&#x3001;&#x958B;&#x59CB;&#x6642;&#x523B;&#x3068;&#x7D42;&#x4E86;&#x6642;&#x523B;&#x304C;&#x4E00;&#x81F4;&#x3059;&#x308B;&#x4ED5;&#x4E8B;&#x3092;&#x517C;&#x4EFB;&#x3059;&#x308B;&#x3053;&#x3068;&#x306F;&#x3067;&#x304D;&#x306A;&#x3044;&#x3002;
+&#x3067;&#x304D;&#x308B;&#x3060;&#x3051;&#x591A;&#x304F;&#x306E;&#x4ED5;&#x4E8B;&#x306B;&#x53C2;&#x52A0;&#x3059;&#x308B;&#x306B;&#x306F;&#x3069;&#x3046;&#x3059;&#x308C;&#x3070;&#x3088;&#x3044;&#x304B;&#x3002;
+</code></pre><p>&#x3053;&#x306E;&#x554F;&#x984C;&#x306F;&#x3001;&#x958B;&#x59CB;&#x6642;&#x523B;&#x304B;&#x3089;&#x30B9;&#x30BF;&#x30FC;&#x30C8;&#x3057;&#x300C;&#x7D42;&#x4E86;&#x6642;&#x523B;&#x304C;&#x6700;&#x3082;&#x65E9;&#x3044;&#x4ED5;&#x4E8B;&#x3092;&#x9078;&#x3093;&#x3067;&#x305D;&#x306E;&#x6642;&#x523B;&#x306B;&#x7ACB;&#x3064;&#x300D;&#x3092;&#x7E70;&#x308A;&#x8FD4;&#x305B;&#x3070;&#x6700;&#x9069;&#x89E3;&#x304C;&#x5F97;&#x3089;&#x308C;&#x308B;&#x3002;</p>
+<h2 id="&#x5B9F;&#x88C5;&#x4F8B;&#xFF08;c&#xFF09;">&#x5B9F;&#x88C5;&#x4F8B;&#xFF08;C++&#xFF09;</h2>
+<blockquote>
+<p>g++ (Ubuntu 4.8.4-2ubuntu1~14.04.3) 4.8.4</p>
+</blockquote>
+<pre><code class="lang-cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;algorithm&gt;</span></span>
+
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span> <span class="hljs-params">(<span class="hljs-keyword">void</span>)</span> </span>{
+    <span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> N = <span class="hljs-number">10</span>;
+    <span class="hljs-keyword">int</span> work_period[N][<span class="hljs-number">2</span>] = {
+        { <span class="hljs-number">1</span>, <span class="hljs-number">2</span> }, { <span class="hljs-number">1</span>, <span class="hljs-number">3</span> }, { <span class="hljs-number">2</span>, <span class="hljs-number">5</span> },
+        { <span class="hljs-number">3</span>, <span class="hljs-number">7</span> }, { <span class="hljs-number">4</span>, <span class="hljs-number">5</span> }, { <span class="hljs-number">5</span>, <span class="hljs-number">6</span> },
+        { <span class="hljs-number">8</span>, <span class="hljs-number">9</span> }, { <span class="hljs-number">7</span>, <span class="hljs-number">9</span> }, { <span class="hljs-number">6</span>, <span class="hljs-number">10</span> },
+        { <span class="hljs-number">8</span>, <span class="hljs-number">10</span> }
+    };
+
+    <span class="hljs-comment">//----------</span>
+
+    pair&lt;<span class="hljs-keyword">int</span>, <span class="hljs-keyword">int</span>&gt; itv[N];
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; N; i++) {
+        itv[i].first = work_period[i][<span class="hljs-number">1</span>];
+        itv[i].second = work_period[i][<span class="hljs-number">0</span>];
+    }
+    sort(itv, itv + N);
+
+    <span class="hljs-keyword">int</span> ans = <span class="hljs-number">0</span>, t = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; N; i++) {
+        <span class="hljs-keyword">if</span>(t &lt; itv[i].second) {
+            ans++;
+            t = itv[i].first;
+        }
+    }
+
+    <span class="hljs-built_in">cout</span> &lt;&lt; ans &lt;&lt; <span class="hljs-built_in">endl</span>;
+
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="exhaustive_search.html" class="navigation navigation-prev " aria-label="Previous page: 全探索">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="dynamic_programming1.html" class="navigation navigation-next " aria-label="Next page: 動的計画法１">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"貪欲法","level":"1.5.3.3","depth":3,"next":{"title":"動的計画法１","level":"1.5.3.4","depth":3,"path":"computer_science/algorithm/dynamic_programming1.md","ref":"computer_science/algorithm/dynamic_programming1.md","articles":[]},"previous":{"title":"全探索","level":"1.5.3.2","depth":3,"path":"computer_science/algorithm/exhaustive_search.md","ref":"computer_science/algorithm/exhaustive_search.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["mathjax-commonhtml","expandable-chapters"],"pluginsConfig":{"mathjax-commonhtml":{"defaultScaling":true},"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"my_style.css","pdf":"my_style.css"}},"file":{"path":"computer_science/algorithm/greedy.md","mtime":"2017-05-11T07:14:10.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-18T11:33:55.890Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

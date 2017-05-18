@@ -1,0 +1,1077 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ラプラス変換 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-mathjax-commonhtml/mathjax.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../my_style.css">
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="fourier_transform.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    トップ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    数学
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" >
+            
+                <span>
+            
+                    
+                    線形代数
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../linear_algebra/determinant.html">
+            
+                <a href="../linear_algebra/determinant.html">
+            
+                    
+                    行列式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" >
+            
+                <span>
+            
+                    
+                    解析学
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.2.1" data-path="laplace_transform.html">
+            
+                <a href="laplace_transform.html">
+            
+                    
+                    ラプラス変換
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="fourier_transform.html">
+            
+                <a href="fourier_transform.html">
+            
+                    
+                    フーリエ変換
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    数値解析
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" >
+            
+                <span>
+            
+                    
+                    有限要素法
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../../numerical_analysis/finite_element_method/1-dimention.html">
+            
+                <a href="../../numerical_analysis/finite_element_method/1-dimention.html">
+            
+                    
+                    1次元の重み付き残差法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../../numerical_analysis/finite_element_method/laplaces_equation.html">
+            
+                <a href="../../numerical_analysis/finite_element_method/laplaces_equation.html">
+            
+                    
+                    2次元の重み付き残差法（ラプラス方程式）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    制御理論
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" >
+            
+                <span>
+            
+                    
+                    概論
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../../control/classical_vs_modern.html">
+            
+                <a href="../../control/classical_vs_modern.html">
+            
+                    
+                    古典制御理論と現代制御理論
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../../control/linear_system.html">
+            
+                <a href="../../control/linear_system.html">
+            
+                    
+                    線形システム
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" >
+            
+                <span>
+            
+                    
+                    古典制御理論
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../../control/classical/transfer_function1.html">
+            
+                <a href="../../control/classical/transfer_function1.html">
+            
+                    
+                    伝達関数１
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../../control/classical/transfer_function2.html">
+            
+                <a href="../../control/classical/transfer_function2.html">
+            
+                    
+                    伝達関数２
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="../../control/classical/transfer_function3.html">
+            
+                <a href="../../control/classical/transfer_function3.html">
+            
+                    
+                    伝達関数３
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.4" data-path="../../control/classical/impulse_step_response.html">
+            
+                <a href="../../control/classical/impulse_step_response.html">
+            
+                    
+                    インパルス応答とステップ応答
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.5" data-path="../../control/classical/first_order_system.html">
+            
+                <a href="../../control/classical/first_order_system.html">
+            
+                    
+                    1次系の応答
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6" data-path="../../control/classical/second_order_system.html">
+            
+                <a href="../../control/classical/second_order_system.html">
+            
+                    
+                    2次系の応答
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" >
+            
+                <span>
+            
+                    
+                    現代制御理論
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="../../control/modern/state_space_equation.html">
+            
+                <a href="../../control/modern/state_space_equation.html">
+            
+                    
+                    状態方程式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2" data-path="../../control/modern/controllability_observability.html">
+            
+                <a href="../../control/modern/controllability_observability.html">
+            
+                    
+                    可制御性・可観測性
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    計算機科学
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" >
+            
+                <span>
+            
+                    
+                    論理
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="../../computer_science/logic/operation.html">
+            
+                <a href="../../computer_science/logic/operation.html">
+            
+                    
+                    論理演算
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" >
+            
+                <span>
+            
+                    
+                    グラフ理論
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../../computer_science/graph_theory/intro.html">
+            
+                <a href="../../computer_science/graph_theory/intro.html">
+            
+                    
+                    概要
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" >
+            
+                <span>
+            
+                    
+                    アルゴリズム
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="../../computer_science/algorithm/execution_cost.html">
+            
+                <a href="../../computer_science/algorithm/execution_cost.html">
+            
+                    
+                    アルゴリズムのコスト
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="../../computer_science/algorithm/exhaustive_search.html">
+            
+                <a href="../../computer_science/algorithm/exhaustive_search.html">
+            
+                    
+                    全探索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.3" data-path="../../computer_science/algorithm/greedy.html">
+            
+                <a href="../../computer_science/algorithm/greedy.html">
+            
+                    
+                    貪欲法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.4" data-path="../../computer_science/algorithm/dynamic_programming1.html">
+            
+                <a href="../../computer_science/algorithm/dynamic_programming1.html">
+            
+                    
+                    動的計画法１
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.5" data-path="../../computer_science/algorithm/dynamic_programming2.html">
+            
+                <a href="../../computer_science/algorithm/dynamic_programming2.html">
+            
+                    
+                    動的計画法２
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.6" data-path="../../computer_science/algorithm/heap.html">
+            
+                <a href="../../computer_science/algorithm/heap.html">
+            
+                    
+                    ヒープ・プライオリティキュー
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.7" data-path="../../computer_science/algorithm/binary_search_tree.html">
+            
+                <a href="../../computer_science/algorithm/binary_search_tree.html">
+            
+                    
+                    二分探索木
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" >
+            
+                <span>
+            
+                    
+                    言語処理
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.4.1" data-path="../../computer_science/language_processing/nlp100_1.html">
+            
+                <a href="../../computer_science/language_processing/nlp100_1.html">
+            
+                    
+                    言語処理100本ノック1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4.2" data-path="../../computer_science/language_processing/nlp100_2.html">
+            
+                <a href="../../computer_science/language_processing/nlp100_2.html">
+            
+                    
+                    言語処理100本ノック2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4.3" data-path="../../computer_science/language_processing/nlp100_3.html">
+            
+                <a href="../../computer_science/language_processing/nlp100_3.html">
+            
+                    
+                    言語処理100本ノック3
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    ネットワーク
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" >
+            
+                <span>
+            
+                    
+                    プロトコル
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="../../network/protocol/reference_model.html">
+            
+                <a href="../../network/protocol/reference_model.html">
+            
+                    
+                    参照モデル
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    開発関係
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" >
+            
+                <span>
+            
+                    
+                    Python
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.1" data-path="../../develop/python/environment.html">
+            
+                <a href="../../develop/python/environment.html">
+            
+                    
+                    環境
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >ラプラス変換</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x30E9;&#x30D7;&#x30E9;&#x30B9;&#x5909;&#x63DB;&#xFF08;laplace-transform&#xFF09;">&#x30E9;&#x30D7;&#x30E9;&#x30B9;&#x5909;&#x63DB;&#xFF08;Laplace Transform&#xFF09;</h1>
+<p>&#x30E9;&#x30D7;&#x30E9;&#x30B9;&#x5909;&#x63DB;&#x3068;&#x306F;&#x3001;&#x95A2;&#x6570;<span class="mjx-chtml"><span class="mjx-math" aria-label="y(t)"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.519em; padding-right: 0.006em;">y</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span></span></span>&#x3092; <strong><span class="mjx-chtml"><span class="mjx-math" aria-label="t"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span></span></span></span>&#x306E;&#x5FAE;&#x7A4D;&#x5206;&#x21D4;<span class="mjx-chtml"><span class="mjx-math" aria-label="s"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span></span></span></span>&#x306E;&#x639B;&#x3051;&#x7B97;</strong> &#x3068;&#x306A;&#x308B;&#x3088;&#x3046;&#x306A;&#x5A92;&#x4ECB;&#x5909;&#x6570;<span class="mjx-chtml"><span class="mjx-math" aria-label="s"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span></span></span></span>&#x3092;&#x7528;&#x3044;&#x3066;<span class="mjx-chtml"><span class="mjx-math" aria-label="Y(s)"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.182em;">Y</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span></span></span>&#x3068;&#x3059;&#x308B;&#x3088;&#x3046;&#x306A;&#x95A2;&#x6570;&#x5909;&#x63DB;&#x3092;&#x6307;&#x3059;&#x3002;</p>
+<p>&#x5FAE;&#x7A4D;&#x5206;&#x3092;&#x639B;&#x3051;&#x7B97;&#x3068;&#x3057;&#x3066;&#x8A08;&#x7B97;&#x3067;&#x304D;&#x308B;&#x305F;&#x3081;&#x3001;&#x7DDA;&#x5F62;&#x5FAE;&#x5206;&#x65B9;&#x7A0B;&#x5F0F;&#x3092;&#x8ABF;&#x3079;&#x308B;&#x969B;&#x306B;&#x5F79;&#x7ACB;&#x3064;&#x3002;</p>
+<h2 id="&#x5B9A;&#x7FA9;">&#x5B9A;&#x7FA9;</h2>
+<h3 id="&#x30E9;&#x30D7;&#x30E9;&#x30B9;&#x5909;&#x63DB;">&#x30E9;&#x30D7;&#x30E9;&#x30B9;&#x5909;&#x63DB;</h3>
+<center>
+<span class="mjx-chtml MJXc-display" style="text-align: center;"><span class="mjx-math" aria-label="
+F(s) = \mathscr{L}[f(t)] = \int_0^\infty f(t)e^{-st} dt \ \ \ (t \geq 0)
+"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.106em;">F</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span><span class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.077em; padding-bottom: 0.298em;">=</span></span><span class="mjx-texatom MJXc-space3"><span class="mjx-mrow"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-script-R" style="padding-top: 0.519em; padding-bottom: 0.225em; padding-right: 0.161em;">L</span></span></span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">[</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.519em; padding-bottom: 0.519em; padding-right: 0.06em;">f</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">]</span></span><span class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.077em; padding-bottom: 0.298em;">=</span></span><span class="mjx-msubsup MJXc-space3"><span class="mjx-base" style="margin-right: -0.388em;"><span class="mjx-mo" style="vertical-align: 0.001em; padding-right: 0.388em;"><span class="mjx-char MJXc-TeX-size2-R" style="padding-top: 1.109em; padding-bottom: 1.109em;">&#x222B;</span></span></span><span class="mjx-stack" style="vertical-align: -0.921em;"><span class="mjx-sup" style="font-size: 70.7%; padding-bottom: 2.15em; padding-left: 0.784em; padding-right: 0.071em;"><span class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.151em; padding-bottom: 0.372em;">&#x221E;</span></span></span><span class="mjx-sub" style="font-size: 70.7%; padding-right: 0.071em;"><span class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">0</span></span></span></span></span><span class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.519em; padding-bottom: 0.519em; padding-right: 0.06em;">f</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span><span class="mjx-msubsup"><span class="mjx-base"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">e</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.584em; padding-left: 0px; padding-right: 0.071em;"><span class="mjx-texatom" style=""><span class="mjx-mrow"><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">&#x2212;</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span></span></span></span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.003em;">d</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span><span class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.291em; padding-bottom: 0.372em;">&#xA0;</span></span><span class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.291em; padding-bottom: 0.372em;">&#xA0;</span></span><span class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.291em; padding-bottom: 0.372em;">&#xA0;</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span><span class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.446em;">&#x2265;</span></span><span class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">0</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span></span></span>
+</center>
+
+<h3 id="&#x9006;&#x30E9;&#x30D7;&#x30E9;&#x30B9;&#x5909;&#x63DB;">&#x9006;&#x30E9;&#x30D7;&#x30E9;&#x30B9;&#x5909;&#x63DB;</h3>
+<center>
+<span class="mjx-chtml MJXc-display" style="text-align: center;"><span class="mjx-math" aria-label="
+f(t) = \lim_{p \to \infty} \frac{1}{2 \pi i} \int_{c-ip}^{c+ip} F(s) e^{st} ds \ \ \ (c &gt; 0)
+"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.519em; padding-bottom: 0.519em; padding-right: 0.06em;">f</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span><span class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.077em; padding-bottom: 0.298em;">=</span></span><span class="mjx-munderover MJXc-space3"><span class="mjx-itable"><span class="mjx-row"><span class="mjx-cell"><span class="mjx-op" style="padding-left: 0.19em;"><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">lim</span></span></span></span></span><span class="mjx-row"><span class="mjx-under" style="font-size: 70.7%; padding-top: 0.236em; padding-bottom: 0.141em;"><span class="mjx-texatom" style=""><span class="mjx-mrow"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.446em;">p</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.225em; padding-bottom: 0.372em;">&#x2192;</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.151em; padding-bottom: 0.372em;">&#x221E;</span></span></span></span></span></span></span></span><span class="mjx-mfrac MJXc-space1"><span class="mjx-box MJXc-stacked" style="width: 1.618em; padding: 0px 0.12em;"><span class="mjx-numerator" style="width: 1.618em; top: -1.368em;"><span class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">1</span></span></span><span class="mjx-denominator" style="width: 1.618em; bottom: -0.767em;"><span class="mjx-mrow"><span class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">2</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em; padding-right: 0.003em;">&#x3C0;</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em;">i</span></span></span></span><span style="border-bottom: 1.3px solid; top: -0.296em; width: 1.618em;" class="mjx-line"></span></span><span style="height: 2.135em; vertical-align: -0.767em;" class="mjx-vsize"></span></span><span class="mjx-msubsup MJXc-space1"><span class="mjx-base" style="margin-right: -0.388em;"><span class="mjx-mo" style="vertical-align: 0.001em; padding-right: 0.388em;"><span class="mjx-char MJXc-TeX-size2-R" style="padding-top: 1.109em; padding-bottom: 1.109em;">&#x222B;</span></span></span><span class="mjx-stack" style="vertical-align: -0.921em;"><span class="mjx-sup" style="font-size: 70.7%; padding-bottom: 1.972em; padding-left: 0.784em; padding-right: 0.071em;"><span class="mjx-texatom" style=""><span class="mjx-mrow"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">c</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">+</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em;">i</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.446em;">p</span></span></span></span></span><span class="mjx-sub" style="font-size: 70.7%; padding-right: 0.071em;"><span class="mjx-texatom" style=""><span class="mjx-mrow"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">c</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">&#x2212;</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em;">i</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.446em;">p</span></span></span></span></span></span></span><span class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.106em;">F</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span><span class="mjx-msubsup"><span class="mjx-base"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">e</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.584em; padding-left: 0px; padding-right: 0.071em;"><span class="mjx-texatom" style=""><span class="mjx-mrow"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span></span></span></span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.003em;">d</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span><span class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.291em; padding-bottom: 0.372em;">&#xA0;</span></span><span class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.291em; padding-bottom: 0.372em;">&#xA0;</span></span><span class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.291em; padding-bottom: 0.372em;">&#xA0;</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">c</span></span><span class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.225em; padding-bottom: 0.372em;">&gt;</span></span><span class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">0</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span></span></span>
+</center>
+
+<h2 id="&#x5909;&#x63DB;&#x8868;">&#x5909;&#x63DB;&#x8868;</h2>
+<table>
+<thead>
+<tr>
+<th>f(t)</th>
+<th>F(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="mjx-chtml"><span class="mjx-math" aria-label="\delta (t) = \begin{cases} \infty &amp; (x=0) \\ 0 &amp; (x \neq 0 ) \end{cases}"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.519em; padding-bottom: 0.298em; padding-right: 0.007em;">&#x3B4;</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span><span class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.077em; padding-bottom: 0.298em;">=</span></span><span class="mjx-mrow MJXc-space3"><span class="mjx-mo"><span class="mjx-char MJXc-TeX-size3-R" style="padding-top: 1.256em; padding-bottom: 1.256em;">{</span></span><span class="mjx-mtable" style="vertical-align: -0.925em; padding: 0px 0.167em;"><span class="mjx-table"><span class="mjx-mtr" style="height: 1.175em;"><span class="mjx-mtd" style="padding: 0px 0.5em 0px 0px; text-align: left; width: 1em;"><span class="mjx-mrow" style="margin-top: -0.2em;"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.151em; padding-bottom: 0.372em;">&#x221E;</span></span><span class="mjx-strut"></span></span></span><span class="mjx-mtd" style="padding: 0px 0px 0px 0.5em; text-align: left; width: 3.184em;"><span class="mjx-mrow" style="margin-top: -0.2em;"><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">x</span></span><span class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.077em; padding-bottom: 0.298em;">=</span></span><span class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">0</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span><span class="mjx-strut"></span></span></span></span><span class="mjx-mtr" style="height: 1.175em;"><span class="mjx-mtd" style="padding: 0.1em 0.5em 0px 0px; text-align: left;"><span class="mjx-mrow" style="margin-top: -0.2em;"><span class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">0</span></span><span class="mjx-strut"></span></span></span><span class="mjx-mtd" style="padding: 0.1em 0px 0px 0.5em; text-align: left;"><span class="mjx-mrow" style="margin-top: -0.2em;"><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">x</span></span><span class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">&#x2260;</span></span><span class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">0</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span><span class="mjx-strut"></span></span></span></span></span></span><span class="mjx-mo" style="width: 0.12em;"></span></span></span></span></span> &#x203B;&#x30C7;&#x30EB;&#x30BF;&#x95A2;&#x6570;</td>
+<td><span class="mjx-chtml"><span class="mjx-math" aria-label="1"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">1</span></span></span></span></span></td>
+</tr>
+<tr>
+<td><span class="mjx-chtml"><span class="mjx-math" aria-label="u_s(t) = \int \delta (t) dt = 1"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-msubsup"><span class="mjx-base"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">u</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span></span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span><span class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.077em; padding-bottom: 0.298em;">=</span></span><span class="mjx-mo MJXc-space3" style="padding-right: 0.138em;"><span class="mjx-char MJXc-TeX-size1-R" style="padding-top: 0.593em; padding-bottom: 0.593em;">&#x222B;</span></span><span class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.519em; padding-bottom: 0.298em; padding-right: 0.007em;">&#x3B4;</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.003em;">d</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span><span class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.077em; padding-bottom: 0.298em;">=</span></span><span class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">1</span></span></span></span></span></td>
+<td><span class="mjx-chtml"><span class="mjx-math" aria-label="\frac{1}{s}"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mfrac"><span class="mjx-box MJXc-stacked" style="width: 0.495em; padding: 0px 0.12em;"><span class="mjx-numerator" style="font-size: 70.7%; width: 0.7em; top: -1.372em;"><span class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">1</span></span></span><span class="mjx-denominator" style="font-size: 70.7%; width: 0.7em; bottom: -0.523em;"><span class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span></span><span style="border-bottom: 1.3px solid; top: -0.296em; width: 0.495em;" class="mjx-line"></span></span><span style="height: 1.34em; vertical-align: -0.37em;" class="mjx-vsize"></span></span></span></span></span></td>
+</tr>
+<tr>
+<td><span class="mjx-chtml"><span class="mjx-math" aria-label="t"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span></span></span></span></td>
+<td><span class="mjx-chtml"><span class="mjx-math" aria-label="\frac{1}{s^2}"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mfrac"><span class="mjx-box MJXc-stacked" style="width: 0.797em; padding: 0px 0.12em;"><span class="mjx-numerator" style="font-size: 70.7%; width: 1.127em; top: -1.372em;"><span class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">1</span></span></span><span class="mjx-denominator" style="font-size: 70.7%; width: 1.127em; bottom: -0.849em;"><span class="mjx-msubsup" style=""><span class="mjx-base"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span></span><span class="mjx-sup" style="font-size: 83.3%; vertical-align: 0.347em; padding-left: 0px; padding-right: 0.06em;"><span class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">2</span></span></span></span></span><span style="border-bottom: 1.3px solid; top: -0.296em; width: 0.797em;" class="mjx-line"></span></span><span style="height: 1.571em; vertical-align: -0.6em;" class="mjx-vsize"></span></span></span></span></span></td>
+</tr>
+<tr>
+<td><span class="mjx-chtml"><span class="mjx-math" aria-label="\frac{t^n}{n!}"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mfrac"><span class="mjx-box MJXc-stacked" style="width: 0.78em; padding: 0px 0.12em;"><span class="mjx-numerator" style="font-size: 70.7%; width: 1.103em; top: -1.445em;"><span class="mjx-msubsup" style=""><span class="mjx-base"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span></span><span class="mjx-sup" style="font-size: 83.3%; vertical-align: 0.435em; padding-left: 0px; padding-right: 0.06em;"><span class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">n</span></span></span></span></span><span class="mjx-denominator" style="font-size: 70.7%; width: 1.103em; bottom: -0.726em;"><span class="mjx-mrow" style=""><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">n</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.372em;">!</span></span></span></span><span style="border-bottom: 1.3px solid; top: -0.296em; width: 0.78em;" class="mjx-line"></span></span><span style="height: 1.535em; vertical-align: -0.514em;" class="mjx-vsize"></span></span></span></span></span></td>
+<td><span class="mjx-chtml"><span class="mjx-math" aria-label="\frac{1}{s^{n+1}}"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mfrac"><span class="mjx-box MJXc-stacked" style="width: 1.609em; padding: 0px 0.12em;"><span class="mjx-numerator" style="font-size: 70.7%; width: 2.276em; top: -1.372em;"><span class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">1</span></span></span><span class="mjx-denominator" style="font-size: 70.7%; width: 2.276em; bottom: -0.849em;"><span class="mjx-msubsup" style=""><span class="mjx-base"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span></span><span class="mjx-sup" style="font-size: 83.3%; vertical-align: 0.347em; padding-left: 0px; padding-right: 0.06em;"><span class="mjx-texatom" style=""><span class="mjx-mrow"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">n</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">+</span></span><span class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">1</span></span></span></span></span></span></span><span style="border-bottom: 1.3px solid; top: -0.296em; width: 1.609em;" class="mjx-line"></span></span><span style="height: 1.571em; vertical-align: -0.6em;" class="mjx-vsize"></span></span></span></span></span></td>
+</tr>
+<tr>
+<td><span class="mjx-chtml"><span class="mjx-math" aria-label="e^{-at}"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-msubsup"><span class="mjx-base"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">e</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0px; padding-right: 0.071em;"><span class="mjx-texatom" style=""><span class="mjx-mrow"><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">&#x2212;</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">a</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span></span></span></span></span></span></span></span></td>
+<td><span class="mjx-chtml"><span class="mjx-math" aria-label="\frac{1}{s+a}"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mfrac"><span class="mjx-box MJXc-stacked" style="width: 1.397em; padding: 0px 0.12em;"><span class="mjx-numerator" style="font-size: 70.7%; width: 1.976em; top: -1.372em;"><span class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">1</span></span></span><span class="mjx-denominator" style="font-size: 70.7%; width: 1.976em; bottom: -0.664em;"><span class="mjx-mrow" style=""><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">+</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">a</span></span></span></span><span style="border-bottom: 1.3px solid; top: -0.296em; width: 1.397em;" class="mjx-line"></span></span><span style="height: 1.44em; vertical-align: -0.47em;" class="mjx-vsize"></span></span></span></span></span></td>
+</tr>
+<tr>
+<td><span class="mjx-chtml"><span class="mjx-math" aria-label="te^{-at}"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span><span class="mjx-msubsup"><span class="mjx-base"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">e</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0px; padding-right: 0.071em;"><span class="mjx-texatom" style=""><span class="mjx-mrow"><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">&#x2212;</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">a</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span></span></span></span></span></span></span></span></td>
+<td><span class="mjx-chtml"><span class="mjx-math" aria-label="\frac{1}{(s+a)^2}"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mfrac"><span class="mjx-box MJXc-stacked" style="width: 2.272em; padding: 0px 0.12em;"><span class="mjx-numerator" style="font-size: 70.7%; width: 3.212em; top: -1.372em;"><span class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">1</span></span></span><span class="mjx-denominator" style="font-size: 70.7%; width: 3.212em; bottom: -1.089em;"><span class="mjx-mrow" style=""><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">+</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">a</span></span><span class="mjx-msubsup"><span class="mjx-base"><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span><span class="mjx-sup" style="font-size: 83.3%; vertical-align: 0.347em; padding-left: 0px; padding-right: 0.06em;"><span class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">2</span></span></span></span></span></span><span style="border-bottom: 1.3px solid; top: -0.296em; width: 2.272em;" class="mjx-line"></span></span><span style="height: 1.741em; vertical-align: -0.77em;" class="mjx-vsize"></span></span></span></span></span></td>
+</tr>
+<tr>
+<td><span class="mjx-chtml"><span class="mjx-math" aria-label="\sin \omega t"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">sin</span></span><span class="mjx-mo"><span class="mjx-char"></span></span><span class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">&#x3C9;</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span></span></span></span></td>
+<td><span class="mjx-chtml"><span class="mjx-math" aria-label="\frac{\omega}{s^2+\omega^2}"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mfrac"><span class="mjx-box MJXc-stacked" style="width: 2.111em; padding: 0px 0.12em;"><span class="mjx-numerator" style="font-size: 70.7%; width: 2.986em; top: -1.16em;"><span class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">&#x3C9;</span></span></span><span class="mjx-denominator" style="font-size: 70.7%; width: 2.986em; bottom: -0.921em;"><span class="mjx-mrow" style=""><span class="mjx-msubsup"><span class="mjx-base"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span></span><span class="mjx-sup" style="font-size: 83.3%; vertical-align: 0.347em; padding-left: 0px; padding-right: 0.06em;"><span class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">2</span></span></span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">+</span></span><span class="mjx-msubsup"><span class="mjx-base"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">&#x3C9;</span></span></span><span class="mjx-sup" style="font-size: 83.3%; vertical-align: 0.347em; padding-left: 0px; padding-right: 0.06em;"><span class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">2</span></span></span></span></span></span><span style="border-bottom: 1.3px solid; top: -0.296em; width: 2.111em;" class="mjx-line"></span></span><span style="height: 1.472em; vertical-align: -0.651em;" class="mjx-vsize"></span></span></span></span></span></td>
+</tr>
+<tr>
+<td><span class="mjx-chtml"><span class="mjx-math" aria-label="\cos \omega t"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.151em; padding-bottom: 0.372em;">cos</span></span><span class="mjx-mo"><span class="mjx-char"></span></span><span class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">&#x3C9;</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span></span></span></span></td>
+<td><span class="mjx-chtml"><span class="mjx-math" aria-label="\frac{s}{s^2+\omega^2}"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mfrac"><span class="mjx-box MJXc-stacked" style="width: 2.111em; padding: 0px 0.12em;"><span class="mjx-numerator" style="font-size: 70.7%; width: 2.986em; top: -1.158em;"><span class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span></span><span class="mjx-denominator" style="font-size: 70.7%; width: 2.986em; bottom: -0.921em;"><span class="mjx-mrow" style=""><span class="mjx-msubsup"><span class="mjx-base"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span></span><span class="mjx-sup" style="font-size: 83.3%; vertical-align: 0.347em; padding-left: 0px; padding-right: 0.06em;"><span class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">2</span></span></span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">+</span></span><span class="mjx-msubsup"><span class="mjx-base"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">&#x3C9;</span></span></span><span class="mjx-sup" style="font-size: 83.3%; vertical-align: 0.347em; padding-left: 0px; padding-right: 0.06em;"><span class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">2</span></span></span></span></span></span><span style="border-bottom: 1.3px solid; top: -0.296em; width: 2.111em;" class="mjx-line"></span></span><span style="height: 1.47em; vertical-align: -0.651em;" class="mjx-vsize"></span></span></span></span></span></td>
+</tr>
+<tr>
+<td><span class="mjx-chtml"><span class="mjx-math" aria-label="e^{-at}\sin \omega t"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-msubsup"><span class="mjx-base"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">e</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0px; padding-right: 0.071em;"><span class="mjx-texatom" style=""><span class="mjx-mrow"><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">&#x2212;</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">a</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span></span></span></span></span><span class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">sin</span></span><span class="mjx-mo"><span class="mjx-char"></span></span><span class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">&#x3C9;</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span></span></span></span></td>
+<td><span class="mjx-chtml"><span class="mjx-math" aria-label="\frac{\omega}{(s+a)^2+\omega^2}"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mfrac"><span class="mjx-box MJXc-stacked" style="width: 3.586em; padding: 0px 0.12em;"><span class="mjx-numerator" style="font-size: 70.7%; width: 5.071em; top: -1.16em;"><span class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">&#x3C9;</span></span></span><span class="mjx-denominator" style="font-size: 70.7%; width: 5.071em; bottom: -1.089em;"><span class="mjx-mrow" style=""><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">+</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">a</span></span><span class="mjx-msubsup"><span class="mjx-base"><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span><span class="mjx-sup" style="font-size: 83.3%; vertical-align: 0.347em; padding-left: 0px; padding-right: 0.06em;"><span class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">2</span></span></span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">+</span></span><span class="mjx-msubsup"><span class="mjx-base"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">&#x3C9;</span></span></span><span class="mjx-sup" style="font-size: 83.3%; vertical-align: 0.347em; padding-left: 0px; padding-right: 0.06em;"><span class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">2</span></span></span></span></span></span><span style="border-bottom: 1.3px solid; top: -0.296em; width: 3.586em;" class="mjx-line"></span></span><span style="height: 1.591em; vertical-align: -0.77em;" class="mjx-vsize"></span></span></span></span></span></td>
+</tr>
+<tr>
+<td><span class="mjx-chtml"><span class="mjx-math" aria-label="e^{-at}\cos \omega t"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-msubsup"><span class="mjx-base"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">e</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0px; padding-right: 0.071em;"><span class="mjx-texatom" style=""><span class="mjx-mrow"><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">&#x2212;</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">a</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span></span></span></span></span><span class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.151em; padding-bottom: 0.372em;">cos</span></span><span class="mjx-mo"><span class="mjx-char"></span></span><span class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">&#x3C9;</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span></span></span></span></td>
+<td><span class="mjx-chtml"><span class="mjx-math" aria-label="\frac{s+a}{(s+a)^2+\omega^2}"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mfrac"><span class="mjx-box MJXc-stacked" style="width: 3.586em; padding: 0px 0.12em;"><span class="mjx-numerator" style="font-size: 70.7%; width: 5.071em; top: -1.371em;"><span class="mjx-mrow" style=""><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">+</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">a</span></span></span></span><span class="mjx-denominator" style="font-size: 70.7%; width: 5.071em; bottom: -1.089em;"><span class="mjx-mrow" style=""><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">+</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">a</span></span><span class="mjx-msubsup"><span class="mjx-base"><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span><span class="mjx-sup" style="font-size: 83.3%; vertical-align: 0.347em; padding-left: 0px; padding-right: 0.06em;"><span class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">2</span></span></span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">+</span></span><span class="mjx-msubsup"><span class="mjx-base"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">&#x3C9;</span></span></span><span class="mjx-sup" style="font-size: 83.3%; vertical-align: 0.347em; padding-left: 0px; padding-right: 0.06em;"><span class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">2</span></span></span></span></span></span><span style="border-bottom: 1.3px solid; top: -0.296em; width: 3.586em;" class="mjx-line"></span></span><span style="height: 1.74em; vertical-align: -0.77em;" class="mjx-vsize"></span></span></span></span></span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x6027;&#x8CEA;">&#x6027;&#x8CEA;</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><span class="mjx-chtml"><span class="mjx-math" aria-label="f(t)"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.519em; padding-bottom: 0.519em; padding-right: 0.06em;">f</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span></span></span></th>
+<th><span class="mjx-chtml"><span class="mjx-math" aria-label="F(s)"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.106em;">F</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span></span></span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x7DDA;&#x5F62;&#x6027;</td>
+<td><span class="mjx-chtml"><span class="mjx-math" aria-label="af(t)+bg(t)"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">a</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.519em; padding-bottom: 0.519em; padding-right: 0.06em;">f</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span><span class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">+</span></span><span class="mjx-mi MJXc-space2"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em;">b</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.519em; padding-right: 0.003em;">g</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span></span></span></td>
+<td><span class="mjx-chtml"><span class="mjx-math" aria-label="aF(s)+bG(t)"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">a</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.106em;">F</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span><span class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">+</span></span><span class="mjx-mi MJXc-space2"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em;">b</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.519em; padding-bottom: 0.298em;">G</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span></span></span></td>
+</tr>
+<tr>
+<td>&#x76F8;&#x4F3C;&#x6027;</td>
+<td><span class="mjx-chtml"><span class="mjx-math" aria-label="f(at)"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.519em; padding-bottom: 0.519em; padding-right: 0.06em;">f</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">a</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span></span></span></td>
+<td><span class="mjx-chtml"><span class="mjx-math" aria-label="\frac{1}{a}F\left( \frac{s}{a} \right)"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mfrac"><span class="mjx-box MJXc-stacked" style="width: 0.515em; padding: 0px 0.12em;"><span class="mjx-numerator" style="font-size: 70.7%; width: 0.729em; top: -1.372em;"><span class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">1</span></span></span><span class="mjx-denominator" style="font-size: 70.7%; width: 0.729em; bottom: -0.523em;"><span class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">a</span></span></span><span style="border-bottom: 1.3px solid; top: -0.296em; width: 0.515em;" class="mjx-line"></span></span><span style="height: 1.34em; vertical-align: -0.37em;" class="mjx-vsize"></span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.106em;">F</span></span><span class="mjx-mrow MJXc-space1"><span class="mjx-mo"><span class="mjx-char MJXc-TeX-size1-R" style="padding-top: 0.593em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mfrac"><span class="mjx-box MJXc-stacked" style="width: 0.515em; padding: 0px 0.12em;"><span class="mjx-numerator" style="font-size: 70.7%; width: 0.729em; top: -1.158em;"><span class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span></span><span class="mjx-denominator" style="font-size: 70.7%; width: 0.729em; bottom: -0.523em;"><span class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">a</span></span></span><span style="border-bottom: 1.3px solid; top: -0.296em; width: 0.515em;" class="mjx-line"></span></span><span style="height: 1.189em; vertical-align: -0.37em;" class="mjx-vsize"></span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-size1-R" style="padding-top: 0.593em; padding-bottom: 0.593em;">)</span></span></span></span></span></span></td>
+</tr>
+<tr>
+<td>&#x6642;&#x9593;&#x30B7;&#x30D5;&#x30C8;</td>
+<td><span class="mjx-chtml"><span class="mjx-math" aria-label="f(t-a)"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.519em; padding-bottom: 0.519em; padding-right: 0.06em;">f</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span><span class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">&#x2212;</span></span><span class="mjx-mi MJXc-space2"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">a</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span></span></span></td>
+<td><span class="mjx-chtml"><span class="mjx-math" aria-label="e^{-as}F(s)"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-msubsup"><span class="mjx-base"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">e</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0px; padding-right: 0.071em;"><span class="mjx-texatom" style=""><span class="mjx-mrow"><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">&#x2212;</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">a</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span></span></span></span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.106em;">F</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span></span></span></td>
+</tr>
+<tr>
+<td>&#x7573;&#x307F;&#x8FBC;&#x307F;</td>
+<td><span class="mjx-chtml"><span class="mjx-math" aria-label="\int_0^t f(t-\tau)g(\tau)d\tau"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-msubsup"><span class="mjx-base" style="margin-right: -0.138em;"><span class="mjx-mo" style="padding-right: 0.138em;"><span class="mjx-char MJXc-TeX-size1-R" style="padding-top: 0.593em; padding-bottom: 0.593em;">&#x222B;</span></span></span><span class="mjx-stack" style="vertical-align: -0.366em;"><span class="mjx-sup" style="font-size: 70.7%; padding-bottom: 0.579em; padding-left: 0.324em; padding-right: 0.071em;"><span class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span></span><span class="mjx-sub" style="font-size: 70.7%; padding-right: 0.071em;"><span class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">0</span></span></span></span></span><span class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.519em; padding-bottom: 0.519em; padding-right: 0.06em;">f</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span><span class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">&#x2212;</span></span><span class="mjx-mi MJXc-space2"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em; padding-right: 0.08em;">&#x3C4;</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.519em; padding-right: 0.003em;">g</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em; padding-right: 0.08em;">&#x3C4;</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.003em;">d</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em; padding-right: 0.08em;">&#x3C4;</span></span></span></span></span></td>
+<td><span class="mjx-chtml"><span class="mjx-math" aria-label="F(s)G(s)"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.106em;">F</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.519em; padding-bottom: 0.298em;">G</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span></span></span></td>
+</tr>
+<tr>
+<td>&#x5FAE;&#x5206;</td>
+<td><span class="mjx-chtml"><span class="mjx-math" aria-label="\frac{d}{dt}f(t)"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mfrac"><span class="mjx-box MJXc-stacked" style="width: 0.767em; padding: 0px 0.12em;"><span class="mjx-numerator" style="font-size: 70.7%; width: 1.084em; top: -1.41em;"><span class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.003em;">d</span></span></span><span class="mjx-denominator" style="font-size: 70.7%; width: 1.084em; bottom: -0.704em;"><span class="mjx-mrow" style=""><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.003em;">d</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span></span></span><span style="border-bottom: 1.3px solid; top: -0.296em; width: 0.767em;" class="mjx-line"></span></span><span style="height: 1.495em; vertical-align: -0.498em;" class="mjx-vsize"></span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.519em; padding-bottom: 0.519em; padding-right: 0.06em;">f</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span></span></span></td>
+<td><span class="mjx-chtml"><span class="mjx-math" aria-label="sF(s)-f(0)"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.106em;">F</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span><span class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">&#x2212;</span></span><span class="mjx-mi MJXc-space2"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.519em; padding-bottom: 0.519em; padding-right: 0.06em;">f</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">0</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span></span></span></td>
+</tr>
+<tr>
+<td>n&#x968E;&#x5FAE;&#x5206;</td>
+<td><span class="mjx-chtml"><span class="mjx-math" aria-label="\frac{d^n}{dt^n}f(t)"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mfrac"><span class="mjx-box MJXc-stacked" style="width: 1.15em; padding: 0px 0.12em;"><span class="mjx-numerator" style="font-size: 70.7%; width: 1.626em; top: -1.444em;"><span class="mjx-msubsup" style=""><span class="mjx-base" style="margin-right: -0.003em;"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.003em;">d</span></span></span><span class="mjx-sup" style="font-size: 83.3%; vertical-align: 0.435em; padding-left: 0.065em; padding-right: 0.06em;"><span class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">n</span></span></span></span></span><span class="mjx-denominator" style="font-size: 70.7%; width: 1.626em; bottom: -0.704em;"><span class="mjx-mrow" style=""><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.003em;">d</span></span><span class="mjx-msubsup"><span class="mjx-base"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span></span><span class="mjx-sup" style="font-size: 83.3%; vertical-align: 0.347em; padding-left: 0px; padding-right: 0.06em;"><span class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">n</span></span></span></span></span></span><span style="border-bottom: 1.3px solid; top: -0.296em; width: 1.15em;" class="mjx-line"></span></span><span style="height: 1.519em; vertical-align: -0.498em;" class="mjx-vsize"></span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.519em; padding-bottom: 0.519em; padding-right: 0.06em;">f</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span></span></span></td>
+<td><span class="mjx-chtml"><span class="mjx-math" aria-label="s^nF(s)-\left\{s^{n-1}f(0)+s^{n-2}f&apos;(0) + \dots + f^{(n-1)}(0)\right\}"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-msubsup"><span class="mjx-base"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0px; padding-right: 0.071em;"><span class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">n</span></span></span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.106em;">F</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span><span class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">&#x2212;</span></span><span class="mjx-mrow MJXc-space2"><span class="mjx-mo"><span class="mjx-char MJXc-TeX-size1-R" style="padding-top: 0.593em; padding-bottom: 0.593em;">{</span></span><span class="mjx-mrow"><span class="mjx-msubsup"><span class="mjx-base"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0px; padding-right: 0.071em;"><span class="mjx-texatom" style=""><span class="mjx-mrow"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">n</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">&#x2212;</span></span><span class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">1</span></span></span></span></span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.519em; padding-bottom: 0.519em; padding-right: 0.06em;">f</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">0</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span><span class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">+</span></span><span class="mjx-msubsup MJXc-space2"><span class="mjx-base"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0px; padding-right: 0.071em;"><span class="mjx-texatom" style=""><span class="mjx-mrow"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">n</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">&#x2212;</span></span><span class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">2</span></span></span></span></span></span><span class="mjx-msup"><span class="mjx-base" style="margin-right: -0.06em;"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.519em; padding-bottom: 0.519em; padding-right: 0.06em;">f</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0.181em; padding-right: 0.071em;"><span class="mjx-mo" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.298em;">&#x2032;</span></span></span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">0</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span><span class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">+</span></span><span class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.004em; padding-bottom: 0.298em;">&#x22EF;</span></span><span class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">+</span></span><span class="mjx-msubsup MJXc-space2"><span class="mjx-base" style="margin-right: -0.06em;"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.519em; padding-bottom: 0.519em; padding-right: 0.06em;">f</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0.181em; padding-right: 0.071em;"><span class="mjx-texatom" style=""><span class="mjx-mrow"><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">n</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">&#x2212;</span></span><span class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">1</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span></span></span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">0</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-size1-R" style="padding-top: 0.593em; padding-bottom: 0.593em;">}</span></span></span></span></span></span></td>
+</tr>
+<tr>
+<td>&#x7A4D;&#x5206;</td>
+<td><span class="mjx-chtml"><span class="mjx-math" aria-label="\int_0^tf(t)dt"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-msubsup"><span class="mjx-base" style="margin-right: -0.138em;"><span class="mjx-mo" style="padding-right: 0.138em;"><span class="mjx-char MJXc-TeX-size1-R" style="padding-top: 0.593em; padding-bottom: 0.593em;">&#x222B;</span></span></span><span class="mjx-stack" style="vertical-align: -0.366em;"><span class="mjx-sup" style="font-size: 70.7%; padding-bottom: 0.579em; padding-left: 0.324em; padding-right: 0.071em;"><span class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span></span><span class="mjx-sub" style="font-size: 70.7%; padding-right: 0.071em;"><span class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">0</span></span></span></span></span><span class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.519em; padding-bottom: 0.519em; padding-right: 0.06em;">f</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.003em;">d</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span></span></span></span></td>
+<td><span class="mjx-chtml"><span class="mjx-math" aria-label="\frac{1}{s} \left\{F(s)+f^{(-1)}(0)\right\}"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mfrac"><span class="mjx-box MJXc-stacked" style="width: 0.495em; padding: 0px 0.12em;"><span class="mjx-numerator" style="font-size: 70.7%; width: 0.7em; top: -1.372em;"><span class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">1</span></span></span><span class="mjx-denominator" style="font-size: 70.7%; width: 0.7em; bottom: -0.523em;"><span class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span></span><span style="border-bottom: 1.3px solid; top: -0.296em; width: 0.495em;" class="mjx-line"></span></span><span style="height: 1.34em; vertical-align: -0.37em;" class="mjx-vsize"></span></span><span class="mjx-mrow"><span class="mjx-mo"><span class="mjx-char MJXc-TeX-size1-R" style="padding-top: 0.593em; padding-bottom: 0.593em;">{</span></span><span class="mjx-mrow"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.106em;">F</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span><span class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">+</span></span><span class="mjx-msubsup MJXc-space2"><span class="mjx-base" style="margin-right: -0.06em;"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.519em; padding-bottom: 0.519em; padding-right: 0.06em;">f</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0.181em; padding-right: 0.071em;"><span class="mjx-texatom" style=""><span class="mjx-mrow"><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">&#x2212;</span></span><span class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">1</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span></span></span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">0</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-size1-R" style="padding-top: 0.593em; padding-bottom: 0.593em;">}</span></span></span></span></span></span></td>
+</tr>
+<tr>
+<td>n&#x91CD;&#x7A4D;&#x5206;</td>
+<td><span class="mjx-chtml"><span class="mjx-math" aria-label="\int \int \dots \int_0^tf(t)(dt)^n"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mo" style="padding-right: 0.138em;"><span class="mjx-char MJXc-TeX-size1-R" style="padding-top: 0.593em; padding-bottom: 0.593em;">&#x222B;</span></span><span class="mjx-mo MJXc-space1" style="padding-right: 0.138em;"><span class="mjx-char MJXc-TeX-size1-R" style="padding-top: 0.593em; padding-bottom: 0.593em;">&#x222B;</span></span><span class="mjx-mo MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.144em; padding-bottom: 0.372em;">&#x2026;</span></span><span class="mjx-msubsup MJXc-space1"><span class="mjx-base" style="margin-right: -0.138em;"><span class="mjx-mo" style="padding-right: 0.138em;"><span class="mjx-char MJXc-TeX-size1-R" style="padding-top: 0.593em; padding-bottom: 0.593em;">&#x222B;</span></span></span><span class="mjx-stack" style="vertical-align: -0.366em;"><span class="mjx-sup" style="font-size: 70.7%; padding-bottom: 0.579em; padding-left: 0.324em; padding-right: 0.071em;"><span class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span></span><span class="mjx-sub" style="font-size: 70.7%; padding-right: 0.071em;"><span class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">0</span></span></span></span></span><span class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.519em; padding-bottom: 0.519em; padding-right: 0.06em;">f</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.003em;">d</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span><span class="mjx-msubsup"><span class="mjx-base"><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0px; padding-right: 0.071em;"><span class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">n</span></span></span></span></span></span></span></td>
+<td><span class="mjx-chtml"><span class="mjx-math" aria-label="s^{-n}F(s)+s^{-n}f^{(-1)}(0)+\left\{s^{-(n-1)}f^{-2}(0)+\dots+s^{-1}f^{(-n)}(0)\right\}"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-msubsup"><span class="mjx-base"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0px; padding-right: 0.071em;"><span class="mjx-texatom" style=""><span class="mjx-mrow"><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">&#x2212;</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">n</span></span></span></span></span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.106em;">F</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span><span class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">+</span></span><span class="mjx-msubsup MJXc-space2"><span class="mjx-base"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0px; padding-right: 0.071em;"><span class="mjx-texatom" style=""><span class="mjx-mrow"><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">&#x2212;</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">n</span></span></span></span></span></span><span class="mjx-msubsup"><span class="mjx-base" style="margin-right: -0.06em;"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.519em; padding-bottom: 0.519em; padding-right: 0.06em;">f</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0.181em; padding-right: 0.071em;"><span class="mjx-texatom" style=""><span class="mjx-mrow"><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">&#x2212;</span></span><span class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">1</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span></span></span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">0</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span><span class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">+</span></span><span class="mjx-mrow MJXc-space2"><span class="mjx-mo"><span class="mjx-char MJXc-TeX-size1-R" style="padding-top: 0.593em; padding-bottom: 0.593em;">{</span></span><span class="mjx-mrow"><span class="mjx-msubsup"><span class="mjx-base"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0px; padding-right: 0.071em;"><span class="mjx-texatom" style=""><span class="mjx-mrow"><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">&#x2212;</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">n</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">&#x2212;</span></span><span class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">1</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span></span></span></span><span class="mjx-msubsup"><span class="mjx-base" style="margin-right: -0.06em;"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.519em; padding-bottom: 0.519em; padding-right: 0.06em;">f</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0.181em; padding-right: 0.071em;"><span class="mjx-texatom" style=""><span class="mjx-mrow"><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">&#x2212;</span></span><span class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">2</span></span></span></span></span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">0</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span><span class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">+</span></span><span class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.004em; padding-bottom: 0.298em;">&#x22EF;</span></span><span class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">+</span></span><span class="mjx-msubsup MJXc-space2"><span class="mjx-base"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0px; padding-right: 0.071em;"><span class="mjx-texatom" style=""><span class="mjx-mrow"><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">&#x2212;</span></span><span class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">1</span></span></span></span></span></span><span class="mjx-msubsup"><span class="mjx-base" style="margin-right: -0.06em;"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.519em; padding-bottom: 0.519em; padding-right: 0.06em;">f</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0.181em; padding-right: 0.071em;"><span class="mjx-texatom" style=""><span class="mjx-mrow"><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">&#x2212;</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">n</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span></span></span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">0</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-size1-R" style="padding-top: 0.593em; padding-bottom: 0.593em;">}</span></span></span></span></span></span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x521D;&#x671F;&#x5024;&#x30FB;&#x6700;&#x7D42;&#x5024;&#x306E;&#x5B9A;&#x7406;">&#x521D;&#x671F;&#x5024;&#x30FB;&#x6700;&#x7D42;&#x5024;&#x306E;&#x5B9A;&#x7406;</h2>
+<center>
+<span class="mjx-chtml"><span class="mjx-math" aria-label="\lim_{t \to 0+}f(t) = \lim_{s \to \infty}sF(s)"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-munderover"><span class="mjx-base"><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">lim</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span class="mjx-texatom" style=""><span class="mjx-mrow"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.225em; padding-bottom: 0.372em;">&#x2192;</span></span><span class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">0</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">+</span></span></span></span></span></span><span class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.519em; padding-bottom: 0.519em; padding-right: 0.06em;">f</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span><span class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.077em; padding-bottom: 0.298em;">=</span></span><span class="mjx-munderover MJXc-space3"><span class="mjx-base"><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">lim</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span class="mjx-texatom" style=""><span class="mjx-mrow"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.225em; padding-bottom: 0.372em;">&#x2192;</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.151em; padding-bottom: 0.372em;">&#x221E;</span></span></span></span></span></span><span class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.106em;">F</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span></span></span>
+</center>
+
+<center>
+<span class="mjx-chtml"><span class="mjx-math" aria-label="\lim_{t \to \infty}f(t) = \lim_{s \to 0}sF(s)"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-munderover"><span class="mjx-base"><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">lim</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span class="mjx-texatom" style=""><span class="mjx-mrow"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.225em; padding-bottom: 0.372em;">&#x2192;</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.151em; padding-bottom: 0.372em;">&#x221E;</span></span></span></span></span></span><span class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.519em; padding-bottom: 0.519em; padding-right: 0.06em;">f</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span><span class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.077em; padding-bottom: 0.298em;">=</span></span><span class="mjx-munderover MJXc-space3"><span class="mjx-base"><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">lim</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span class="mjx-texatom" style=""><span class="mjx-mrow"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.225em; padding-bottom: 0.372em;">&#x2192;</span></span><span class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">0</span></span></span></span></span></span><span class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.106em;">F</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span></span></span>
+</center>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="fourier_transform.html" class="navigation navigation-next navigation-unique" aria-label="Next page: フーリエ変換">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ラプラス変換","level":"1.2.2.1","depth":3,"next":{"title":"フーリエ変換","level":"1.2.2.2","depth":3,"path":"mathematics/analysis/fourier_transform.md","ref":"mathematics/analysis/fourier_transform.md","articles":[]},"previous":{"title":"解析学","level":"1.2.2","depth":2,"ref":"","articles":[{"title":"ラプラス変換","level":"1.2.2.1","depth":3,"path":"mathematics/analysis/laplace_transform.md","ref":"mathematics/analysis/laplace_transform.md","articles":[]},{"title":"フーリエ変換","level":"1.2.2.2","depth":3,"path":"mathematics/analysis/fourier_transform.md","ref":"mathematics/analysis/fourier_transform.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["mathjax-commonhtml","expandable-chapters"],"pluginsConfig":{"mathjax-commonhtml":{"defaultScaling":true},"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"my_style.css","pdf":"my_style.css"}},"file":{"path":"mathematics/analysis/laplace_transform.md","mtime":"2017-05-10T20:41:41.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-18T11:33:55.890Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
