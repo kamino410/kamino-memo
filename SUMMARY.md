@@ -47,5 +47,7 @@
   * プロトコル
     * [参照モデル](network/protocol/reference_model.md)
 * 開発関係
+  * デバイス
+    * [SteamVR / HTC Vive](develop/device/steamvr_vive.md)
   * Python
     * [環境](develop/python/environment.md)

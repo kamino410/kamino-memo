@@ -79,6 +79,9 @@
 ### Python
 * [環境](develop/python/environment.md)
 
+### デバイス
+* [SteamVR / HTC Vive](develop/device/steamvr_vive.md)
+
 # 参考文献
 
 * 中山 司, 『流れ解析のための有限要素法入門』, 東京大学出版会, 2008
