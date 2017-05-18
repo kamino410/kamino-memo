@@ -49,6 +49,7 @@
 
 ### グラフ理論
 * [概要](computer_science/graph_theory/intro.md)
+* [プログラムにおけるグラフ表現](computer_science/graph_theory/graph_expression.md)
 
 ### アルゴリズム
 * [アルゴリズムのコスト](computer_science/algorithm/execution_cost.md)
