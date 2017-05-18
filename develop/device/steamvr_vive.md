@@ -2,6 +2,8 @@
 
 ## Steam
 
+![alt text](steam.png)
+
 SteamはアメリカのValve Corporationが開発・運営するゲーム配信プラットフォーム。
 app storeやgoogle playなどと同様に
 
@@ -16,7 +18,7 @@ app storeやgoogle playなどと同様に
 ### 概要
 
 SteamVRはValveが台湾のHTC Corporationと提携・開発したPCゲーム用VRシステム。
-HTC VIVEはSteamVR向けに提供されているデバイスの名前である。
+HTC VIVEはSteamVR向けに提供されているデバイスの名称である。
 
 ![alt text](fig1.jpg)
 
@@ -41,14 +43,14 @@ HTC VIVEはSteamVR向けに提供されているデバイスの名前である�
 
 Outside-In型のトラッキングを行なっている。
 
-ベースステーション2台が赤外線平面を順に上下方向・左右方向に走査させ、トラッキング対象がそれを受信する。
+ベースステーション2台が赤外線平面を順に上下方向・左右方向に走査させ、トラッキング対象に仕込まれたセンサーがそれを受信する。
 
 具体的には
 
-* 同期信号 x 2 ($$0\mu s$$, $$400\mu s$$)
-* 走査 ($$1222–6777\mu s$$)
+* 同期信号 x 2 （0$$\mu s$$, 400$$\mu s$$）
+* 走査 （1222–6777$$\mu s$$）
 
-をベースステーション2台×縦横の4回を1サイクルとして行なっているらしい（参考：[https://github.com/ashtuchkin/vive-diy-position-sensor](https://github.com/ashtuchkin/vive-diy-position-sensor)）。
+をベースステーション2台×縦横の4回行うのを1サイクルを繰り返しているらしい（参考：[https://github.com/ashtuchkin/vive-diy-position-sensor](https://github.com/ashtuchkin/vive-diy-position-sensor)）。
 
 赤外線平面は一定の角速度で走査されるため、同期信号から走査の受信までの時間から位置を推定できる。
 
