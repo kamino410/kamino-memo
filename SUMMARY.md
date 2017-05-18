@@ -20,8 +20,10 @@
     * [伝達関数２](control/classical/transfer_function2.md)
     * [伝達関数３](control/classical/transfer_function3.md)
     * [インパルス応答とステップ応答](control/classical/impulse_step_response.md)
+    * [過渡応答](control/classical/transient_response.md)
     * [1次系の応答](control/classical/first_order_system.md)
     * [2次系の応答](control/classical/second_order_system.md)
+    * [極・零点と過渡応答](control/classical/pole_zero.md)
   * 現代制御理論
     * [状態方程式](control/modern/state_space_equation.md)
     * [可制御性・可観測性](control/modern/controllability_observability.md)

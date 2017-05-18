@@ -34,8 +34,10 @@
 * [伝達関数３](control/classical/transfer_function3.md)
   * proper／strictly proper／improperな伝達関数
 * [インパルス応答とステップ応答](control/classical/impulse_step_response.md)
+* [過渡応答](control/classical/transient_response.md)
 * [1次系の応答](control/classical/first_order_system.md)
 * [2次系の応答](control/classical/second_order_system.md)
+* [極・零点と過渡応答](control/classical/pole_zero.md)
 
 ### 現代制御
 * [状態方程式](control/modern/state_space_equation.md)

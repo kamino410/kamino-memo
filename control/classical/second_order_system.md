@@ -73,12 +73,6 @@ $$
   * 速応性を定める
   * 実際は $$\omega_d = \omega_n\sqrt{1-\zeta^2}$$ が振動の周波数になる
 
-また応答波形に対しては次のような特性値が定義されている。
-
-<img src="fig_res.gif" style="border:solid 1px #000000">
-
-（出典：[http://www1.gifu-u.ac.jp/~kawalab/content/seminar/Control/Property2.html](http://www1.gifu-u.ac.jp/~kawalab/content/seminar/Control/Property2.html)）
-
 ## インパルス応答（Python）
 
 >Python 3.6.1, matplotlib 2.0.1, control 0.7.0
