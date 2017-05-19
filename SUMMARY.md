@@ -41,6 +41,7 @@
     * [動的計画法２](computer_science/algorithm/dynamic_programming2.md)
     * [ヒープ・プライオリティキュー](computer_science/algorithm/heap.md)
     * [二分探索木](computer_science/algorithm/binary_search_tree.md)
+    * [Union-Find木](computer_science/algorithm/union_find_tree.md)
   * 言語処理
     * [言語処理100本ノック1](computer_science/language_processing/nlp100_1.md)
     * [言語処理100本ノック2](computer_science/language_processing/nlp100_2.md)
