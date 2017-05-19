@@ -7,8 +7,8 @@
 &\ &minimize : f(x) \\
 &\ &s.t.
 \begin{cases}
-g_i(x) = 0 & (i=1,\dots,m) & \dots 等式制約 \\
-h_j(x) = 0 & (j=1,\dots,l) & \dots 不等式制約
+g_i(x) = 0 & (i=1,\dots,m) \\
+h_j(x) \leq 0 & (j=1,\dots,l)
 \end{cases} \\
 &\ & f:R^n \rightarrow R,\ g_i:R^n \rightarrow R,\ h_i:R^n \rightarrow R
 \end{eqnarray}
@@ -25,8 +25,8 @@ $$
 &\ &minimize : c^Tx \\
 &\ &s.t.
 \begin{cases}
-Ax=a & \dots 等式制約\\
-Bx \leq b & \dots 不等式制約
+Ax=a\\
+Bx \leq b
 \end{cases} \\
 &\ &A \in R^{m \times n}, \ B \in R^{l \times n}, \ a \in R^m, \ b \in R^l, \ c \in R^n, \ x \in R^n
 \end{eqnarray}
@@ -78,7 +78,9 @@ $$
 
 ### 基底行列・基底解
 
-等式制約の係数行列$$A$$から$$m=rank(A)$$本の線形独立な列ベクトルを1組選んだとき、それらを並べて作る正則行列を$$B \in R^{m \times m}$$とおいて **基底行列（basis matrix）** といい、それに対応する$$m$$個の変数$$x_i$$を **基底変数（basic variable）** という。逆に選ばれなかった$$n-m$$個の変数$$x_i$$を **非基底変数（nonbasic variable）** という。
+等式制約の係数行列$$A$$から$$m=rank(A)$$本の線形独立な列ベクトルを1組選んだとき、それらを並べて作る正則行列を$$B \in R^{m \times m}$$とおいて **基底行列（basis matrix）** といい、それに対応する$$m$$個の変数$$x_i$$を **基底変数（basic variable）** という。
+
+逆に選ばれなかった$$n-m$$個の変数$$x_i$$を **非基底変数（nonbasic variable）** という。
 
 $$
 \begin{eqnarray}
@@ -104,7 +106,9 @@ $$
 
 ### 退化
 
-基底解を得たとき、非基底変数だけでなく基底変数の中にも0の値をとるものがあるとき、 **退化（degenerate）** しているという。逆に基底変数がすべて非零であるとき（$$x_B > 0, x_N = 0$$）、 **非退化（non-degenerate）** であるという。
+基底解を得たとき、非基底変数だけでなく基底変数の中にも0の値をとるものがあるとき、 **退化（degenerate）** しているという。
+
+逆に基底変数がすべて非零であるとき（$$x_B > 0, x_N = 0$$）、 **非退化（non-degenerate）** であるという。
 
 退化の直観的・数学的な意味は後述する。
 
