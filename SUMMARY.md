@@ -7,6 +7,9 @@
   * 解析学
     * [ラプラス変換](mathematics/analysis/laplace_transform.md)
     * [フーリエ変換](mathematics/analysis/fourier_transform.md)
+* 計画数学
+  * 線形計画問題
+    * [概要](mathematical_programming/linear/intro.md)
 * 数値解析
   * 有限要素法
     * [1次元の重み付き残差法](numerical_analysis/finite_element_method/1-dimention.md)
