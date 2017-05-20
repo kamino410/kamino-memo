@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>マルウェア · GitBook</title>
+        <title>Union-Find木 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -60,7 +60,7 @@
 
     
     
-    <link rel="prev" href="cyber-terrorism.html" />
+    <link rel="prev" href="binary_search_tree.html" />
     
 
     </head>
@@ -663,9 +663,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.6.3.1" data-path="../algorithm/execution_cost.html">
+        <li class="chapter " data-level="1.6.3.1" data-path="execution_cost.html">
             
-                <a href="../algorithm/execution_cost.html">
+                <a href="execution_cost.html">
             
                     
                     アルゴリズムのコスト
@@ -676,9 +676,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.3.2" data-path="../algorithm/exhaustive_search.html">
+        <li class="chapter " data-level="1.6.3.2" data-path="exhaustive_search.html">
             
-                <a href="../algorithm/exhaustive_search.html">
+                <a href="exhaustive_search.html">
             
                     
                     全探索
@@ -689,9 +689,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.3.3" data-path="../algorithm/greedy.html">
+        <li class="chapter " data-level="1.6.3.3" data-path="greedy.html">
             
-                <a href="../algorithm/greedy.html">
+                <a href="greedy.html">
             
                     
                     貪欲法
@@ -702,9 +702,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.3.4" data-path="../algorithm/dynamic_programming1.html">
+        <li class="chapter " data-level="1.6.3.4" data-path="dynamic_programming1.html">
             
-                <a href="../algorithm/dynamic_programming1.html">
+                <a href="dynamic_programming1.html">
             
                     
                     動的計画法１
@@ -715,9 +715,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.3.5" data-path="../algorithm/dynamic_programming2.html">
+        <li class="chapter " data-level="1.6.3.5" data-path="dynamic_programming2.html">
             
-                <a href="../algorithm/dynamic_programming2.html">
+                <a href="dynamic_programming2.html">
             
                     
                     動的計画法２
@@ -728,9 +728,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.3.6" data-path="../algorithm/heap.html">
+        <li class="chapter " data-level="1.6.3.6" data-path="heap.html">
             
-                <a href="../algorithm/heap.html">
+                <a href="heap.html">
             
                     
                     ヒープ・プライオリティキュー
@@ -741,9 +741,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.3.7" data-path="../algorithm/binary_search_tree.html">
+        <li class="chapter " data-level="1.6.3.7" data-path="binary_search_tree.html">
             
-                <a href="../algorithm/binary_search_tree.html">
+                <a href="binary_search_tree.html">
             
                     
                     二分探索木
@@ -754,9 +754,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.3.8" data-path="../algorithm/union_find_tree.html">
+        <li class="chapter active" data-level="1.6.3.8" data-path="union_find_tree.html">
             
-                <a href="../algorithm/union_find_tree.html">
+                <a href="union_find_tree.html">
             
                     
                     Union-Find木
@@ -844,9 +844,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.6.5.1" data-path="cyber-terrorism.html">
+        <li class="chapter " data-level="1.6.5.1" data-path="../security/cyber-terrorism.html">
             
-                <a href="cyber-terrorism.html">
+                <a href="../security/cyber-terrorism.html">
             
                     
                     サイバー攻撃
@@ -857,9 +857,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.6.5.2" data-path="malware.html">
+        <li class="chapter " data-level="1.6.5.2" data-path="../security/malware.html">
             
-                <a href="malware.html">
+                <a href="../security/malware.html">
             
                     
                     マルウェア
@@ -1076,7 +1076,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >マルウェア</a>
+        <a href="../.." >Union-Find木</a>
     </h1>
 </div>
 
@@ -1091,15 +1091,106 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x30DE;&#x30EB;&#x30A6;&#x30A7;&#x30A2;&#xFF08;malware&#xFF09;">&#x30DE;&#x30EB;&#x30A6;&#x30A7;&#x30A2;&#xFF08;malware&#xFF09;</h1>
-<p>&#x60AA;&#x610F;&#x306E;&#x3042;&#x308B;&#x30BD;&#x30D5;&#x30C8;&#x30A6;&#x30A7;&#x30A2;&#x3092;&#x7DCF;&#x3058;&#x3066;&#x30DE;&#x30EB;&#x30A6;&#x30A7;&#x30A2;&#x3068;&#x547C;&#x3076;&#x3002;</p>
-<h2 id="&#x30A6;&#x30A4;&#x30EB;&#x30B9;&#xFF08;virus&#xFF09;">&#x30A6;&#x30A4;&#x30EB;&#x30B9;&#xFF08;virus&#xFF09;</h2>
-<p>&#x30DE;&#x30B7;&#x30F3;&#x4E0A;&#x306E;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#xFF08;&#x5B9F;&#x884C;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#xFF09;&#x3092;&#x66F8;&#x304D;&#x63DB;&#x3048;&#x3001;&#x305D;&#x306E;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x304C;&#x5B9F;&#x884C;&#x3055;&#x308C;&#x305F;&#x3068;&#x304D;&#x306B;&#x4ED6;&#x306E;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x3092;&#x66F8;&#x304D;&#x63DB;&#x3048;&#x3066;&#x611F;&#x67D3;&#x3057;&#x3066;&#x3044;&#x304F;&#x3082;&#x306E;&#x3092; <strong>&#x30A6;&#x30A4;&#x30EB;&#x30B9;</strong> &#x3068;&#x547C;&#x3076;&#x3002;</p>
-<p>&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x304C;&#x4FE1;&#x983C;&#x3057;&#x3066;&#x3044;&#x308B;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x306E;&#x4E2D;&#x306B;&#x7D1B;&#x308C;&#x308B;&#x305F;&#x3081;&#x3001;&#x4E00;&#x5EA6;&#x611F;&#x67D3;&#x3059;&#x308B;&#x3068;&#x30A6;&#x30A4;&#x30EB;&#x30B9;&#x5BFE;&#x7B56;&#x30BD;&#x30D5;&#x30C8;&#x3092;&#x7528;&#x3044;&#x306A;&#x3044;&#x9650;&#x308A;&#x767A;&#x898B;&#x304C;&#x96E3;&#x3057;&#x3044;&#x3002;</p>
-<h2 id="&#x30EF;&#x30FC;&#x30E0;&#xFF08;worm&#xFF09;">&#x30EF;&#x30FC;&#x30E0;&#xFF08;worm&#xFF09;</h2>
-<p>&#x30CD;&#x30C3;&#x30C8;&#x30EF;&#x30FC;&#x30AF;&#x3092;&#x4ECB;&#x3057;&#x3066;&#x4ED6;&#x306E;&#x30DE;&#x30B7;&#x30F3;&#x4E0A;&#x306B;&#x81EA;&#x8EAB;&#x3092;&#x8907;&#x88FD;&#x3057;&#x5897;&#x6B96;&#x3057;&#x3066;&#x3044;&#x304F;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x3092; <strong>&#x30EF;&#x30FC;&#x30E0;</strong> &#x3068;&#x547C;&#x3076;&#x3002;</p>
-<h2 id="&#x30C8;&#x30ED;&#x30A4;&#x306E;&#x6728;&#x99AC;&#xFF08;trojan-horse&#xFF09;">&#x30C8;&#x30ED;&#x30A4;&#x306E;&#x6728;&#x99AC;&#xFF08;Trojan horse&#xFF09;</h2>
-<p>&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x304C;&#x671B;&#x3080;&#x3088;&#x3046;&#x306A;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x306B;&#x507D;&#x88C5;&#x3057;&#x3066;&#x914D;&#x5E03;&#x3055;&#x308C;&#x3001;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x5F8C;&#x306B;&#x60AA;&#x610F;&#x306E;&#x3042;&#x308B;&#x52D5;&#x4F5C;&#x3092;&#x3059;&#x308B;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x3092; <strong>&#x30C8;&#x30ED;&#x30A4;&#x306E;&#x6728;&#x99AC;</strong> &#x3068;&#x547C;&#x3076;&#x3002;</p>
+                                <h1 id="union-find&#x6728;">Union-Find&#x6728;</h1>
+<p>&#x7D20;&#x96C6;&#x5408;&#x3092;&#x7BA1;&#x7406;&#x3059;&#x308B;&#x30C7;&#x30FC;&#x30BF;&#x69CB;&#x9020;&#x3002;
+&#x5185;&#x90E8;&#x306B;&#x8907;&#x6570;&#x306E;&#x6728;&#x69CB;&#x9020;&#x3092;&#x6301;&#x3061;&#x3001;1&#x3064;&#x306E;&#x6728;&#x304C;1&#x3064;&#x306E;&#x96C6;&#x5408;&#x306B;&#x76F8;&#x5F53;&#x3059;&#x308B;&#x3002;</p>
+<h2 id="&#x5B9F;&#x88C5;&#x4F8B;">&#x5B9F;&#x88C5;&#x4F8B;</h2>
+<ul>
+<li>&#x96C6;&#x5408;&#x306B;&#x6839;&#x3092;1&#x3064;&#x5B9A;&#x7FA9;&#x3059;&#x308B;&#x3002;</li>
+<li>&#x521D;&#x671F;&#x72B6;&#x614B;&#x306F;&#x5168;&#x3066;&#x306E;&#x5024;&#x304C;&#x72EC;&#x7ACB;&#x3057;&#x305F;&#x72B6;&#x614B;&#x3068;&#x3059;&#x308B;&#x3002;</li>
+<li>&#x3042;&#x308B;&#x5024;&#x540C;&#x58EB;&#x304C;&#x540C;&#x3058;&#x96C6;&#x5408;&#x306B;&#x5C5E;&#x3057;&#x3066;&#x3044;&#x308B;&#x304B;&#x306F;&#x6B21;&#x306E;&#x3088;&#x3046;&#x306B;&#x5224;&#x5B9A;&#x3059;&#x308B;&#x3002;<ol>
+<li>&#x8449;&#x304B;&#x3089;&#x9806;&#x306B;&#x5024;&#x3092;&#x63A2;&#x7D22;&#x3059;&#x308B;</li>
+<li>&#x767A;&#x898B;&#x3057;&#x305F;&#x30CE;&#x30FC;&#x30C9;&#x306E;&#x89AA;&#x3092;&#x8FBF;&#x308A;&#x3001;&#x6728;&#x306E;&#x6839;&#x3092;&#x898B;&#x3064;&#x3051;&#x308B;<ul>
+<li>&#x3053;&#x306E;&#x3068;&#x304D;&#x8FBF;&#x3063;&#x305F;&#x30CE;&#x30FC;&#x30C9;&#x3092;&#x6839;&#x306B;&#x76F4;&#x63A5;&#x7E4B;&#x3052;&#x3001;&#x6B21;&#x306E;&#x63A2;&#x7D22;&#x3092;&#x9AD8;&#x901F;&#x5316;&#x3059;&#x308B;&#xFF08;&#x6728;&#x306E;&#x7E2E;&#x9000;&#xFF09;</li>
+</ul>
+</li>
+<li>&#x8FBF;&#x308A;&#x7740;&#x3044;&#x305F;&#x6839;&#x304C;&#x540C;&#x3058;&#x3067;&#x3042;&#x308C;&#x3070;2&#x3064;&#x306E;&#x5024;&#x306F;&#x540C;&#x3058;&#x96C6;&#x5408;&#x306B;&#x5C5E;&#x3059;&#x308B;</li>
+</ol>
+</li>
+<li>2&#x3064;&#x306E;&#x96C6;&#x5408;&#x306F;&#x6B21;&#x306E;&#x3088;&#x3046;&#x306B;&#x4F75;&#x5408;&#x3059;&#x308B;&#x3002;<ol>
+<li>&#x5404;&#x96C6;&#x5408;&#x306E;&#x6839;&#x3092;&#x898B;&#x3064;&#x3051;&#x308B;</li>
+<li>&#x7247;&#x65B9;&#x306E;&#x6839;&#x3092;&#x3082;&#x3046;&#x7247;&#x65B9;&#x306E;&#x6839;&#x306E;&#x5B50;&#x30CE;&#x30FC;&#x30C9;&#x306B;&#x3059;&#x308B;</li>
+</ol>
+</li>
+<li>&#x30B5;&#x30A4;&#x30BA;&#x306F;&#x4F75;&#x5408;&#x306E;&#x969B;&#x306B;&#x8A08;&#x7B97;&#x3057;&#x4FDD;&#x6301;&#x3059;&#x308B;&#x3002;<ul>
+<li>&#x96C6;&#x5408;&#x306E;&#x30B5;&#x30A4;&#x30BA;&#x3092;&#x6C42;&#x3081;&#x308B;&#x306B;&#x306F;&#x5168;&#x30CE;&#x30FC;&#x30C9;&#x306E;&#x8D70;&#x67FB;&#x304C;&#x5FC5;&#x8981;&#x3068;&#x306A;&#x3063;&#x3066;&#x3057;&#x307E;&#x3046;&#x305F;&#x3081;</li>
+</ul>
+</li>
+</ul>
+<p>&#x7C21;&#x5358;&#x306E;&#x305F;&#x3081;&#x96C6;&#x5408;&#x306E;&#x5206;&#x5272;&#x306F;&#x3067;&#x304D;&#x306A;&#x3044;&#x3082;&#x306E;&#x3068;&#x3059;&#x308B;&#x3002;</p>
+<pre><code class="lang-cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;functional&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;vector&gt;</span></span>
+
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+
+<span class="hljs-comment">// Union-Find-Tree</span>
+<span class="hljs-keyword">struct</span> UnionFind {
+  <span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; par;   <span class="hljs-comment">//&#x305D;&#x306E;&#x30CE;&#x30FC;&#x30C9;&#x306E;&#x89AA;&#x30CE;&#x30FC;&#x30C9;</span>
+                     <span class="hljs-comment">//&#xFF08;&#x6839;&#x30CE;&#x30FC;&#x30C9;&#x306F;&#x81EA;&#x5206;&#x3092;&#x53C2;&#x7167;&#xFF09;</span>
+  <span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; sizes; <span class="hljs-comment">//&#x305D;&#x306E;&#x30CE;&#x30FC;&#x30C9;&#x3092;&#x6839;&#x3068;&#x3059;&#x308B;&#x6728;&#x306E;&#x30B5;&#x30A4;&#x30BA;</span>
+                     <span class="hljs-comment">//&#xFF08;&#x6839;&#x3067;&#x306A;&#x3044;&#x30CE;&#x30FC;&#x30C9;&#x306B;&#x3064;&#x3044;&#x3066;&#x306F;&#x7121;&#x610F;&#x5473;&#xFF09;</span>
+  <span class="hljs-keyword">int</span> N;
+
+  UnionFind(<span class="hljs-keyword">int</span> n) : par(n), sizes(n, <span class="hljs-number">1</span>) {
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++)
+      par[i] = i;
+    N = n;
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">find</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x)</span> </span>{
+    <span class="hljs-keyword">if</span> (par[x] == x)
+      <span class="hljs-keyword">return</span> x;
+    <span class="hljs-keyword">else</span>
+      <span class="hljs-keyword">return</span> par[x] = find(par[x]);
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">unite</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y)</span> </span>{
+    x = find(x);
+    y = find(y);
+    <span class="hljs-keyword">if</span> (x == y)
+      <span class="hljs-keyword">return</span>;
+
+    <span class="hljs-keyword">if</span> (sizes[x] &lt; sizes[y]) {
+      par[x] = y;
+      sizes[y] += sizes[x];
+    } <span class="hljs-keyword">else</span> {
+      par[y] = x;
+      sizes[x] += sizes[y];
+    }
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">show</span><span class="hljs-params">()</span> </span>{
+    function&lt;<span class="hljs-keyword">void</span>(<span class="hljs-keyword">int</span>)&gt; f = [&amp;](<span class="hljs-keyword">int</span> x) {
+      <span class="hljs-built_in">cout</span> &lt;&lt; x &lt;&lt; <span class="hljs-string">&apos;,&apos;</span>;
+      <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> y = <span class="hljs-number">0</span>; y &lt; N; y++) {
+        <span class="hljs-keyword">if</span> (par[y] == x &amp;&amp; y != x)
+          f(y);
+      }
+    };
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; N; i++) {
+      <span class="hljs-keyword">if</span> (par[i] == i) {
+        f(i);
+        <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-built_in">endl</span>;
+      }
+    }
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">bool</span> <span class="hljs-title">same</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y)</span> </span>{ <span class="hljs-keyword">return</span> find(x) == find(y); }
+
+  <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">size</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x)</span> </span>{ <span class="hljs-keyword">return</span> sizes[find(x)]; }
+};
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span> </span>{
+  <span class="hljs-function">UnionFind <span class="hljs-title">uf</span><span class="hljs-params">(<span class="hljs-number">5</span>)</span></span>;
+
+  uf.unite(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>);
+  uf.unite(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>);
+  uf.show();
+
+  <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
 
                                 
                                 </section>
@@ -1127,7 +1218,7 @@
 
             
                 
-                <a href="cyber-terrorism.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: サイバー攻撃">
+                <a href="binary_search_tree.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 二分探索木">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -1139,7 +1230,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"マルウェア","level":"1.6.5.2","depth":3,"next":{"title":"ネットワーク","level":"1.7","depth":1,"ref":"","articles":[{"title":"プロトコル","level":"1.7.1","depth":2,"ref":"","articles":[{"title":"参照モデル","level":"1.7.1.1","depth":3,"path":"network/protocol/reference_model.md","ref":"network/protocol/reference_model.md","articles":[]}]}]},"previous":{"title":"サイバー攻撃","level":"1.6.5.1","depth":3,"path":"computer_science/security/cyber-terrorism.md","ref":"computer_science/security/cyber-terrorism.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["mathjax-commonhtml","expandable-chapters"],"pluginsConfig":{"mathjax-commonhtml":{"defaultScaling":true},"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"my_style.css","pdf":"my_style.css"}},"file":{"path":"computer_science/security/malware.md","mtime":"2017-05-18T16:39:25.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-20T07:03:22.626Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Union-Find木","level":"1.6.3.8","depth":3,"next":{"title":"言語処理","level":"1.6.4","depth":2,"ref":"","articles":[{"title":"言語処理100本ノック1","level":"1.6.4.1","depth":3,"path":"computer_science/language_processing/nlp100_1.md","ref":"computer_science/language_processing/nlp100_1.md","articles":[]},{"title":"言語処理100本ノック2","level":"1.6.4.2","depth":3,"path":"computer_science/language_processing/nlp100_2.md","ref":"computer_science/language_processing/nlp100_2.md","articles":[]},{"title":"言語処理100本ノック3","level":"1.6.4.3","depth":3,"path":"computer_science/language_processing/nlp100_3.md","ref":"computer_science/language_processing/nlp100_3.md","articles":[]}]},"previous":{"title":"二分探索木","level":"1.6.3.7","depth":3,"path":"computer_science/algorithm/binary_search_tree.md","ref":"computer_science/algorithm/binary_search_tree.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["mathjax-commonhtml","expandable-chapters"],"pluginsConfig":{"mathjax-commonhtml":{"defaultScaling":true},"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"my_style.css","pdf":"my_style.css"}},"file":{"path":"computer_science/algorithm/union_find_tree.md","mtime":"2017-05-19T04:03:56.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-20T07:03:22.626Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
