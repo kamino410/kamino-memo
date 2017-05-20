@@ -16,8 +16,8 @@
     * [2次元の重み付き残差法（ラプラス方程式）](numerical_analysis/finite_element_method/laplaces_equation.md)
 * 制御理論
   * 概論
-    * [古典制御理論と現代制御理論](control/classical_vs_modern.md)
-    * [線形システム](control/linear_system.md)
+    * [概要](control/abstract/intro.md)
+    * [線形システム](control/abstract/linear_system.md)
   * 古典制御理論
     * [伝達関数１](control/classical/transfer_function1.md)
     * [伝達関数２](control/classical/transfer_function2.md)

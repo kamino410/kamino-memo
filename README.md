@@ -29,8 +29,8 @@
 
 ## 制御理論
 ### 概論
-* [古典制御理論と現代制御理論](control/classical_vs_modern.md)
-* [線形システム](control/linear_system.md)
+* [概要](control/abstract/intro.md)
+* [線形システム](control/abstract/linear_system.md)
 
 ### 古典制御理論
 * [伝達関数１](control/classical/transfer_function1.md)
