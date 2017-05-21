@@ -7,7 +7,7 @@
 * mathjax-commonhtml
   * gitbook-plugin-mathjaxを使うとmathjax形式になってしまうため、htmlにレンダリングしてくれるものを採用。
 * mermaid-2
-  * Atomのmarkdown-preview-enhancedと互換性を保つため、`{% mermaid %}`ではなく` ```mermaid ``` ` を使いたかった。
+  * Atomのmarkdown-preview-enhancedと互換性を保つため、タグではなくコードブロックを使いたかった。
 * expandable-chapters
   * SUMMARYでインデントをつけると、レンダリングしたときに折りたたみできるようになる。
 
