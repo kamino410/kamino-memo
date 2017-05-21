@@ -70,6 +70,7 @@
 * [ヒープ・プライオリティキュー](computer_science/algorithm/heap.md)
 * [二分探索木](computer_science/algorithm/binary_search_tree.md)
 * [Union-Find木](computer_science/algorithm/union_find_tree.md)
+* [2部グラフ判定](computer_science/algorithm/bipartite_graph.md)
 
 ### 言語処理
 * [言語処理100本ノック1](computer_science/language_processing/nlp100_1.md)
@@ -97,7 +98,7 @@
 ### Python
 * [環境](develop/python/environment.md)
 
-### C#
+### C＃
 * [.Netの歴史](develop/cs/dotnet_history.md)
 
 # 参考文献
