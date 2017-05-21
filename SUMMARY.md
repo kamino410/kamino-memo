@@ -64,3 +64,5 @@
     * [環境](develop/python/environment.md)
   * C#
     * [.Netの歴史](develop/cs/dotnet_history.md)
+  * GitBook
+    * [自分用の設定](develop/gitbook/my_setting.md)

@@ -101,6 +101,9 @@
 ### C＃
 * [.Netの歴史](develop/cs/dotnet_history.md)
 
+### GitBook
+* [自分用の設定](develop/gitbook/my_setting.md)
+
 # 参考文献
 
 * 矢部 博, 『工学基礎 最適化とその応用』, 数理工学社, 2006

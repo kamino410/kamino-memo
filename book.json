@@ -1,7 +1,12 @@
 {
-  "plugins":["mathjax-commonhtml","expandable-chapters"],
+  "plugins":["mathjax-commonhtml","expandable-chapters","mermaid-2"],
   "styles": {
     "website": "my_style.css",
     "pdf": "my_style.css"
+  },
+  "pluginsConfig": {
+    "mermaid-2": {
+       "theme": "forest"
+    }
   }
 }
