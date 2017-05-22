@@ -63,6 +63,7 @@
     * [SteamVR / HTC Vive](develop/device/steamvr_vive.md)
   * Python
     * [環境](develop/python/environment.md)
+    * [JUMAN/KNP](develop/python/juman_knp.md)
   * C#
     * [.Netの歴史](develop/cs/dotnet_history.md)
   * GitBook
