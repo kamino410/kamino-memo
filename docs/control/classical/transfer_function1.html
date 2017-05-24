@@ -25,6 +25,10 @@
                 
             
                 
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-mermaid-2/bower_components/mermaid/dist/mermaid.css">
+                
+            
+                
                 <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -341,12 +345,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1.1" data-path="../classical_vs_modern.html">
+        <li class="chapter " data-level="1.5.1.1" data-path="../abstract/intro.html">
             
-                <a href="../classical_vs_modern.html">
+                <a href="../abstract/intro.html">
             
                     
-                    古典制御理論と現代制御理論
+                    概要
             
                 </a>
             
@@ -354,9 +358,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.1.2" data-path="../linear_system.html">
+        <li class="chapter " data-level="1.5.1.2" data-path="../abstract/linear_system.html">
             
-                <a href="../linear_system.html">
+                <a href="../abstract/linear_system.html">
             
                     
                     線形システム
@@ -767,6 +771,32 @@
             
         </li>
     
+        <li class="chapter " data-level="1.6.3.9" data-path="../../computer_science/algorithm/bipartite_graph.html">
+            
+                <a href="../../computer_science/algorithm/bipartite_graph.html">
+            
+                    
+                    2部グラフ判定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.10" data-path="../../computer_science/algorithm/shortest_path.html">
+            
+                <a href="../../computer_science/algorithm/shortest_path.html">
+            
+                    
+                    最短経路問題
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -818,6 +848,19 @@
             
                     
                     言語処理100本ノック3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.4" data-path="../../computer_science/language_processing/nlp100_4.html">
+            
+                <a href="../../computer_science/language_processing/nlp100_4.html">
+            
+                    
+                    言語処理100本ノック4
             
                 </a>
             
@@ -1004,6 +1047,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.8.2.2" data-path="../../develop/python/juman_knp.html">
+            
+                <a href="../../develop/python/juman_knp.html">
+            
+                    
+                    JUMAN/KNP
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -1029,6 +1085,38 @@
             
                     
                     .Netの歴史
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" >
+            
+                <span>
+            
+                    
+                    GitBook
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.4.1" data-path="../../develop/gitbook/my_setting.html">
+            
+                <a href="../../develop/gitbook/my_setting.html">
+            
+                    
+                    自分用の設定
             
                 </a>
             
@@ -1094,7 +1182,7 @@
                                 <h1 id="&#x4F1D;&#x9054;&#x95A2;&#x6570;&#xFF11;&#xFF08;transfer-function&#xFF09;">&#x4F1D;&#x9054;&#x95A2;&#x6570;&#xFF11;&#xFF08;Transfer Function&#xFF09;</h1>
 <h2 id="&#x4F1D;&#x9054;&#x95A2;&#x6570;&#x8868;&#x73FE;">&#x4F1D;&#x9054;&#x95A2;&#x6570;&#x8868;&#x73FE;</h2>
 <p>&#x7DDA;&#x5F62;&#x30B7;&#x30B9;&#x30C6;&#x30E0;&#x3092;&#x5FAE;&#x5206;&#x65B9;&#x7A0B;&#x5F0F;&#x306E;&#x307E;&#x307E;&#x8A08;&#x7B97;&#x3059;&#x308B;&#x3068;&#x3001;&#x30B7;&#x30B9;&#x30C6;&#x30E0;&#x306E;&#x7D50;&#x5408;&#x304C;&#x9023;&#x7ACB;&#x5FAE;&#x5206;&#x65B9;&#x7A0B;&#x5F0F;&#x3067;&#x8868;&#x73FE;&#x3055;&#x308C;&#x308B;&#x3053;&#x3068;&#x306B;&#x306A;&#x308A;&#x6271;&#x3044;&#x3065;&#x3089;&#x3044;&#x3002;</p>
-<p>&#x305D;&#x3053;&#x3067;<a href="mathematics/analysis/laplace_transform.md">&#x30E9;&#x30D7;&#x30E9;&#x30B9;&#x5909;&#x63DB;</a>&#x3092;&#x7528;&#x3044;&#x3066; <strong><span class="mjx-chtml"><span class="mjx-math" aria-label="t"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span></span></span></span>&#x306E;&#x5FAE;&#x5206;&#x21D4;<span class="mjx-chtml"><span class="mjx-math" aria-label="s"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span></span></span></span>&#x306E;&#x639B;&#x3051;&#x7B97;</strong> &#x3068;&#x306A;&#x308B;&#x3088;&#x3046;&#x306A;&#x5A92;&#x4ECB;&#x5909;&#x6570;&#x8868;&#x793A;&#x306B;&#x3059;&#x308B;&#x3053;&#x3068;&#x3067;&#x3001;</p>
+<p>&#x305D;&#x3053;&#x3067;<a href="mathematics/analysis/laplace_transform.md">&#x30E9;&#x30D7;&#x30E9;&#x30B9;&#x5909;&#x63DB;</a>&#x3092;&#x7528;&#x3044;&#x3066; <strong><span class="mjx-chtml"><span class="mjx-math" aria-label="t"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span></span></span></span>&#x306E;&#x5FAE;&#x5206;&#x21D4;<span class="mjx-chtml"><span class="mjx-math" aria-label="s"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span></span></span></span>&#x306E;&#x639B;&#x3051;&#x7B97;</strong> &#x3068;&#x306A;&#x308B;&#x3088;&#x3046;&#x306A;&#x5A92;&#x4ECB;&#x5909;&#x6570;&#x8868;&#x793A;&#x306B;&#x3059;&#x308B;&#x3053;&#x3068;&#x3067;&#x3001;&#x6B21;&#x306E;&#x3088;&#x3046;&#x306A;&#x5229;&#x76CA;&#x304C;&#x3042;&#x308B;&#x3002;</p>
 <ol>
 <li>&#x30B7;&#x30B9;&#x30C6;&#x30E0;&#x306E;&#x7279;&#x6027;&#x3092;&#x3072;&#x3068;&#x3064;&#x306E; <strong>&#x4F1D;&#x9054;&#x95A2;&#x6570;<span class="mjx-chtml"><span class="mjx-math" aria-label="G(s)"><span class="mjx-mrow" aria-hidden="true"><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.519em; padding-bottom: 0.298em;">G</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">s</span></span><span class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span></span></span></strong> &#x3068;&#x3057;&#x3066;&#x8868;&#x73FE;&#x3067;&#x304D;&#x308B;&#x3088;&#x3046;&#x306B;&#x306A;&#x308B;&#x3002;</li>
 <li>&#x30B7;&#x30B9;&#x30C6;&#x30E0;&#x306E;&#x76F4;&#x5217;&#x7D50;&#x5408;&#x3092; <strong>&#x4F1D;&#x9054;&#x95A2;&#x6570;&#x306E;&#x7A4D;</strong> &#x3068;&#x3057;&#x3066;&#x8868;&#x73FE;&#x3067;&#x304D;&#x308B;&#x3088;&#x3046;&#x306B;&#x306A;&#x308B;&#x3002;</li>
@@ -1102,8 +1190,9 @@
 </ol>
 <h3 id="&#x4F8B;">&#x4F8B;</h3>
 <p>&#x7DDA;&#x5F62;&#x30B7;&#x30B9;&#x30C6;&#x30E0;A&#x3001;B&#x3092;&#x76F4;&#x5217;&#x306B;&#x7D50;&#x5408;&#x3057;&#x3066;&#x307F;&#x308B;&#x3002;</p>
-<p><img src="fig1.png" style="width: 350px" border="1px/"></p>
 <center>
+<img src="fig1.png" style="width: 350px" border="1px/">
+
 <span class="mjx-chtml MJXc-display" style="text-align: center;"><span class="mjx-math" aria-label="
 \begin{eqnarray}
   \left\{
@@ -1204,7 +1293,7 @@ Y_2(s) = \frac{d_1s+d_0}{c_2s^2+c_1s+c_0} \cdot \frac{b_1s+b_0}{a_2s^2+a_1s+a_0}
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"伝達関数１","level":"1.5.2.1","depth":3,"next":{"title":"伝達関数２","level":"1.5.2.2","depth":3,"path":"control/classical/transfer_function2.md","ref":"control/classical/transfer_function2.md","articles":[]},"previous":{"title":"古典制御理論","level":"1.5.2","depth":2,"ref":"","articles":[{"title":"伝達関数１","level":"1.5.2.1","depth":3,"path":"control/classical/transfer_function1.md","ref":"control/classical/transfer_function1.md","articles":[]},{"title":"伝達関数２","level":"1.5.2.2","depth":3,"path":"control/classical/transfer_function2.md","ref":"control/classical/transfer_function2.md","articles":[]},{"title":"伝達関数３","level":"1.5.2.3","depth":3,"path":"control/classical/transfer_function3.md","ref":"control/classical/transfer_function3.md","articles":[]},{"title":"インパルス応答とステップ応答","level":"1.5.2.4","depth":3,"path":"control/classical/impulse_step_response.md","ref":"control/classical/impulse_step_response.md","articles":[]},{"title":"過渡応答","level":"1.5.2.5","depth":3,"path":"control/classical/transient_response.md","ref":"control/classical/transient_response.md","articles":[]},{"title":"1次系の応答","level":"1.5.2.6","depth":3,"path":"control/classical/first_order_system.md","ref":"control/classical/first_order_system.md","articles":[]},{"title":"2次系の応答","level":"1.5.2.7","depth":3,"path":"control/classical/second_order_system.md","ref":"control/classical/second_order_system.md","articles":[]},{"title":"極・零点と過渡応答","level":"1.5.2.8","depth":3,"path":"control/classical/pole_zero.md","ref":"control/classical/pole_zero.md","articles":[]},{"title":"線形システムの安定性","level":"1.5.2.9","depth":3,"path":"control/classical/stability.md","ref":"control/classical/stability.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["mathjax-commonhtml","expandable-chapters"],"pluginsConfig":{"mathjax-commonhtml":{"defaultScaling":true},"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"my_style.css","pdf":"my_style.css"}},"file":{"path":"control/classical/transfer_function1.md","mtime":"2017-05-10T20:41:41.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-20T07:03:22.626Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"伝達関数１","level":"1.5.2.1","depth":3,"next":{"title":"伝達関数２","level":"1.5.2.2","depth":3,"path":"control/classical/transfer_function2.md","ref":"control/classical/transfer_function2.md","articles":[]},"previous":{"title":"古典制御理論","level":"1.5.2","depth":2,"ref":"","articles":[{"title":"伝達関数１","level":"1.5.2.1","depth":3,"path":"control/classical/transfer_function1.md","ref":"control/classical/transfer_function1.md","articles":[]},{"title":"伝達関数２","level":"1.5.2.2","depth":3,"path":"control/classical/transfer_function2.md","ref":"control/classical/transfer_function2.md","articles":[]},{"title":"伝達関数３","level":"1.5.2.3","depth":3,"path":"control/classical/transfer_function3.md","ref":"control/classical/transfer_function3.md","articles":[]},{"title":"インパルス応答とステップ応答","level":"1.5.2.4","depth":3,"path":"control/classical/impulse_step_response.md","ref":"control/classical/impulse_step_response.md","articles":[]},{"title":"過渡応答","level":"1.5.2.5","depth":3,"path":"control/classical/transient_response.md","ref":"control/classical/transient_response.md","articles":[]},{"title":"1次系の応答","level":"1.5.2.6","depth":3,"path":"control/classical/first_order_system.md","ref":"control/classical/first_order_system.md","articles":[]},{"title":"2次系の応答","level":"1.5.2.7","depth":3,"path":"control/classical/second_order_system.md","ref":"control/classical/second_order_system.md","articles":[]},{"title":"極・零点と過渡応答","level":"1.5.2.8","depth":3,"path":"control/classical/pole_zero.md","ref":"control/classical/pole_zero.md","articles":[]},{"title":"線形システムの安定性","level":"1.5.2.9","depth":3,"path":"control/classical/stability.md","ref":"control/classical/stability.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["mathjax-commonhtml","expandable-chapters","mermaid-2"],"pluginsConfig":{"search":{},"mathjax-commonhtml":{"defaultScaling":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"mermaid-2":{"theme":"forest"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"my_style.css","pdf":"my_style.css"}},"file":{"path":"control/classical/transfer_function1.md","mtime":"2017-05-20T12:01:29.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-24T03:31:58.958Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1215,6 +1304,14 @@ Y_2(s) = \frac{d_1s+d_0}{c_2s^2+c_1s+c_0} \cdot \frac{b_1s+b_0}{a_2s^2+a_1s+a_0}
     
         
         <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-mermaid-2/bower_components/mermaid/dist/mermaid.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-mermaid-2/plugin.js"></script>
         
     
         

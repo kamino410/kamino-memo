@@ -25,6 +25,10 @@
                 
             
                 
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-mermaid-2/bower_components/mermaid/dist/mermaid.css">
+                
+            
+                
                 <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -58,6 +62,8 @@
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
+    
+    <link rel="next" href="nlp100_4.html" />
     
     
     <link rel="prev" href="nlp100_2.html" />
@@ -341,12 +347,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1.1" data-path="../../control/classical_vs_modern.html">
+        <li class="chapter " data-level="1.5.1.1" data-path="../../control/abstract/intro.html">
             
-                <a href="../../control/classical_vs_modern.html">
+                <a href="../../control/abstract/intro.html">
             
                     
-                    古典制御理論と現代制御理論
+                    概要
             
                 </a>
             
@@ -354,9 +360,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.1.2" data-path="../../control/linear_system.html">
+        <li class="chapter " data-level="1.5.1.2" data-path="../../control/abstract/linear_system.html">
             
-                <a href="../../control/linear_system.html">
+                <a href="../../control/abstract/linear_system.html">
             
                     
                     線形システム
@@ -767,6 +773,32 @@
             
         </li>
     
+        <li class="chapter " data-level="1.6.3.9" data-path="../algorithm/bipartite_graph.html">
+            
+                <a href="../algorithm/bipartite_graph.html">
+            
+                    
+                    2部グラフ判定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.10" data-path="../algorithm/shortest_path.html">
+            
+                <a href="../algorithm/shortest_path.html">
+            
+                    
+                    最短経路問題
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -818,6 +850,19 @@
             
                     
                     言語処理100本ノック3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.4" data-path="nlp100_4.html">
+            
+                <a href="nlp100_4.html">
+            
+                    
+                    言語処理100本ノック4
             
                 </a>
             
@@ -1004,6 +1049,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.8.2.2" data-path="../../develop/python/juman_knp.html">
+            
+                <a href="../../develop/python/juman_knp.html">
+            
+                    
+                    JUMAN/KNP
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -1029,6 +1087,38 @@
             
                     
                     .Netの歴史
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" >
+            
+                <span>
+            
+                    
+                    GitBook
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.4.1" data-path="../../develop/gitbook/my_setting.html">
+            
+                <a href="../../develop/gitbook/my_setting.html">
+            
+                    
+                    自分用の設定
             
                 </a>
             
@@ -1230,6 +1320,7 @@ res = {}
 <span class="hljs-comment">#&#x5B8C;&#x5168;&#x3067;&#x306F;&#x306A;&#x3044;&#x3051;&#x3069;&#x3068;&#x308A;&#x3042;&#x3048;&#x305A;&#x3044;&#x3044;&#x3053;&#x3068;&#x306B;&#x3059;&#x308B;</span>
 </code></pre>
 <h3 id="29-&#x56FD;&#x65D7;&#x753B;&#x50CF;&#x306E;url&#x3092;&#x53D6;&#x5F97;&#x3059;&#x308B;">29. &#x56FD;&#x65D7;&#x753B;&#x50CF;&#x306E;URL&#x3092;&#x53D6;&#x5F97;&#x3059;&#x308B;</h3>
+<p>&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x306E;&#x5185;&#x5BB9;&#x3092;&#x5229;&#x7528;&#x3057;&#xFF0C;&#x56FD;&#x65D7;&#x753B;&#x50CF;&#x306E;URL&#x3092;&#x53D6;&#x5F97;&#x305B;&#x3088;&#xFF0E;&#xFF08;&#x30D2;&#x30F3;&#x30C8;: MediaWiki API&#x306E;imageinfo&#x3092;&#x547C;&#x3073;&#x51FA;&#x3057;&#x3066;&#xFF0C;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x53C2;&#x7167;&#x3092;URL&#x306B;&#x5909;&#x63DB;&#x3059;&#x308C;&#x3070;&#x3088;&#x3044;&#xFF09;</p>
 <pre><code class="lang-py"><span class="hljs-keyword">import</span> re, json, requests
 
 res = {}
@@ -1278,10 +1369,14 @@ res = {}
 
             
                 
-                <a href="nlp100_2.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 言語処理100本ノック2">
+                <a href="nlp100_2.html" class="navigation navigation-prev " aria-label="Previous page: 言語処理100本ノック2">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="nlp100_4.html" class="navigation navigation-next " aria-label="Next page: 言語処理100本ノック4">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -1290,7 +1385,7 @@ res = {}
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"言語処理100本ノック3","level":"1.6.4.3","depth":3,"next":{"title":"セキュリティ","level":"1.6.5","depth":2,"ref":"","articles":[{"title":"サイバー攻撃","level":"1.6.5.1","depth":3,"path":"computer_science/security/cyber-terrorism.md","ref":"computer_science/security/cyber-terrorism.md","articles":[]},{"title":"マルウェア","level":"1.6.5.2","depth":3,"path":"computer_science/security/malware.md","ref":"computer_science/security/malware.md","articles":[]}]},"previous":{"title":"言語処理100本ノック2","level":"1.6.4.2","depth":3,"path":"computer_science/language_processing/nlp100_2.md","ref":"computer_science/language_processing/nlp100_2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["mathjax-commonhtml","expandable-chapters"],"pluginsConfig":{"mathjax-commonhtml":{"defaultScaling":true},"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"my_style.css","pdf":"my_style.css"}},"file":{"path":"computer_science/language_processing/nlp100_3.md","mtime":"2017-05-13T20:38:10.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-20T07:03:22.626Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"言語処理100本ノック3","level":"1.6.4.3","depth":3,"next":{"title":"言語処理100本ノック4","level":"1.6.4.4","depth":3,"path":"computer_science/language_processing/nlp100_4.md","ref":"computer_science/language_processing/nlp100_4.md","articles":[]},"previous":{"title":"言語処理100本ノック2","level":"1.6.4.2","depth":3,"path":"computer_science/language_processing/nlp100_2.md","ref":"computer_science/language_processing/nlp100_2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["mathjax-commonhtml","expandable-chapters","mermaid-2"],"pluginsConfig":{"search":{},"mathjax-commonhtml":{"defaultScaling":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"mermaid-2":{"theme":"forest"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"my_style.css","pdf":"my_style.css"}},"file":{"path":"computer_science/language_processing/nlp100_3.md","mtime":"2017-05-22T19:02:13.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-24T03:31:58.958Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1301,6 +1396,14 @@ res = {}
     
         
         <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-mermaid-2/bower_components/mermaid/dist/mermaid.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-mermaid-2/plugin.js"></script>
         
     
         
