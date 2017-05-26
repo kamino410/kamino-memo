@@ -99,6 +99,7 @@
 
 ### Python
 * [環境](develop/python/environment.md)
+* [matplotlib template](develop/python/matplotlib_template.md)
 * [JUMAN/KNP](develop/python/juman_knp.md)
 
 ### C＃
