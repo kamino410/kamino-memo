@@ -5,8 +5,10 @@
 一般に$$m$$入力$$r$$出力$$n$$次元システムの状態方程式は
 
 $$
-\dot{x} = f(x,u) \\
-y = g(x,u)
+\begin{eqnarray}
+\dot{x} &=& f(x,u) \\
+y &=& g(x,u)
+\end{eqnarray}
 $$
 
 と表される。ただし$$x$$,$$y$$,$$u$$はそれぞれ$$n$$,$$m$$,$$r$$次のベクトルである。
@@ -16,8 +18,10 @@ $$
 線形システムの場合、関数$$f$$,$$g$$は行列演算によって表現できる。
 
 $$
-\dot{x} = Ax + Bu \\
-y = Cx + Du
+\begin{eqnarray}
+\dot{x} &=& Ax + Bu \\
+y &=& Cx + Du
+\end{eqnarray}
 $$
 
 ただし$$A$$,$$B$$,$$C$$,$$D$$はそれぞれ$$n \times n$$,$$n \times m$$,$$r \times n$$,$$r \times m$$の定数行列である。
@@ -31,15 +35,19 @@ $$
 ### 一般的なシステム
 
 $$
-\dot{x} = f(x,u) \\
-y = g(x)
+\begin{eqnarray}
+\dot{x} &=& f(x,u) \\
+y &=& g(x)
+\end{eqnarray}
 $$
 
 ### 線形システム
 
 $$
-\dot{x} = Ax + Bu \\
-y = Cx
+\begin{eqnarray}
+\dot{x} &=& Ax + Bu \\
+y &=& Cx
+\end{eqnarray}
 $$
 
 ## 状態方程式と伝達関数
@@ -56,14 +64,18 @@ $$
 ### 一般的な時変システム
 
 $$
-\dot{x} = f(x,u,t) \\
-y = g(x,t)
+\begin{eqnarray}
+\dot{x} &=& f(x,u,t) \\
+y &=& g(x,t)
+\end{eqnarray}
 $$
 
 ### 線形時変システム
 
 $$
-\dot{x} = A(t)x + B(t)u \\
-y = C(t)x
+\begin{eqnarray}
+\dot{x} &=& A(t)x + B(t)u \\
+y &=& C(t)x
+\end{eqnarray}
 $$
 
