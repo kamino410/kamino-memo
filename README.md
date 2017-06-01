@@ -96,6 +96,7 @@
 ## 開発関係
 ### デバイス
 * [SteamVR / HTC Vive](develop/device/steamvr_vive.md)
+* [GPU関連の用語](develop/device/gpu.md)
 
 ### Python
 * [環境](develop/python/environment.md)
