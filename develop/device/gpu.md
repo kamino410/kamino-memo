@@ -31,8 +31,8 @@ GPGPU（General-purpose computing on graphics processing units）向けに最適
 ### CUDA（Compute Unified Device Architecture）
 
 NVIDIAが開発したGPUプログラミング向けの統合開発環境。
-対応言語はC/C\+\+（ただし、C\+\+は一部の構文にのみ対応）に準拠したCUDA C/C\+\+で、ファイル拡張子には`cu`、`cuh`などが用いられる。
+対応言語はC/C\+\+に準拠（ただし、C\+\+は一部の構文にのみ対応）したCUDA C/C\+\+で、ファイル拡張子には`cu`、`cuh`などが用いられる。
 CUDA 7の時点でラムダ式などC\+\+11の一部の規格に対応済み。
 
 その他、CUDA ToolkitというSDKが公開されている。
-CUDA ToolkitにはC\+\+のテンプレートプログラミングライブラリ（主にvector<T>とか）のThrustなどが含まれており、これらを通してCUDA以外の開発環境でもGPUの資産をすることができる。
+CUDA ToolkitにはC\+\+のテンプレートプログラミングライブラリ（主にvector<T>とか）のThrustなどが含まれており、これらを通してCUDA以外の開発環境でもGPUの資産を利用することができる。
