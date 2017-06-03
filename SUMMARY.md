@@ -53,6 +53,8 @@
     * [言語処理100本ノック2](computer_science/language_processing/nlp100_2.md)
     * [言語処理100本ノック3](computer_science/language_processing/nlp100_3.md)
     * [言語処理100本ノック4](computer_science/language_processing/nlp100_4.md)
+  * グラフィック
+    * [ベジェ曲線](computer_science/graphic/bezier_curve.md)
   * セキュリティ
     * [サイバー攻撃](computer_science/security/cyber-terrorism.md)
     * [マルウェア](computer_science/security/malware.md)
