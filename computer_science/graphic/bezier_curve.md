@@ -39,7 +39,7 @@ def bezier3(p0, p1, p2, p3, n):
         )
     return map(f, ts)
 
-ps = list(bezier((0,0),(0.3,0.3),(0.3,0),(1,0),100))
+ps = list(bezier3((0,0),(0.3,0.3),(0.3,0),(1,0),100))
 xs = list(map(lambda p: p[0], ps))
 ys = list(map(lambda p: p[1], ps))
 

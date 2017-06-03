@@ -102,7 +102,7 @@
 * [GPU関連の用語](develop/device/gpu.md)
 
 ### Git
-  * [環境](develop/git/environment.md)
+* [環境](develop/git/environment.md)
 
 ### Python
 * [環境](develop/python/environment.md)
