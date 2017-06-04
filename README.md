@@ -96,6 +96,13 @@
 
 ----
 
+## 人力飛行機
+
+* [カメラ計測](hpa/camera_mesurement.md)
+* [翼型のベジェ曲線表現](hpa/foil_bezier.md)
+
+----
+
 ## 開発関係
 ### デバイス
 * [SteamVR / HTC Vive](develop/device/steamvr_vive.md)
