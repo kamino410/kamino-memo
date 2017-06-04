@@ -23,7 +23,6 @@ $$B_i^n(t)$$はバーンスタイン基底関数と呼ばれる。
 ```py
 import matplotlib.pyplot as plt
 import numpy as np
-import functools
 
 def bezier3(p0, p1, p2, p3, n):
     ts = [i/n for i in range(n)]

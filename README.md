@@ -99,10 +99,10 @@
 ## 開発関係
 ### デバイス
 * [SteamVR / HTC Vive](develop/device/steamvr_vive.md)
-* [GPU関連の用語](develop/device/gpu.md)
+* [GPU](develop/device/gpu.md)
 
 ### Git
-* [環境](develop/git/environment.md)
+* [自分用の設定](develop/git/environment.md)
 
 ### Python
 * [環境](develop/python/environment.md)
