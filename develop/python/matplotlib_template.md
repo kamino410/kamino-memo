@@ -11,7 +11,7 @@ import numpy as np
 xs = np.arange(0.1, 10, 0.5)
 ys = 1 / xs
 
-plt.plot(xs, ys, c='red', label='$y=\\frac{1}{x}$')
+plt.plot(xs, ys, c='blue', label='$y=\\frac{1}{x}$')
 
 plt.title('sample graph')
 plt.xlabel('x')
