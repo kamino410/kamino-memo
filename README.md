@@ -11,6 +11,9 @@
 * [ラプラス変換](mathematics/analysis/laplace_transform.md)
 * [フーリエ変換](mathematics/analysis/fourier_transform.md)
 
+### 確率・統計
+* [確率分布](mathematics/statistics/probability_distribution.md)
+
 ----
 
 ## 計画数学
