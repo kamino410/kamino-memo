@@ -1,0 +1,1591 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>翼型のベジェ曲線表現 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mathjax-commonhtml/mathjax.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-2/bower_components/mermaid/dist/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../my_style.css">
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="camera_mesurement.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    トップ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    数学
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" >
+            
+                <span>
+            
+                    
+                    線形代数
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../mathematics/linear_algebra/determinant.html">
+            
+                <a href="../mathematics/linear_algebra/determinant.html">
+            
+                    
+                    行列式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" >
+            
+                <span>
+            
+                    
+                    解析学
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../mathematics/analysis/laplace_transform.html">
+            
+                <a href="../mathematics/analysis/laplace_transform.html">
+            
+                    
+                    ラプラス変換
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../mathematics/analysis/fourier_transform.html">
+            
+                <a href="../mathematics/analysis/fourier_transform.html">
+            
+                    
+                    フーリエ変換
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" >
+            
+                <span>
+            
+                    
+                    確率・統計
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../mathematics/statistics/probability_distribution.html">
+            
+                <a href="../mathematics/statistics/probability_distribution.html">
+            
+                    
+                    確率分布
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    計画数学
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" >
+            
+                <span>
+            
+                    
+                    線形計画問題
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../mathematical_programming/linear/intro.html">
+            
+                <a href="../mathematical_programming/linear/intro.html">
+            
+                    
+                    概要
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    数値解析
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" >
+            
+                <span>
+            
+                    
+                    有限要素法
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../numerical_analysis/finite_element_method/1-dimention.html">
+            
+                <a href="../numerical_analysis/finite_element_method/1-dimention.html">
+            
+                    
+                    1次元の重み付き残差法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../numerical_analysis/finite_element_method/laplaces_equation.html">
+            
+                <a href="../numerical_analysis/finite_element_method/laplaces_equation.html">
+            
+                    
+                    2次元の重み付き残差法（ラプラス方程式）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    制御理論
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" >
+            
+                <span>
+            
+                    
+                    概論
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="../control/abstract/intro.html">
+            
+                <a href="../control/abstract/intro.html">
+            
+                    
+                    概要
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="../control/abstract/linear_system.html">
+            
+                <a href="../control/abstract/linear_system.html">
+            
+                    
+                    線形システム
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" >
+            
+                <span>
+            
+                    
+                    古典制御理論
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../control/classical/transfer_function1.html">
+            
+                <a href="../control/classical/transfer_function1.html">
+            
+                    
+                    伝達関数１
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="../control/classical/transfer_function2.html">
+            
+                <a href="../control/classical/transfer_function2.html">
+            
+                    
+                    伝達関数２
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="../control/classical/transfer_function3.html">
+            
+                <a href="../control/classical/transfer_function3.html">
+            
+                    
+                    伝達関数３
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4" data-path="../control/classical/impulse_step_response.html">
+            
+                <a href="../control/classical/impulse_step_response.html">
+            
+                    
+                    インパルス応答とステップ応答
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.5" data-path="../control/classical/transient_response.html">
+            
+                <a href="../control/classical/transient_response.html">
+            
+                    
+                    過渡応答
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.6" data-path="../control/classical/first_order_system.html">
+            
+                <a href="../control/classical/first_order_system.html">
+            
+                    
+                    1次系の応答
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.7" data-path="../control/classical/second_order_system.html">
+            
+                <a href="../control/classical/second_order_system.html">
+            
+                    
+                    2次系の応答
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.8" data-path="../control/classical/pole_zero.html">
+            
+                <a href="../control/classical/pole_zero.html">
+            
+                    
+                    極・零点と過渡応答
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.9" data-path="../control/classical/stability.html">
+            
+                <a href="../control/classical/stability.html">
+            
+                    
+                    線形システムの安定性
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" >
+            
+                <span>
+            
+                    
+                    現代制御理論
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="../control/modern/state_space_equation.html">
+            
+                <a href="../control/modern/state_space_equation.html">
+            
+                    
+                    状態方程式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="../control/modern/controllability_observability.html">
+            
+                <a href="../control/modern/controllability_observability.html">
+            
+                    
+                    可制御性・可観測性
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    計算機科学
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" >
+            
+                <span>
+            
+                    
+                    論理
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="../computer_science/logic/operation.html">
+            
+                <a href="../computer_science/logic/operation.html">
+            
+                    
+                    論理演算
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" >
+            
+                <span>
+            
+                    
+                    グラフ理論
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1" data-path="../computer_science/graph_theory/intro.html">
+            
+                <a href="../computer_science/graph_theory/intro.html">
+            
+                    
+                    概要
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2" data-path="../computer_science/graph_theory/graph_expression.html">
+            
+                <a href="../computer_science/graph_theory/graph_expression.html">
+            
+                    
+                    プログラムにおけるグラフ表現
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" >
+            
+                <span>
+            
+                    
+                    アルゴリズム
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.1" data-path="../computer_science/algorithm/execution_cost.html">
+            
+                <a href="../computer_science/algorithm/execution_cost.html">
+            
+                    
+                    アルゴリズムのコスト
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.2" data-path="../computer_science/algorithm/exhaustive_search.html">
+            
+                <a href="../computer_science/algorithm/exhaustive_search.html">
+            
+                    
+                    全探索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.3" data-path="../computer_science/algorithm/greedy.html">
+            
+                <a href="../computer_science/algorithm/greedy.html">
+            
+                    
+                    貪欲法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.4" data-path="../computer_science/algorithm/dynamic_programming1.html">
+            
+                <a href="../computer_science/algorithm/dynamic_programming1.html">
+            
+                    
+                    動的計画法１
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.5" data-path="../computer_science/algorithm/dynamic_programming2.html">
+            
+                <a href="../computer_science/algorithm/dynamic_programming2.html">
+            
+                    
+                    動的計画法２
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.6" data-path="../computer_science/algorithm/heap.html">
+            
+                <a href="../computer_science/algorithm/heap.html">
+            
+                    
+                    ヒープ・プライオリティキュー
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.7" data-path="../computer_science/algorithm/binary_search_tree.html">
+            
+                <a href="../computer_science/algorithm/binary_search_tree.html">
+            
+                    
+                    二分探索木
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.8" data-path="../computer_science/algorithm/union_find_tree.html">
+            
+                <a href="../computer_science/algorithm/union_find_tree.html">
+            
+                    
+                    Union-Find木
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.9" data-path="../computer_science/algorithm/bipartite_graph.html">
+            
+                <a href="../computer_science/algorithm/bipartite_graph.html">
+            
+                    
+                    2部グラフ判定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.10" data-path="../computer_science/algorithm/shortest_path.html">
+            
+                <a href="../computer_science/algorithm/shortest_path.html">
+            
+                    
+                    最短経路問題
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" >
+            
+                <span>
+            
+                    
+                    機械学習
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.4.1" data-path="../computer_science/machine_learning/abstract.html">
+            
+                <a href="../computer_science/machine_learning/abstract.html">
+            
+                    
+                    概要
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.2" data-path="../computer_science/machine_learning/svm.html">
+            
+                <a href="../computer_science/machine_learning/svm.html">
+            
+                    
+                    サポートベクターマシン
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" >
+            
+                <span>
+            
+                    
+                    言語処理
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.5.1" data-path="../computer_science/language_processing/nlp100_1.html">
+            
+                <a href="../computer_science/language_processing/nlp100_1.html">
+            
+                    
+                    言語処理100本ノック1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5.2" data-path="../computer_science/language_processing/nlp100_2.html">
+            
+                <a href="../computer_science/language_processing/nlp100_2.html">
+            
+                    
+                    言語処理100本ノック2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5.3" data-path="../computer_science/language_processing/nlp100_3.html">
+            
+                <a href="../computer_science/language_processing/nlp100_3.html">
+            
+                    
+                    言語処理100本ノック3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5.4" data-path="../computer_science/language_processing/nlp100_4.html">
+            
+                <a href="../computer_science/language_processing/nlp100_4.html">
+            
+                    
+                    言語処理100本ノック4
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" >
+            
+                <span>
+            
+                    
+                    グラフィック
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.6.1" data-path="../computer_science/graphic/bezier_curve.html">
+            
+                <a href="../computer_science/graphic/bezier_curve.html">
+            
+                    
+                    ベジェ曲線
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" >
+            
+                <span>
+            
+                    
+                    セキュリティ
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.7.1" data-path="../computer_science/security/cyber-terrorism.html">
+            
+                <a href="../computer_science/security/cyber-terrorism.html">
+            
+                    
+                    サイバー攻撃
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7.2" data-path="../computer_science/security/malware.html">
+            
+                <a href="../computer_science/security/malware.html">
+            
+                    
+                    マルウェア
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    ネットワーク
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" >
+            
+                <span>
+            
+                    
+                    プロトコル
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.1" data-path="../network/protocol/reference_model.html">
+            
+                <a href="../network/protocol/reference_model.html">
+            
+                    
+                    参照モデル
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    人力飛行機
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="camera_mesurement.html">
+            
+                <a href="camera_mesurement.html">
+            
+                    
+                    カメラ計測
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8.2" data-path="foil_bezier.html">
+            
+                <a href="foil_bezier.html">
+            
+                    
+                    翼型のベジェ曲線表現
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    開発関係
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" >
+            
+                <span>
+            
+                    
+                    デバイス
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1.1" data-path="../develop/device/steamvr_vive.html">
+            
+                <a href="../develop/device/steamvr_vive.html">
+            
+                    
+                    SteamVR / HTC Vive
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.1.2" data-path="../develop/device/gpu.html">
+            
+                <a href="../develop/device/gpu.html">
+            
+                    
+                    GPU
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" >
+            
+                <span>
+            
+                    
+                    Git
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.2.1" data-path="../develop/git/environment.html">
+            
+                <a href="../develop/git/environment.html">
+            
+                    
+                    自分用の設定
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" >
+            
+                <span>
+            
+                    
+                    Python
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.3.1" data-path="../develop/python/environment.html">
+            
+                <a href="../develop/python/environment.html">
+            
+                    
+                    環境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3.2" data-path="../develop/python/matplotlib_template.html">
+            
+                <a href="../develop/python/matplotlib_template.html">
+            
+                    
+                    matplotlib template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3.3" data-path="../develop/python/juman_knp.html">
+            
+                <a href="../develop/python/juman_knp.html">
+            
+                    
+                    JUMAN/KNP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" >
+            
+                <span>
+            
+                    
+                    C#
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.4.1" data-path="../develop/cs/dotnet_history.html">
+            
+                <a href="../develop/cs/dotnet_history.html">
+            
+                    
+                    .Netの歴史
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" >
+            
+                <span>
+            
+                    
+                    GitBook
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.5.1" data-path="../develop/gitbook/my_setting.html">
+            
+                <a href="../develop/gitbook/my_setting.html">
+            
+                    
+                    自分用の設定
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >翼型のベジェ曲線表現</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7FFC;&#x578B;&#x306E;&#x30D9;&#x30B8;&#x30A7;&#x66F2;&#x7DDA;&#x8868;&#x73FE;">&#x7FFC;&#x578B;&#x306E;&#x30D9;&#x30B8;&#x30A7;&#x66F2;&#x7DDA;&#x8868;&#x73FE;</h1>
+<p>&#x7FFC;&#x578B;&#x306E;&#x5916;&#x5F62;&#x3092;4&#x3064;&#x306E;3&#x6B21;&#x30D9;&#x30B8;&#x30A7;&#x66F2;&#x7DDA;&#x3067;&#x8868;&#x73FE;&#x3057;&#x3066;&#x307F;&#x308B;&#x3002;</p>
+<h2 id="&#x63CF;&#x753B;">&#x63CF;&#x753B;</h2>
+<p><img src="fig1.png" alt="alt text"></p>
+<pre><code class="lang-py"><span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt
+<span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">bezier3</span><span class="hljs-params">(p0, p1, p2, p3, n)</span>:</span>
+    ts = [i/n <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(n)]
+    ts.append(<span class="hljs-number">1</span>)
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">f</span><span class="hljs-params">(t)</span>:</span>
+        a0 = (<span class="hljs-number">1</span>-t)**<span class="hljs-number">3</span>
+        a1 = <span class="hljs-number">3</span> * (<span class="hljs-number">1</span>-t)**<span class="hljs-number">2</span> * t
+        a2 = <span class="hljs-number">3</span> * (<span class="hljs-number">1</span>-t)* t**<span class="hljs-number">2</span>
+        a3 = t**<span class="hljs-number">3</span>
+        <span class="hljs-keyword">return</span> (
+            a0*p0[<span class="hljs-number">0</span>] + a1*p1[<span class="hljs-number">0</span>] + a2*p2[<span class="hljs-number">0</span>] + a3*p3[<span class="hljs-number">0</span>],
+            a0*p0[<span class="hljs-number">1</span>] + a1*p1[<span class="hljs-number">1</span>] + a2*p2[<span class="hljs-number">1</span>] + a3*p3[<span class="hljs-number">1</span>]
+        )
+    <span class="hljs-keyword">return</span> map(f, ts)
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">bezier_params_to_points</span><span class="hljs-params">(upper, lower, front, rear, n)</span>:</span>
+    <span class="hljs-comment"># &#x70B9;&#x6570;&#x306E;&#x5272;&#x308A;&#x632F;&#x308A;</span>
+    part1 = abs(lower[<span class="hljs-number">0</span>]) + <span class="hljs-number">1</span> - lower[<span class="hljs-number">2</span>]
+    part2 = abs(lower[<span class="hljs-number">0</span>]) + lower[<span class="hljs-number">2</span>]
+    part3 = abs(upper[<span class="hljs-number">0</span>]) + upper[<span class="hljs-number">2</span>]
+    part4 = abs(upper[<span class="hljs-number">0</span>]) + <span class="hljs-number">1</span> - upper[<span class="hljs-number">2</span>]
+    total = part1 + part2 + part3 + part4
+    <span class="hljs-comment"># &#x5F8C;&#x7E01;&#x4E0B;&#x5074;</span>
+    ps1 = list(bezier3(
+                (lower[<span class="hljs-number">2</span>], lower[<span class="hljs-number">0</span>]), (lower[<span class="hljs-number">3</span>], lower[<span class="hljs-number">0</span>]),
+                (rear[<span class="hljs-number">0</span>], rear[<span class="hljs-number">1</span>]), (<span class="hljs-number">1</span>, <span class="hljs-number">0</span>),
+                int(n * part1 / total)))
+    <span class="hljs-comment"># &#x524D;&#x7E01;&#x4E0B;&#x5074;</span>
+    ps2 = list(bezier3(
+                (<span class="hljs-number">0</span>, <span class="hljs-number">0</span>), (<span class="hljs-number">0</span>, front[<span class="hljs-number">0</span>]),
+                (lower[<span class="hljs-number">1</span>], lower[<span class="hljs-number">0</span>]), (lower[<span class="hljs-number">2</span>], lower[<span class="hljs-number">0</span>]),
+                int(n * part2 / total)))
+    <span class="hljs-comment"># &#x524D;&#x7E01;&#x4E0A;&#x5074;</span>
+    ps3 = list(bezier3(
+                (<span class="hljs-number">0</span>, <span class="hljs-number">0</span>), (<span class="hljs-number">0</span>, front[<span class="hljs-number">1</span>]),
+                (upper[<span class="hljs-number">1</span>], upper[<span class="hljs-number">0</span>]), (upper[<span class="hljs-number">2</span>], upper[<span class="hljs-number">0</span>]),
+                int(n * part3 / total)))
+    <span class="hljs-comment"># &#x5F8C;&#x7E01;&#x4E0A;&#x5074;</span>
+    ps4 = list(bezier3(
+                (upper[<span class="hljs-number">2</span>], upper[<span class="hljs-number">0</span>]), (upper[<span class="hljs-number">3</span>], upper[<span class="hljs-number">0</span>]),
+                (rear[<span class="hljs-number">2</span>], rear[<span class="hljs-number">3</span>]), (<span class="hljs-number">1</span>, <span class="hljs-number">0</span>),
+                int(n * part4 / total)))
+    <span class="hljs-keyword">return</span> (ps1, ps2, ps3, ps4)
+
+<span class="hljs-comment"># &#x4E0A;&#x7AEF;&#x30FB;&#x4E0B;&#x7AEF;&#x306E;(y1, x2, x1, x3)</span>
+upper = (<span class="hljs-number">0.11991</span>, <span class="hljs-number">0.13077</span>, <span class="hljs-number">0.38109</span>, <span class="hljs-number">0.67725</span>)
+lower = (<span class="hljs-number">-0.015984</span>, <span class="hljs-number">0.0063793</span>, <span class="hljs-number">0.029729</span>, <span class="hljs-number">0.17167</span>)
+<span class="hljs-comment"># &#x524D;&#x7E01;&#x4E0B;&#x5074;&#x3001;&#x524D;&#x7E01;&#x4E0A;&#x5074;&#x306E;&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30EB;&#x30DD;&#x30A4;&#x30F3;&#x30C8;(y1,y2)</span>
+front = (<span class="hljs-number">-0.011888</span>, <span class="hljs-number">0.041121</span>)
+<span class="hljs-comment"># &#x5F8C;&#x7E01;&#x4E0B;&#x5074;&#x3001;&#x5F8C;&#x7E01;&#x4E0A;&#x5074;&#x306E;&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30EB;&#x30DD;&#x30A4;&#x30F3;&#x30C8;(x1,y1,x2,y2)</span>
+rear = (<span class="hljs-number">0.51552</span>, <span class="hljs-number">0.055408</span>, <span class="hljs-number">0.79526</span>, <span class="hljs-number">0.044435</span>)
+n = <span class="hljs-number">200</span>
+
+pss = bezier_params_to_points(upper, lower, front, rear, n)
+
+<span class="hljs-keyword">for</span> ps <span class="hljs-keyword">in</span> pss:
+    xs = list(map(<span class="hljs-keyword">lambda</span> p: p[<span class="hljs-number">0</span>], ps))
+    ys = list(map(<span class="hljs-keyword">lambda</span> p: p[<span class="hljs-number">1</span>], ps))
+    plt.plot(xs, ys)
+
+plt.xlim(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>)
+plt.ylim(<span class="hljs-number">-0.4</span>, <span class="hljs-number">0.4</span>)
+plt.show()
+</code></pre>
+<h2 id="xfoil&#x306E;&#x89E3;&#x6790;&#x3078;">xfoil&#x306E;&#x89E3;&#x6790;&#x3078;</h2>
+<pre><code class="lang-py"><span class="hljs-keyword">import</span> subprocess
+
+<span class="hljs-comment"># &#x4E0A;&#x7AEF;&#x30FB;&#x4E0B;&#x7AEF;&#x306E;(y1, x2, x1, x3)</span>
+upper = (<span class="hljs-number">0.11991</span>, <span class="hljs-number">0.13077</span>, <span class="hljs-number">0.38109</span>, <span class="hljs-number">0.67725</span>)
+lower = (<span class="hljs-number">-0.015984</span>, <span class="hljs-number">0.0063793</span>, <span class="hljs-number">0.029729</span>, <span class="hljs-number">0.17167</span>)
+<span class="hljs-comment"># &#x524D;&#x7E01;&#x4E0B;&#x5074;&#x3001;&#x524D;&#x7E01;&#x4E0A;&#x5074;&#x306E;&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30EB;&#x30DD;&#x30A4;&#x30F3;&#x30C8;(y1,y2)</span>
+front = (<span class="hljs-number">-0.011888</span>, <span class="hljs-number">0.041121</span>)
+<span class="hljs-comment"># &#x5F8C;&#x7E01;&#x4E0B;&#x5074;&#x3001;&#x5F8C;&#x7E01;&#x4E0A;&#x5074;&#x306E;&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30EB;&#x30DD;&#x30A4;&#x30F3;&#x30C8;(x1,y1,x2,y2)</span>
+rear = (<span class="hljs-number">0.51552</span>, <span class="hljs-number">0.055408</span>, <span class="hljs-number">0.79526</span>, <span class="hljs-number">0.044435</span>)
+n = <span class="hljs-number">200</span>
+
+pss = bezier_params_to_points(upper, lower, front, rear, n)
+pss[<span class="hljs-number">0</span>].reverse()
+pss[<span class="hljs-number">1</span>].reverse()
+ps = []
+ps.extend(pss[<span class="hljs-number">0</span>][:<span class="hljs-number">-1</span>])
+ps.extend(pss[<span class="hljs-number">1</span>][:<span class="hljs-number">-1</span>])
+ps.extend(pss[<span class="hljs-number">2</span>][:<span class="hljs-number">-1</span>])
+ps.extend(pss[<span class="hljs-number">3</span>])
+
+<span class="hljs-keyword">with</span> open(<span class="hljs-string">&apos;test.dat&apos;</span>, <span class="hljs-string">&apos;w&apos;</span>) <span class="hljs-keyword">as</span> f:
+    f.writelines(map(<span class="hljs-keyword">lambda</span> p: <span class="hljs-string">&apos;%.4f&apos;</span>%p[<span class="hljs-number">0</span>] + <span class="hljs-string">&apos; &apos;</span> + <span class="hljs-string">&apos;%.4f&apos;</span>%p[<span class="hljs-number">1</span>] + <span class="hljs-string">&apos;\n&apos;</span>, ps))
+
+path2xfoil = <span class="hljs-string">r&apos;C:\Program Files\XFOIL6.99\xfoil.exe&apos;</span>
+proc = subprocess.Popen(path2xfoil, stdin=subprocess.PIPE)
+command = <span class="hljs-string">&quot;&quot;&quot;LOAD test.dat
+newfoil
+OPER
+ITER 100
+VISC 8e5
+PACC
+result.txt
+
+ASeq -5 20 0.5
+
+QUIT
+&quot;&quot;&quot;</span>
+proc.communicate(command.encode(<span class="hljs-string">&apos;utf-8&apos;</span>))
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="camera_mesurement.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: カメラ計測">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"翼型のベジェ曲線表現","level":"1.8.2","depth":2,"next":{"title":"開発関係","level":"1.9","depth":1,"ref":"","articles":[{"title":"デバイス","level":"1.9.1","depth":2,"ref":"","articles":[{"title":"SteamVR / HTC Vive","level":"1.9.1.1","depth":3,"path":"develop/device/steamvr_vive.md","ref":"develop/device/steamvr_vive.md","articles":[]},{"title":"GPU","level":"1.9.1.2","depth":3,"path":"develop/device/gpu.md","ref":"develop/device/gpu.md","articles":[]}]},{"title":"Git","level":"1.9.2","depth":2,"ref":"","articles":[{"title":"自分用の設定","level":"1.9.2.1","depth":3,"path":"develop/git/environment.md","ref":"develop/git/environment.md","articles":[]}]},{"title":"Python","level":"1.9.3","depth":2,"ref":"","articles":[{"title":"環境","level":"1.9.3.1","depth":3,"path":"develop/python/environment.md","ref":"develop/python/environment.md","articles":[]},{"title":"matplotlib template","level":"1.9.3.2","depth":3,"path":"develop/python/matplotlib_template.md","ref":"develop/python/matplotlib_template.md","articles":[]},{"title":"JUMAN/KNP","level":"1.9.3.3","depth":3,"path":"develop/python/juman_knp.md","ref":"develop/python/juman_knp.md","articles":[]}]},{"title":"C#","level":"1.9.4","depth":2,"ref":"","articles":[{"title":".Netの歴史","level":"1.9.4.1","depth":3,"path":"develop/cs/dotnet_history.md","ref":"develop/cs/dotnet_history.md","articles":[]}]},{"title":"GitBook","level":"1.9.5","depth":2,"ref":"","articles":[{"title":"自分用の設定","level":"1.9.5.1","depth":3,"path":"develop/gitbook/my_setting.md","ref":"develop/gitbook/my_setting.md","articles":[]}]}]},"previous":{"title":"カメラ計測","level":"1.8.1","depth":2,"path":"hpa/camera_mesurement.md","ref":"hpa/camera_mesurement.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["mathjax-commonhtml","expandable-chapters","mermaid-2"],"pluginsConfig":{"search":{},"mathjax-commonhtml":{"defaultScaling":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"mermaid-2":{"theme":"forest"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"my_style.css","pdf":"my_style.css"}},"file":{"path":"hpa/foil_bezier.md","mtime":"2017-06-05T06:44:12.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-22T20:25:41.953Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mermaid-2/bower_components/mermaid/dist/mermaid.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mermaid-2/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
