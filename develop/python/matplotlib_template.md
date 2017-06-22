@@ -49,6 +49,26 @@ plt.show()
 
 ![alt text](fig2.png)
 
+### ヒストグラム
+
+```py
+import matplotlib.pyplot as plt
+import numpy as np
+
+# 平均 50, 標準偏差 10 の正規乱数を1,000件生成
+xs = np.random.normal(50, 10, 1000)
+plt.hist(xs, bins=20)
+
+plt.title('sample graph')
+plt.xlabel('x')
+plt.ylabel('y')
+
+plt.show()
+
+```
+
+![alt text](fig5.png)
+
 ## 3次元
 
 ### ワイヤーフレーム/サーフェース
