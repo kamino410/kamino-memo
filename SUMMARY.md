@@ -16,6 +16,7 @@
     * [概要](mathematical_programming/linear/intro.md)
   * 非線形計画法
     * [無制約最小化問題](mathematical_programming/nonlinear/unconstrained.md)
+    * [等式制約付き最小化問題](mathematical_programming/nonlinear/equality_constrained.md)
 * 数値解析
   * 有限要素法
     * [1次元の重み付き残差法](numerical_analysis/finite_element_method/1-dimention.md)

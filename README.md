@@ -25,6 +25,7 @@
 
 ### 非線形計画法
 * [無制約最小化問題](mathematical_programming/nonlinear/unconstrained.md)
+* [等式制約付き最小化問題](mathematical_programming/nonlinear/equality_constrained.md)
 
 ----
 
