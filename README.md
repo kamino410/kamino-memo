@@ -2,139 +2,94 @@
 
 # 目次
 
-## 数学
-
-### 線形代数
-* [行列式](mathematics/linear_algebra/determinant.md)
-
-### 解析学
-* [ラプラス変換](mathematics/analysis/laplace_transform.md)
-* [フーリエ変換](mathematics/analysis/fourier_transform.md)
-* [凸集合・凸関数](mathematics/analysis/convex.md)
-* [ラグランジュ乗数法](mathematics/analysis/lagrange_multiplier.md)
-
-### 確率・統計
-* [確率分布](mathematics/statistics/probability_distribution.md)
-
-----
-
-## 計画数学
-
-### 線形計画法
-* [概要](mathematical_programming/linear/intro.md)
-
-### 非線形計画法
-* [無制約最小化問題](mathematical_programming/nonlinear/unconstrained.md)
-* [等式制約付き最小化問題](mathematical_programming/nonlinear/equality_constrained.md)
-* [一般の制約付き最小化問題](mathematical_programming/nonlinear/constrained.md)
-
-----
-
-## 数値解析
-### 有限要素法
-* [1次元の重み付き残差法](numerical_analysis/finite_element_method/1-dimention.md)
-* [2次元の重み付き残差法（ラプラス方程式）](numerical_analysis/finite_element_method/laplaces_equation.md)
-
-----
-
-## 制御理論
-### 概論
-* [概要](control/abstract/intro.md)
-* [線形システム](control/abstract/linear_system.md)
-
-### 古典制御理論
-* [伝達関数１](control/classical/transfer_function1.md)
-  * 伝達関数表現
-* [伝達関数２](control/classical/transfer_function2.md)
-  * 伝達関数とブロック線図
-  * むだ時間を含む系
-* [伝達関数３](control/classical/transfer_function3.md)
-  * proper／strictly proper／improperな伝達関数
-* [インパルス応答とステップ応答](control/classical/impulse_step_response.md)
-* [過渡応答](control/classical/transient_response.md)
-* [1次系の応答](control/classical/first_order_system.md)
-* [2次系の応答](control/classical/second_order_system.md)
-* [極・零点と過渡応答](control/classical/pole_zero.md)
-* [線形システムの安定性](control/classical/stability.md)
-
-### 現代制御
-* [状態方程式](control/modern/state_space_equation.md)
-* [可制御性・可観測性](control/modern/controllability_observability.md)
-
-----
-
-## 計算機科学
-### 論理
-* [論理演算](computer_science/logic/operation.md)
-
-### グラフ理論
-* [概要](computer_science/graph_theory/intro.md)
-* [プログラムにおけるグラフ表現](computer_science/graph_theory/graph_expression.md)
-
-### アルゴリズム
-* [アルゴリズムのコスト](computer_science/algorithm/execution_cost.md)
-* [全探索](computer_science/algorithm/exhaustive_search.md)
-* [貪欲法](computer_science/algorithm/greedy.md)
-* [動的計画法１](computer_science/algorithm/dynamic_programming1.md)
-* [動的計画法２](computer_science/algorithm/dynamic_programming2.md)
-* [ヒープ・プライオリティキュー](computer_science/algorithm/heap.md)
-* [二分探索木](computer_science/algorithm/binary_search_tree.md)
-* [Union-Find木](computer_science/algorithm/union_find_tree.md)
-* [2部グラフ判定](computer_science/algorithm/bipartite_graph.md)
-* [最短経路問題](computer_science/algorithm/shortest_path.md)
-
-### 機械学習
-* [概要](computer_science/machine_learning/abstract.md)
-* [サポートベクターマシン](computer_science/machine_learning/svm.md)
-
-### 言語処理
-* [言語処理100本ノック1](computer_science/language_processing/nlp100_1.md)
-* [言語処理100本ノック2](computer_science/language_processing/nlp100_2.md)
-* [言語処理100本ノック3](computer_science/language_processing/nlp100_3.md)
-* [言語処理100本ノック4](computer_science/language_processing/nlp100_4.md)
-
-### グラフィック
-* [ベジェ曲線](computer_science/graphic/bezier_curve.md)
-
-### セキュリティ
-* [サイバー攻撃](computer_science/security/cyber-terrorism.md)
-* [マルウェア](computer_science/security/malware.md)
-
-----
-
-## ネットワーク
-### プロトコル
-* [参照モデル](network/protocol/reference_model.md)
-  * OSI参照モデル
-  * TCP/IP階層モデル
-
-----
-
-## 人力飛行機
-
-* [カメラ計測](hpa/camera_mesurement.md)
-* [翼型のベジェ曲線表現](hpa/foil_bezier.md)
-
-----
-
-## 開発関係
-### デバイス
-* [SteamVR / HTC Vive](develop/device/steamvr_vive.md)
-* [GPU](develop/device/gpu.md)
-
-### Git
-* [自分用の設定](develop/git/environment.md)
-
-### Python
-* [環境](develop/python/environment.md)
-* [matplotlib template](develop/python/matplotlib_template.md)
-* [JUMAN/KNP](develop/python/juman_knp.md)
-
-### C＃
-* [.Netの歴史](develop/cs/dotnet_history.md)
-
-### GitBook
-* [自分用の設定](develop/gitbook/my_setting.md)
+* 数学
+  * 線形代数
+    * [行列式](mathematics/linear_algebra/determinant.md)
+  * 解析学
+    * [ラプラス変換](mathematics/analysis/laplace_transform.md)
+    * [フーリエ変換](mathematics/analysis/fourier_transform.md)
+    * [凸集合・凸関数](mathematics/analysis/convex.md)
+    * [ラグランジュ乗数法](mathematics/analysis/lagrange_multiplier.md)
+  * 確率・統計
+    * [確率分布](mathematics/statistics/probability_distribution.md)
+* 計画数学
+  * 線形計画法
+    * [概要](mathematical_programming/linear/intro.md)
+  * 非線形計画法
+    * [無制約最小化問題](mathematical_programming/nonlinear/unconstrained.md)
+    * [等式制約付き最小化問題](mathematical_programming/nonlinear/equality_constrained.md)
+    * [一般の制約付き最小化問題](mathematical_programming/nonlinear/constrained.md)
+* 数値解析
+  * 有限要素法
+    * [1次元の重み付き残差法](numerical_analysis/finite_element_method/1-dimention.md)
+    * [2次元の重み付き残差法（ラプラス方程式）](numerical_analysis/finite_element_method/laplaces_equation.md)
+* 制御理論
+  * 概論
+    * [概要](control/abstract/intro.md)
+    * [線形システム](control/abstract/linear_system.md)
+  * 古典制御理論
+    * [伝達関数１](control/classical/transfer_function1.md)
+    * [伝達関数２](control/classical/transfer_function2.md)
+    * [伝達関数３](control/classical/transfer_function3.md)
+    * [インパルス応答とステップ応答](control/classical/impulse_step_response.md)
+    * [過渡応答](control/classical/transient_response.md)
+    * [1次系の応答](control/classical/first_order_system.md)
+    * [2次系の応答](control/classical/second_order_system.md)
+    * [極・零点と過渡応答](control/classical/pole_zero.md)
+    * [線形システムの安定性](control/classical/stability.md)
+  * 現代制御理論
+    * [状態方程式](control/modern/state_space_equation.md)
+    * [可制御性・可観測性](control/modern/controllability_observability.md)
+* 計算機科学
+  * 論理
+    * [論理演算](computer_science/logic/operation.md)
+  * グラフ理論
+    * [概要](computer_science/graph_theory/intro.md)
+    * [プログラムにおけるグラフ表現](computer_science/graph_theory/graph_expression.md)
+  * アルゴリズム
+    * [アルゴリズムのコスト](computer_science/algorithm/execution_cost.md)
+    * [全探索](computer_science/algorithm/exhaustive_search.md)
+    * [貪欲法](computer_science/algorithm/greedy.md)
+    * [動的計画法１](computer_science/algorithm/dynamic_programming1.md)
+    * [動的計画法２](computer_science/algorithm/dynamic_programming2.md)
+    * [ヒープ・プライオリティキュー](computer_science/algorithm/heap.md)
+    * [二分探索木](computer_science/algorithm/binary_search_tree.md)
+    * [Union-Find木](computer_science/algorithm/union_find_tree.md)
+    * [2部グラフ判定](computer_science/algorithm/bipartite_graph.md)
+    * [最短経路問題](computer_science/algorithm/shortest_path.md)
+  * 機械学習
+    * [概要](computer_science/machine_learning/abstract.md)
+    * [サポートベクターマシン](computer_science/machine_learning/svm.md)
+  * 言語処理
+    * [言語処理100本ノック1](computer_science/language_processing/nlp100_1.md)
+    * [言語処理100本ノック2](computer_science/language_processing/nlp100_2.md)
+    * [言語処理100本ノック3](computer_science/language_processing/nlp100_3.md)
+    * [言語処理100本ノック4](computer_science/language_processing/nlp100_4.md)
+  * グラフィック
+    * [ベジェ曲線](computer_science/graphic/bezier_curve.md)
+  * セキュリティ
+    * [サイバー攻撃](computer_science/security/cyber-terrorism.md)
+    * [マルウェア](computer_science/security/malware.md)
+* ネットワーク
+  * プロトコル
+    * [参照モデル](network/protocol/reference_model.md)
+* 人力飛行機
+  * [カメラ計測](hpa/camera_mesurement.md)
+  * [翼型のベジェ曲線表現](hpa/foil_bezier.md)
+* 開発関係
+  * デバイス
+    * [SteamVR / HTC Vive](develop/device/steamvr_vive.md)
+    * [GPU](develop/device/gpu.md)
+  * Git
+    * [自分用の設定](develop/git/environment.md)
+  * Python
+    * [環境](develop/python/environment.md)
+    * [matplotlib template](develop/python/matplotlib_template.md)
+    * [JUMAN/KNP](develop/python/juman_knp.md)
+  * C#
+    * [.Netの歴史](develop/cs/dotnet_history.md)
+  * GitBook
+    * [自分用の設定](develop/gitbook/my_setting.md)
 
 # 参考文献
 
