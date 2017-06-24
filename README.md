@@ -10,6 +10,7 @@
 ### 解析学
 * [ラプラス変換](mathematics/analysis/laplace_transform.md)
 * [フーリエ変換](mathematics/analysis/fourier_transform.md)
+* [凸集合・凸関数](mathematics/analysis/convex.md)
 * [ラグランジュ乗数法](mathematics/analysis/lagrange_multiplier.md)
 
 ### 確率・統計
@@ -21,6 +22,9 @@
 
 ### 線形計画法
 * [概要](mathematical_programming/linear/intro.md)
+
+### 非線形計画法
+* [無制約最小化問題](mathematical_programming/nonlinear/unconstrained.md)
 
 ----
 
