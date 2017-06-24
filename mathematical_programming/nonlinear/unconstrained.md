@@ -1,6 +1,10 @@
 # 無制約最小化問題
 
-$$f:R^n \rightarrow R $$について
+$$x \in D \subseteq R^n$$
+
+$$f:D \rightarrow R $$
+
+について
 
 $$
 minimize \ f(x) \ \ \ (x \in R^n)

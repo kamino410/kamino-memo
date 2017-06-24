@@ -1,8 +1,8 @@
 # 等式制約付き最小化問題
 
-$$x \in D \subset R^n$$
+$$x \in D \subseteq R^n$$
 
-$$f:R^n \rightarrow R$$
+$$f:D \rightarrow R$$
 
 $$g_i:R^n \rightarrow R$$
 
@@ -31,6 +31,16 @@ $$x^* $$ において $$f,g$$ は微分可能であるとする。
 
 <center>
 $$x^* $$ が局所的最小解　⇒　$$x^* $$ は停留点（$$\frac{\partial}{\partial x_i}f(x^* )=0$$となる点）
+</center>
+
+[ラグランジュ乗数法](../../mathematics/analysis/lagrange_multiplier.md)より、停留点は次の条件を満たすため、これが局所的最小解への条件となる。
+
+<center>
+$$L(x,\lambda) \equiv f(x) - \sum_{k=1}^M \lambda_k g_k(x)$$ として
+</center>
+
+<center>
+$$\frac{\partial F}{\partial x_k}=0, \frac{\partial F}{\partial \lambda_k}=0$$
 </center>
 
 ただし逆は成立しない（停留点には極大点や鞍点などが含まれるため）。

@@ -1,10 +1,10 @@
 # 一般の制約付き最小化問題
 
-$$x \in D \subset R^n$$
+$$x \in D \subseteq R^n$$
 
-$$f:R^n \rightarrow R$$
+$$f:D \rightarrow R$$
 
-$$g_i,h_i:R^n \rightarrow R$$
+$$g_i,h_i:D \rightarrow R$$
 
 について次の問題を考える。
 
@@ -39,9 +39,7 @@ $$x^* $$ において $$f,g$$ は微分可能であるとする。
 
 ### 1次導関数に対する条件
 
-<center>
 
-</center>
 
 ### 2次導関数に対する条件
 

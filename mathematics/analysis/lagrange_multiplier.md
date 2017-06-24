@@ -19,7 +19,7 @@ G(x)=
 $$
 
 ただし、$$g_k(x)$$は$$C^1$$級関数（連続微分可能つまり微分可能で導関数も連続）である。
-また、制約条件を満たす点で$$dim \left(\nabla g_k\right) = dim\left(\frac{\partial g_k}{\partial x_1}, \cdots, \frac{\partial g_k}{\partial x_n}\right)=m$$である。
+また、制約条件を満たす点で$$dim \left(\nabla g_k\right) = dim\left(\frac{\partial g_k}{\partial x_1}, \cdots, \frac{\partial g_k}{\partial x_n}\right)=m$$である（つまり$$\nabla g_i$$同士は一次独立）。
 
 ここでm個の未知の変数$$\lambda_k$$（**Lagrange乗数** と呼ぶ）を導入して、
 
@@ -30,11 +30,10 @@ $$
 のような **Lagrange関数** を定義したとき、
 
 <center>
-ある$$x$$について$$\frac{\partial F}{\partial x_k}=0, \frac{\partial F}{\partial \lambda_k}=0$$を満たす$$\lambda$$が存在する
-⇔　$$x$$は関数$$f(x)$$の停留点
+ある$$x$$について$$\frac{\partial F}{\partial x_k}=0, \frac{\partial F}{\partial \lambda_k}=0$$を満たす$$\lambda$$が存在する<br>⇔　$$x$$は関数$$f(x)$$の停留点
 </center>
 
-である。
+が成立する。
 
 ## 解説
 
