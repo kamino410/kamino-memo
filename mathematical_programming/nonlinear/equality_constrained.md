@@ -1,8 +1,11 @@
 # 等式制約付き最小化問題
 
 $$x \in D \subset R^n$$
+
 $$f:R^n \rightarrow R$$
+
 $$g_i:R^n \rightarrow R$$
+
 について次の問題を考える。
 
 $$
