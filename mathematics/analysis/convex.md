@@ -7,8 +7,7 @@
 条件を数式にすると
 
 $$
-u,v\in D\\
-S = \{(1-\lambda)u+\lambda v \ | \ 0 \leq \lambda \leq 1\}
+S = \{(1-\lambda)u+\lambda v \ | \ 0 \leq \lambda \leq 1\}\ \ \ (u,v\in D)
 $$
 
 について

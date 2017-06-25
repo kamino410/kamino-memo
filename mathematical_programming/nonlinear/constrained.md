@@ -1,12 +1,6 @@
 # 一般の制約付き最小化問題
 
-$$x \in D \subseteq R^n$$
-
-$$f:D \rightarrow R$$
-
-$$g_i,h_i:D \rightarrow R$$
-
-について次の問題を考える。
+次の問題について考える。
 
 $$
 \begin{eqnarray}
@@ -29,7 +23,8 @@ H(x) =
 \end{pmatrix}
 \leq 0
 \end{matrix}
-\right.
+\right. \\
+&x \in D \subseteq R^n,& \ \ \ f:D \rightarrow R, \ \ \ g_i,h_i:D \rightarrow R
 \end{eqnarray}
 $$
 
@@ -38,8 +33,6 @@ $$
 $$x^* $$ において $$f,g$$ は微分可能であるとする。
 
 ### 1次導関数に対する条件
-
-
 
 ### 2次導関数に対する条件
 

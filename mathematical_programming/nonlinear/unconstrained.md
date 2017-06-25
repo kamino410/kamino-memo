@@ -1,16 +1,13 @@
 # 無制約最小化問題
 
-$$x \in D \subseteq R^n$$
-
-$$f:D \rightarrow R $$
-
-について
+次の問題について考える。
 
 $$
-minimize \ f(x) \ \ \ (x \in R^n)
+\begin{eqnarray}
+minimize \ f(x) \ \ \ (x \in R^n) \\
+x \in D \subseteq R^n, \ \ \ f:D \rightarrow R
+\end{eqnarray}
 $$
-
-を考える
 
 ## 最適性条件
 

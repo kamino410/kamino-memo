@@ -1,12 +1,6 @@
 # 等式制約付き最小化問題
 
-$$x \in D \subseteq R^n$$
-
-$$f:D \rightarrow R$$
-
-$$g_i:R^n \rightarrow R$$
-
-について次の問題を考える。
+次の問題について考える。
 
 $$
 \begin{eqnarray}
@@ -17,7 +11,8 @@ s.t. \ &G(x)& =
   \vdots \\
   g_m(x_1, \dots, x_n)
 \end{pmatrix}
-=0
+=0\\
+x \in D &\subseteq R^n,&\ \ \ f:D \rightarrow R, \ \ \ g_i,h_i:D \rightarrow R
 \end{eqnarray}
 $$
 

@@ -2,17 +2,19 @@
 
 ここでは制御対象が1次系、制御機が定数ゲインの制御システムについて考える。
 　
-$$P(s) = \frac{A}{\tau s + 1}$$
-
-$$K(s) = K$$
+$$
+P(s) = \frac{A}{\tau s + 1}, \ \ \ K(s) = K
+$$
 
 ## 伝達関数
 
 上記のシステムのフィードフォワード系とフィードバック系の伝達関数はそれぞれ次のようになる。
 
 $$
-G_f(s) = \frac{AK}{\tau s + 1} \\
-G_b(s) = \frac{AK}{\tau s + 1 + AK}
+\begin{eqnarray}
+G_f(s) &=& \frac{AK}{\tau s + 1} \\
+G_b(s) &=& \frac{AK}{\tau s + 1 + AK}
+\end{eqnarray}
 $$
 
 ## 感度特性
