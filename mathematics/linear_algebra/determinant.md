@@ -22,4 +22,32 @@ $$
 
 ## 性質
 
-* $$|^t A| = |A|$$
+行列式は主に次のような性質を満たす。
+
+### その1
+
+行・列に対する対称性
+
+$$|A^t| = |A|$$
+
+### その2
+
+**n重線型性**
+
+$$\begin{vmatrix} a_1 \\ \vdots \\ a_i' \\ \vdots \\ a_n \end{vmatrix} \ + \  \begin{vmatrix} a_1 \\ \vdots \\ a_i'' \\ \vdots \\ a_n \end{vmatrix} \ = \  \begin{vmatrix} a_1 \\ \vdots \\ a_i' + a_i'' \\ \vdots \\ a_n \end{vmatrix}$$
+
+$$|kA| = k|A| \ \ \ (k \in R)$$
+
+### その3
+
+行・列ベクトルを入れ替えると行列式の符号が逆転する（**交代性**）
+
+$$\begin{vmatrix} a_1 \\ \vdots \\ a_i \\ \vdots \\ a_j \\ \vdots \\ a_n \end{vmatrix} \ = \  - \ \begin{vmatrix} a_1 \\ \vdots \\ a_j \\ \vdots \\ a_i \\ \vdots \\ a_n \end{vmatrix}$$
+
+### その4
+
+乗算
+
+$$|AB| = |A| \cdot |B|$$
+
+$$|A^n| = |A|^n$$
