@@ -17,6 +17,7 @@
   * 線形計画法
     * [概要](mathematical_programming/linear/intro.md)
     * [シンプレックス法](mathematical_programming/linear/simplex_method.md)
+    * [線形計画問題を解くプログラム](mathematical_programming/linear/program.md)
   * 非線形計画法
     * [無制約最小化問題](mathematical_programming/nonlinear/unconstrained.md)
     * [等式制約付き最小化問題](mathematical_programming/nonlinear/equality_constrained.md)
