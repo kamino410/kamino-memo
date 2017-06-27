@@ -10,33 +10,49 @@
 というアルゴリズムによって最適解を求めることができる。
 シンプレックス法は2番の手順を効率よく実現した解法である。
 
-## 事前知識：基底形式（basic form）
-
-$$x$$を基底解、つまり $$x = \begin{bmatrix}x_B \\ x_N\end{bmatrix} = \begin{bmatrix}B^{-1}b \\ 0\end{bmatrix}$$ とする。
-
-ここでLP問題の標準形を以下のように表す。
-
-$$
-\begin{eqnarray}
-w &=& \begin{bmatrix} c_B^T & c_N^T \end{bmatrix} \begin{bmatrix} x_B \\ x_N \end{bmatrix} \\
-b &=& \begin{bmatrix} B & N \end{bmatrix} \begin{bmatrix} x_B \\ x_N \end{bmatrix}
-\end{eqnarray} \tag{1}
-$$
-
-$$B$$に逆行列が存在するという性質を利用してこの式を変形すると次のようになる。
-
-$$
-\begin{eqnarray}
-\omega &=& c_B^T B^{-1}b + (c_N^T-c_B^TB^{-1}N)x_N \\
-B^{-1}b &=& x_B + B^{-1}Nx_N
-\end{eqnarray} \tag{2}
-$$
-
-この式を **基底形式（basic form）** といい、$$\bar{c}_N^T = c_N^T-c_B^TB^{-1}N$$ を **相対費用係数** という。
-
 ## 原理
 
 事前に実行可能基底解 $$x = \begin{bmatrix}x_B \\ x_N\end{bmatrix} = \begin{bmatrix}B^{-1}b \\ 0\end{bmatrix} \geq 0$$ が得られているものとする。
+
+$$
+\begin{eqnarray}
+&\ &minimize : c_B^Tx_B + c_N^Tx_N \\
+&\ &s.t.
+\begin{cases}
+Bx_B + Nx_N=b\\
+x_B, x_N \geq 0
+\end{cases}
+\end{eqnarray}
+$$
+
+このとき双対問題は
+
+$$
+\begin{eqnarray}
+&\ &minimize : b^Ty \\
+&\ &s.t.
+\begin{cases}
+B^Ty + z_B=c_B \\
+N^Ty + z_N=c_N \\
+z_B, z_N \geq 0
+\end{cases}
+\end{eqnarray}
+$$
+
+のように表される。基底解が得られていることから双対定理を利用すると
+
+$$
+y=(B^T)^{-1}c_B, \ \ \ z_B=0, \ \ \ z_N = c_N - N^T (B^T)^{-1}c_B \geq 0
+$$
+
+のように双対問題においても1つの実行可能基底解が得られていることがわかる。
+
+
+
+
+
+
+----
 
 まず、現在の解が最適解であるかを確認する。
 

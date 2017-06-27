@@ -59,16 +59,64 @@ $$
 &\ &minimize : c^Tx \\
 &\ &s.t.
 \begin{cases}
-Ax=a\\
+Ax=b\\
 x_i \geq 0
 \end{cases} \\
-&\ &A \in R^{m \times n}, \ B \in R^{l \times n}, \ a \in R^m, \ b \in R^l, \ c \in R^n, \ x \in R^n
+&\ &A \in R^{m \times n}, \ b \in R^m, \ c \in R^n, \ x \in R^n
 \end{eqnarray}
 $$
 
 となる。
 
 これを線形計画問題の **標準形** という。
+
+## 双対問題（dual problem）
+
+標準形の線形計画問題を主問題として
+
+$$
+\begin{eqnarray}
+&\ &maximize : b^Ty \\
+&\ &s.t. \ 
+A^Ty \leq c
+\end{eqnarray}
+$$
+
+もしくは
+
+$$
+\begin{eqnarray}
+&\ &maximize : b^Ty \\
+&\ &s.t.
+\begin{cases}
+A^Ty + z = c \\
+z \geq 0
+\end{cases}
+\end{eqnarray}
+$$
+
+で表される問題を**双対問題**という。また、このときの変数$$y,z$$は**双対変数**という。主問題と双対問題の間には次のような関連性がある。
+
+### 弱双対定理
+
+$$\bar{x}$$と$$\bar{y}$$がそれぞれ主問題と双対問題の実行可能解であるならば
+
+$$
+c^T\bar{x} \geq b^T\bar{y}
+$$
+
+が成立する。
+
+#### 証明
+
+$$
+c^Tx = (A^Ty + z)^Tx = y^T Ax + z^Tx = y^Tb + z^Tx = b^Ty + z^Tx
+$$
+
+### 双対定理
+
+1. 主問題が実行可能解を持ち最適値$$f$$をとる　⇔　双対問題が実行可能解を持ち最適値$$f$$をとる
+1. 主問題の最適解に対して、双対問題の最適解はそれに対応する単体乗数$$(B^{-1})^Tc_B b$$となる
 
 ## 解法（$$m\geq n$$のとき）
 
@@ -137,7 +185,29 @@ $$
 
 逆に基底変数がすべて非零であるとき（$$x_B > 0, x_N = 0$$）、 **非退化（non-degenerate）** であるという。
 
-退化の直観的・数学的な意味は後述する。
+## 基底形式（basic form）
+
+$$x$$を基底解、つまり $$x = \begin{bmatrix}x_B \\ x_N\end{bmatrix} = \begin{bmatrix}B^{-1}b \\ 0\end{bmatrix}$$ とする。
+
+ここでLP問題の標準形を以下のように表す。
+
+$$
+\begin{eqnarray}
+w &=& \begin{bmatrix} c_B^T & c_N^T \end{bmatrix} \begin{bmatrix} x_B \\ x_N \end{bmatrix} \\
+b &=& \begin{bmatrix} B & N \end{bmatrix} \begin{bmatrix} x_B \\ x_N \end{bmatrix}
+\end{eqnarray} \tag{1}
+$$
+
+$$B$$に逆行列が存在するという性質を利用してこの式を変形すると次のようになる。
+
+$$
+\begin{eqnarray}
+\omega &=& c_B^T B^{-1}b + (c_N^T-c_B^TB^{-1}N)x_N \\
+B^{-1}b &=& x_B + B^{-1}Nx_N
+\end{eqnarray} \tag{2}
+$$
+
+この式を **基底形式（basic form）** といい、$$\bar{c}_N^T = c_N^T-c_B^TB^{-1}N$$ を **相対費用係数** という。
 
 ### 単体乗数
 
