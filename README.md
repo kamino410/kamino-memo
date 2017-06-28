@@ -27,6 +27,7 @@
   * 有限要素法
     * [1次元の重み付き残差法](numerical_analysis/finite_element_method/1-dimention.md)
     * [2次元の重み付き残差法（ラプラス方程式）](numerical_analysis/finite_element_method/laplaces_equation.md)
+    * [数値計算例](numerical_analysis/finite_element_method/examples.md)
 * 制御理論
   * 概論
     * [概要](control/abstract/intro.md)
@@ -92,6 +93,7 @@
   * Python
     * [環境](develop/python/environment.md)
     * [matplotlib template](develop/python/matplotlib_template.md)
+    * [行列演算](develop/python/matrix_operation.md)
     * [JUMAN/KNP](develop/python/juman_knp.md)
   * C#
     * [.Netの歴史](develop/cs/dotnet_history.md)
