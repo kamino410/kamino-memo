@@ -108,7 +108,7 @@ l_k &=& x_{k+1} - x_k \\
 N_k^T &=& \begin{bmatrix} \frac{x_{k+1}-x}{l_k} & \frac{x-x_k}{l_k} \end{bmatrix} \\
 L_k^T &=& \begin{bmatrix} -\frac{1}{l_k} & \frac{1}{l_k} \end{bmatrix} \\
 \tilde{U}_k &=& \begin{pmatrix} \tilde{u}_k \\ \tilde{u}_{k+1} \end{pmatrix} \\
-U^* _ k &=& \begin{pmatrix} \tilde{u^* }_k \\ \tilde{u^* }_{k+1} \end{pmatrix} \\
+U^* _ k &=& \begin{pmatrix} u^* _ k \\ u^* _ {k+1} \end{pmatrix} \\
 \end{eqnarray}
 $$
 
