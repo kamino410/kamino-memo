@@ -8,8 +8,8 @@
 
 $$
 \begin{eqnarray}
-&\ &minimize : c^Tx \\
-&\ &s.t.
+minimize : &\ & c^Tx \\
+s.t. &\ &
 \begin{cases}
 Ax=a\\
 Bx \leq b
@@ -22,8 +22,8 @@ $$
 
 >$$
 \begin{eqnarray}
-&\ &minimize : f(x) \\
-&\ &s.t.
+minimize : &\ & f(x) \\
+s.t. &\ &
 \begin{cases}
 g_i(x) = 0 & (i=1,\dots,m) \\
 h_j(x) \leq 0 & (j=1,\dots,l)
@@ -56,8 +56,8 @@ $$
 
 $$
 \begin{eqnarray}
-&\ &minimize : c^Tx \\
-&\ &s.t.
+minimize : &\ & c^Tx \\
+s.t. &\ &
 \begin{cases}
 Ax=b\\
 x_i \geq 0
@@ -76,8 +76,8 @@ $$
 
 $$
 \begin{eqnarray}
-&\ &maximize : b^Ty \\
-&\ &s.t. \ 
+maximize : &\ & b^Ty \\
+s.t. &\ &
 A^Ty \leq c
 \end{eqnarray}
 $$
@@ -86,8 +86,8 @@ $$
 
 $$
 \begin{eqnarray}
-&\ &maximize : b^Ty \\
-&\ &s.t.
+maximize : &\ & b^Ty \\
+s.t.&\ &
 \begin{cases}
 A^Ty + z = c \\
 z \geq 0
@@ -116,7 +116,7 @@ $$
 ### 双対定理
 
 1. 主問題が実行可能解を持ち最適値$$f$$をとる　⇔　双対問題が実行可能解を持ち最適値$$f$$をとる
-1. 主問題の最適解に対して、双対問題の最適解はそれに対応する単体乗数$$(B^{-1})^Tc_B b$$となる
+1. 主問題の最適解に対して、双対問題の最適解はそれに対応する単体乗数$$(B^{-1})^Tc_B b$$となる 
 
 ## 解法（$$m\geq n$$のとき）
 
@@ -189,25 +189,19 @@ $$
 
 $$x$$を基底解、つまり $$x = \begin{bmatrix}x_B \\ x_N\end{bmatrix} = \begin{bmatrix}B^{-1}b \\ 0\end{bmatrix}$$ とする。
 
-ここでLP問題の標準形を以下のように表す。
+$$B$$が正則行列であることを利用して問題を$$x_N$$の一次式として書き直すと
 
 $$
 \begin{eqnarray}
-w &=& \begin{bmatrix} c_B^T & c_N^T \end{bmatrix} \begin{bmatrix} x_B \\ x_N \end{bmatrix} \\
-b &=& \begin{bmatrix} B & N \end{bmatrix} \begin{bmatrix} x_B \\ x_N \end{bmatrix}
-\end{eqnarray} \tag{1}
+minimize : &\ &c_B^T B^{-1}b + (c_N^T-c_B^TB^{-1}N)x_N \\
+s.t. &\ &\begin{cases}
+x_B = B^{-1}b - B^{-1}Nx_N \\
+x_B \geq 0, \ \ \ x_N \geq 0
+\end{cases}
+\end{eqnarray}
 $$
 
-$$B$$に逆行列が存在するという性質を利用してこの式を変形すると次のようになる。
-
-$$
-\begin{eqnarray}
-\omega &=& c_B^T B^{-1}b + (c_N^T-c_B^TB^{-1}N)x_N \\
-B^{-1}b &=& x_B + B^{-1}Nx_N
-\end{eqnarray} \tag{2}
-$$
-
-この式を **基底形式（basic form）** といい、$$\bar{c}_N^T = c_N^T-c_B^TB^{-1}N$$ を **相対費用係数** という。
+のようになる。この式を **基底形式（basic form）** といい、$$\bar{c}_N^T = c_N^T-c_B^TB^{-1}N$$ を **相対費用係数** という。
 
 ### 単体乗数
 
