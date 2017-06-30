@@ -9,6 +9,8 @@ u | _ {x=0}=a, \ \ \  \frac{du}{dx} | _ {x=L} = b
 \end{eqnarray}
 $$
 
+※式を展開して解いていったときの結論と一致が確認できていないので
+
 ![alt text](fig1.png)
 
 ```py
