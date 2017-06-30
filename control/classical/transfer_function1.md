@@ -35,7 +35,6 @@ $$
 
 そこで $$y_1(t)$$、$$y_2(t)$$、$$u(t)$$ を全ての初期値を0としてラプラス変換する。
 
-<center>
 $$
 \begin{eqnarray}
   Y_1(s) &=& \mathscr{L}[y_1(t)] \\
@@ -43,11 +42,9 @@ $$
   U(s) &=& \mathscr{L}[u(t)]
 \end{eqnarray}
 $$
-</center>
 
 これを利用して書き直すと
 
-<center>
 $$
 \begin{eqnarray}
   \begin{array}{l}
@@ -56,15 +53,12 @@ $$
   \end{array}
 \end{eqnarray}
 $$
-</center>
 
 さらに $$Y_1(s)$$ を消してひとつの式にまとめると
 
-<center>
 $$
 Y_2(s) = \frac{d_1s+d_0}{c_2s^2+c_1s+c_0} \cdot \frac{b_1s+b_0}{a_2s^2+a_1s+a_0} U(s)
 $$
-</center>
 
 簡潔に記述できた。
 
@@ -72,14 +66,12 @@ $$
 
 上の式において
 
-<center>
 $$
 \begin{eqnarray}
   G_A(s) &=& \frac{b_1s+b_0}{a_2s^2+a_1s+a_0} \\
   G_B(s) &=& \frac{d_1s+d_0}{c_2s^2+c_1s+c_0}
 \end{eqnarray}
 $$
-</center>
 
 はそれぞれA、Bのシステムの入出力比を表しているといえる。
 つまり $$G_A(s)$$、$$G_B(s)$$ はA、Bの **システムの特性を表現する関数** になっている。

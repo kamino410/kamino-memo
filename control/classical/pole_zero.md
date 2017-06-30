@@ -2,11 +2,9 @@
 
 > 復習：伝達関数の定義
 
-><center>
-$$
+>$$
 G(s) = \frac{N(s)}{D(s)} = \frac{b_ms^m+b_{m-1}s^{m-1}+\ \dots \ +b_0}{s^n+a_{n-1}s^{n-1}+\ \dots \ +a_0}
 $$
-</center>
 
 ## 極（pole）・零点（zero）
 

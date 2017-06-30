@@ -4,11 +4,9 @@
 
 伝達関数が
 
-<center>
 $$
 G(s) = \frac{K}{Ts+1} \ \ \ (T>0,K>0)
 $$
-</center>
 
 の形で与えられるシステムは1次系と呼ばれる。
 
@@ -16,35 +14,29 @@ $$
 
 1次系のインパルス応答は次のようになる。
 
-<center>
 $$
 \begin{eqnarray}
 y(t) &=& \mathscr{L}^{-1}[G(s)] \\
 &=& \frac{K}{T}e^{-t/T}
 \end{eqnarray}
 $$
-</center>
 
 ## ステップ応答
 
 1次系のステップ応答は次のようになる（インパルス応答を積分して求めた）。
 
-<center>
 $$
 \begin{eqnarray}
 y(t) &=& \int_0^t \frac{K}{T}e^{-\tau/T}d\tau \\
 &=& K(1-e^{-t/T})
 \end{eqnarray}
 $$
-</center>
 
 以上からステップ応答の定常値・初期速度は次のようになる。
 
-<center>
 $$
 \lim_{t \to \infty}y(t) = K, \ \ \ \frac{dy}{dt}|_ {t=0} = \frac{K}{T}
 $$
-</center>
 
 ## パラメーターの意味
 

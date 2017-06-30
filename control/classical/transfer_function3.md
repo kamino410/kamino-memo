@@ -4,19 +4,15 @@
 
 次のような線形システムについて考える。
 
-<center>
 $$
 \sum_{k=0}^n a_n\frac{d^ky(t)}{dt^n} = \sum_{k=0}^m b_n\frac{d^ku(t)}{dt^n}
 $$
-</center>
 
 このシステムの伝達関数を計算すると
 
-<center>
 $$
 G(s) = \frac{N(s)}{D(s)} = \frac{b_ms^m+b_{m-1}s^{m-1}+\ \dots \ +b_0}{s^n+a_{n-1}s^{n-1}+\ \dots \ +a_0}
 $$
-</center>
 
 となる。
 

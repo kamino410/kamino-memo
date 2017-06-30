@@ -4,34 +4,28 @@
 
 伝達関数が
 
-<center>
 $$
 G(s) = \frac{b_0}{s^2+a_1+a_2} \ \ \ (b_0>0,a_1>0,a_2>0)
 $$
-</center>
 
 の形で与えられるシステムは2次系と呼ばれる。
 
 上記の式は解析のしやすさを考えて次のような形で表すことが多い。
 
-<center>
 $$
 G(s) = \frac{K\omega_n^2}{s^2+2\zeta\omega_ns+\omega_n^2} \ \ \ (K>0,\zeta>0,\omega_n>0)
 $$
-</center>
 
 ## インパルス応答
 
 2次系のインパルス応答は次のようになる。
 
-<center>
 $$
 \begin{eqnarray}
 y(t) &=& \mathscr{L}^{-1}[G(s)] \\
 &=& \frac{K\omega_n}{\sqrt{1-\zeta^2}}e^{-\zeta\omega_nt}\sin(\omega_dt)
 \end{eqnarray}
 $$
-</center>
 
 ## ステップ応答
 
@@ -39,28 +33,18 @@ $$
 
 $$\omega_d = \omega_n\sqrt{1-\zeta^2}$$ と置いて
 
-<center>
 $$
 \begin{eqnarray}
 y(t) &=& \mathscr{L}^{-1}\left[G(s)\frac{1}{s}\right] \\
 &=& \mathscr{L}^{-1}\left[\frac{K}{s} - \frac{K(s+2\zeta\omega_n)}{s^2+2\zeta\omega_ns+\omega_n^2}\right] \\
 &=& \mathscr{L}^{-1}\left[\frac{K}{s} - \frac{K(s+\zeta\omega_n)}{(s+\zeta\omega_n)^2+\omega_d^2} - \frac{K\zeta}{\sqrt{1-\zeta^2}}\frac{\sqrt{1-\zeta^2}\omega_n}{(s+\zeta\omega_n)^2+\omega_d^2}\right] \\
-&=& K\left\{1-\frac{e^{-\zeta\omega_nt}}{\sqrt{1-\zeta^2}}\sin(\omega_dt+\theta)\right\}
+&=& K\left\{1-\frac{e^{-\zeta\omega_nt}}{\sqrt{1-\zeta^2}}\sin(\omega_dt+\theta)\right\} \\ &\ & \left(\theta=\tan^{-1}\frac{\sqrt{1-\zeta^2}}{\zeta}\right)
 \end{eqnarray}
 $$
-</center>
-
-<br>
-
-<center>
-$$
-\theta=\tan^{-1}\frac{\sqrt{1-\zeta^2}}{\zeta}
-$$
-</center>
 
 ## パラメーターの意味
 
-この後示すグラフを見ればわかるように、各パラメーターは応答に次のような影響を与える。
+後に示すグラフを見ればわかるように、各パラメーターは応答に次のような影響を与える。
 
 * ゲイン $$K$$
   * 定常状態でのゲイン（定常値が入力信号の$$K$$倍になる）

@@ -20,14 +20,12 @@ $$y(t) = u(t-L)$$ は信号の伝達を$$L$$だけ遅延させるシステム。
 
 これをラプラス変換すると
 
-<center>
 $$
 \begin{eqnarray}
   Y(s) &=& e^{-sL}U(s) \\
   G(s) &=& e^{-sL}
 \end{eqnarray}
 $$
-</center>
 
 となる。
 
@@ -35,11 +33,9 @@ $$
 
 むだ時間を無視できない場合、次のような有利関数への近似を行うことがある。
 
-<center>
 $$
 \begin{eqnarray}
   e^{-sL} &\simeq& \frac{1-Ls/2}{1+Ls/2} \\
   e^{-sL} &\simeq& \frac{1-Ls/2+(Ls)^2/12}{1+Ls/2+(Ls)^2/12}
 \end{eqnarray}
 $$
-</center>
