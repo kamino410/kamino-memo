@@ -55,6 +55,7 @@
     * [プログラムにおけるグラフ表現](computer_science/graph_theory/graph_expression.md)
   * アルゴリズム
     * [アルゴリズムのコスト](computer_science/algorithm/execution_cost.md)
+    * [ソート](computer_science/algorithm/sort.md)
     * [全探索](computer_science/algorithm/exhaustive_search.md)
     * [貪欲法](computer_science/algorithm/greedy.md)
     * [動的計画法１](computer_science/algorithm/dynamic_programming1.md)
@@ -108,3 +109,4 @@
 * 秋葉 拓哉/岩田 陽一/北川 宣稔, 『プログラミングコンテストチャレンジブック 第2版』, マイナビ出版, 2012
 * J. Glenn Brookshear (神林 靖/長尾 高宏 訳),  『入門コンピュータ科学～ITを支える技術と理論の基礎知識～』, アスキー・メディアワークス, 2014
 * 杉江 俊治/藤田 政之, 『フィードバック制御入門』, コロナ社, 1999
+* 近藤 嘉雪、 『定本 Cプログラマのためのアルゴリズムとデータ構造』, SB Creative, 1998

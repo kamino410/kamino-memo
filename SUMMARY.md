@@ -54,6 +54,7 @@
     * [プログラムにおけるグラフ表現](computer_science/graph_theory/graph_expression.md)
   * アルゴリズム
     * [アルゴリズムのコスト](computer_science/algorithm/execution_cost.md)
+    * [ソート](computer_science/algorithm/sort.md)
     * [全探索](computer_science/algorithm/exhaustive_search.md)
     * [貪欲法](computer_science/algorithm/greedy.md)
     * [動的計画法１](computer_science/algorithm/dynamic_programming1.md)
