@@ -49,6 +49,8 @@
   * 現代制御理論
     * [状態方程式](control/modern/state_space_equation.md)
     * [可制御性・可観測性](control/modern/controllability_observability.md)
+    * [可制御正準形・可観測正準形](control/modern/canonical_form.md)
+    * [正準分解](control/modern/canonical_decomposition.md)
 * 計算機科学
   * 論理
     * [論理演算](computer_science/logic/operation.md)
