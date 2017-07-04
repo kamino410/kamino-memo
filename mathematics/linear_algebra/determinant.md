@@ -51,3 +51,13 @@ $$\begin{vmatrix} a_1 \\ \vdots \\ a_i \\ \vdots \\ a_j \\ \vdots \\ a_n \end{vm
 $$|AB| = |A| \cdot |B|$$
 
 $$|A^n| = |A|^n$$
+
+# ケイリー・ハミルトンの定理
+
+行列 $$A$$ に対して次のような固有多項式を定義する（詳細は固有値問題の項目へ）。
+
+$$
+\Phi(\lambda) = \det (\lambda I - A)
+$$
+
+ここで右辺を展開した式において $$\lambda = A$$ としたとき、$$\Phi(A) = 0$$ となる。
