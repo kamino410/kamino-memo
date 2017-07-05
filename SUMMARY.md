@@ -2,6 +2,8 @@
 
 * [トップ](README.md)
 * 数学
+  * 代数学
+    * [環](mathematics/algebra/ring.md)
   * 線形代数
     * [行列式・対角和](mathematics/linear_algebra/determinant.md)
     * [特殊な行列](mathematics/linear_algebra/characteristic_matrix.md)
