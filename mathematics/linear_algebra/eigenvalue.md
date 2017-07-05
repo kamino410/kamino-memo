@@ -53,3 +53,14 @@ $$
 $$
 
 一次独立の定義と特性方程式を合わせれば容易に証明できる。
+
+## 対角和・行列式と固有値
+
+[ジョルダン標準形](diagonalization.md)を考慮すれば次のような関係が導ける。
+
+$$
+\begin{eqnarray}
+\mathscr{tr} A &=& \sum_{i=1}^n \lambda_i \\
+\det A &=& \prod_{i=1}^n \lambda_i
+\end{eqnarray}
+$$

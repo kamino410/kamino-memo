@@ -4,11 +4,13 @@
 
 * 数学
   * 線形代数
-    * [行列式](mathematics/linear_algebra/determinant.md)
+    * [行列式・対角和](mathematics/linear_algebra/determinant.md)
     * [特殊な行列](mathematics/linear_algebra/characteristic_matrix.md)
     * [階数・逆行列](mathematics/linear_algebra/inverse_matrix.md)
     * [ベクトル空間](mathematics/linear_algebra/vector_space.md)
     * [固有値問題](mathematics/linear_algebra/eigenvalue.md)
+    * [相似変換](mathematics/linear_algebra/similarity_transformation.md)
+    * [対角化・ジョルダン標準形](mathematics/linear_algebra/diagonalization.md)
   * 解析学
     * [ラプラス変換](mathematics/analysis/laplace_transform.md)
     * [フーリエ変換](mathematics/analysis/fourier_transform.md)
