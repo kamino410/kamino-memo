@@ -2,6 +2,9 @@
 
 * [トップ](README.md)
 * 数学
+  * 集合論
+    * [集合](mathematics/set_theory/set.md)
+    * [ZFC公理系](mathematics/set_theory/zfc_set_theory.md)
   * 代数学
     * [群](mathematics/algebra/group.md)
     * [環](mathematics/algebra/ring.md)
