@@ -4,6 +4,7 @@
 
 * 数学
   * 代数学
+    * [群](mathematics/algebra/group.md)
     * [環](mathematics/algebra/ring.md)
   * 線形代数
     * [行列式・対角和](mathematics/linear_algebra/determinant.md)
@@ -116,6 +117,7 @@
 
 # 参考文献
 
+* 中島 匠一, 『代数と数論の基礎』, 共立出版株式会社, 2000
 * 矢部 博, 『工学基礎 最適化とその応用』, 数理工学社, 2006
 * 中山 司, 『流れ解析のための有限要素法入門』, 東京大学出版会, 2008
 * 宇野 俊夫, 『独習 TCP/IP～IPv6対応～』, 翔泳社, 2010
