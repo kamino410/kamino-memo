@@ -30,7 +30,7 @@ $$
 のような **Lagrange関数** を定義したとき、
 
 <center>
-ある$$x$$について$$\frac{\partial F}{\partial x_k}=0, \frac{\partial F}{\partial \lambda_k}=0$$を満たす$$\lambda$$が存在する<br>⇔　$$x$$は関数$$f(x)$$の停留点
+ある$$x$$について$$\frac{\partial L}{\partial x_k}=0, \frac{\partial L}{\partial \lambda_k}=0$$を満たす$$\lambda$$が存在する<br>⇔　$$x$$は関数$$f(x)$$の停留点
 </center>
 
 が成立する。
