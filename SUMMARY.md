@@ -57,8 +57,10 @@
     * [フィードバック制御系の特性](control/classical/feedback.md)
     * [根軌跡](control/classical/root_locus.md)
     * [周波数応答](control/classical/frequency_response.md)
+    * [ベクトル軌跡](control/classical/vector_locus.md)
     * [ボード線図](control/classical/bode_diagram.md)
     * [フィードバック制御系の内部安定性](control/classical/stability_of_feedback.md)
+    * [ナイキストの安定判別法](control/classical/nyquist_diagram.md)
   * 現代制御理論
     * [状態方程式](control/modern/state_space_equation.md)
     * [可制御性・可観測性](control/modern/controllability_observability.md)
