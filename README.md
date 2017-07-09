@@ -66,8 +66,6 @@
     * [可制御正準形・可観測正準形](control/modern/canonical_form.md)
     * [正準分解](control/modern/canonical_decomposition.md)
 * 計算機科学
-  * 論理
-    * [論理演算](computer_science/logic/operation.md)
   * グラフ理論
     * [概要](computer_science/graph_theory/intro.md)
     * [プログラムにおけるグラフ表現](computer_science/graph_theory/graph_expression.md)
