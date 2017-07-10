@@ -19,6 +19,7 @@
     * [固有値問題](mathematics/linear_algebra/eigenvalue.md)
     * [相似変換](mathematics/linear_algebra/similarity_transformation.md)
     * [ジョルダン標準形・対角化](mathematics/linear_algebra/diagonalization.md)
+    * [線形写像・線形変換](mathematics/linear_algebra/linear_mapping.md)
   * 解析学
     * [ラプラス変換](mathematics/analysis/laplace_transform.md)
     * [フーリエ変換](mathematics/analysis/fourier_transform.md)
