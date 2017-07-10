@@ -61,6 +61,7 @@
     * [ボード線図](control/classical/bode_diagram.md)
     * [フィードバック制御系の内部安定性](control/classical/stability_of_feedback.md)
     * [ナイキストの安定判別法](control/classical/nyquist_diagram.md)
+    * [ゲイン余裕・位相余裕](control/classical/gain_phase_margin.md)
   * 現代制御理論
     * [状態方程式](control/modern/state_space_equation.md)
     * [可制御性・可観測性](control/modern/controllability_observability.md)
