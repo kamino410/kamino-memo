@@ -88,7 +88,6 @@
     * [最短経路問題](computer_science/algorithm/shortest_path.md)
   * 機械学習
     * [概要](computer_science/machine_learning/abstract.md)
-    * [サポートベクターマシン](computer_science/machine_learning/svm.md)
     * [scikit-learnでMNIST](computer_science/machine_learning/scikit_mnist.md)
   * 言語処理
     * [言語処理100本ノック1](computer_science/language_processing/nlp100_1.md)
