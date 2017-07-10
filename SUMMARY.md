@@ -99,9 +99,9 @@
   * セキュリティ
     * [サイバー攻撃](computer_science/security/cyber-terrorism.md)
     * [マルウェア](computer_science/security/malware.md)
-* ネットワーク
-  * プロトコル
-    * [参照モデル](network/protocol/reference_model.md)
+  * ネットワーク
+    * [参照モデル](computer_science/network/reference_model.md)
+    * [ssh](computer_science/network/ssh.md)
 * 人力飛行機
   * [カメラ計測](hpa/camera_mesurement.md)
   * [翼型のベジェ曲線表現](hpa/foil_bezier.md)
