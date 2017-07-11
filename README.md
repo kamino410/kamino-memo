@@ -14,6 +14,7 @@
     * [環](mathematics/algebra/ring.md)
   * 線形代数
     * [行列式・対角和](mathematics/linear_algebra/determinant.md)
+    * [ケーリー・ハミルトンの定理](mathematics/linear_algebra/cayley_hamilton.md)
     * [特殊な行列](mathematics/linear_algebra/characteristic_matrix.md)
     * [階数・逆行列](mathematics/linear_algebra/inverse_matrix.md)
     * [ベクトル空間](mathematics/linear_algebra/vector_space.md)
