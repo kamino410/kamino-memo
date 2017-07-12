@@ -67,6 +67,7 @@
     * [ゲイン余裕・位相余裕](control/classical/gain_phase_margin.md)
   * 現代制御理論
     * [状態方程式](control/modern/state_space_equation.md)
+    * [遷移行列](control/modern/transition_matrix.md)
     * [可制御性・可観測性](control/modern/controllability_observability.md)
     * [可制御正準形・可観測正準形](control/modern/canonical_form.md)
     * [正準分解](control/modern/canonical_decomposition.md)
