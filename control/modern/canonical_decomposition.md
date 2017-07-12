@@ -112,7 +112,7 @@ $$
 x(0) = -\int_0^T (I+A(-\tau)+\frac{A^2(-\tau)^2}{2!} + \cdots)Bu(\tau)d\tau
 $$
 
-さらに[ケーリー・ハミルトンの定理](../../mathematics/linear_algebra/cayley_hamilton.md)を用いれば $$A^n, A^{n+1}, \cdots$$ は $$A^0 \sim A^n$$ の一次多項式として表せるため
+さらに[ケーリー・ハミルトンの定理](../../mathematics/linear_algebra/cayley_hamilton.md)を用いれば $$A^n, A^{n+1}, \cdots$$ は $$A^0 \sim A^{n-1}$$ の一次多項式として表せるため
 
 $$
 x(0) = \begin{bmatrix}B & AB & \cdots & A^{n-1}B\end{bmatrix} \begin{pmatrix}* \\ * \\ \vdots \\ *\end{pmatrix} \in \mathrm{Im}M_C
