@@ -56,7 +56,7 @@ $$
 
 遷移行列の要素は定義の式 $$e^{At} = A + At + \frac{A^2t^2}{2!} + \frac{A^3t^3}{3!} + \cdots$$ から計算できるほか、[ラプラス変換](../../mathematics/analysis/laplace_transform.md)を用いても計算できる。
 
-$$e^At$$ の性質から
+$$t_0 = 0$$ として、$$e^At$$ の性質から
 
 $$
 \frac{d(e^{At})}{dt} = Ae^{At}
