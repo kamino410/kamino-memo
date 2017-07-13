@@ -1,8 +1,8 @@
-# 素朴集合論（native set theory）
+# 素朴集合論の集合演算（native set theory）
 
-[集合の定義](set.md)のみに基づいて、集合の性質を調べる分野。
+[集合の定義](set.md)に基づく、単なるものの集まりとしての集合の性質について述べられたものである。
 
-## 記号
+## 基本となる記号
 
 1. 集合 $$A, B, \cdots$$
 2. 要素 $$x, y, \cdots$$
@@ -17,6 +17,15 @@
 3. 実数（real numbers）の集合 $$R$$
 4. 複素数（complex numbers）の集合 $$C$$
 
+## 等号の公理
+
+一般に等号 $$=$$ が満たす次のような性質が集合においても成立することを前提として議論を進める。
+厳密な定義の例は[ZFC公理系](../axiomatic_set_theory/zfc_set_theory.md)へ。
+
+1. 反射律 $$A = A$$
+2. 対称律 $$A=B \Rightarrow B=A$$
+3. 推移律 $$(A=B \wedge B=C) \Rightarrow A = C$$
+
 ## 和集合・共通部分（積集合）（union / intersection）
 
 ### 定義
@@ -26,6 +35,11 @@
 
 ### 性質
 
+1. $$A \cup A = A, \ A \cap A = A$$（冪等律）
+2. $$A \cup B = B \cup A, \ A \cap B = B \cap A$$（可換律）
+3. $$(A\cup B) \cup C = A \cup (B \cup C), \ (A \cap B) \cap C = A \cap (B \cap C)$$（結合律）
+4. $$(A \cup B)\cap C = (A \cap C) \cup (B \cap C), \ (A \cap B) \cup C = (A\cup C)\cap(B \cup C)$$（分配律）
+5. $$A\cap (A \cup B) = A, \ A \cup(A\cap B) = A$$（吸収律）
 1. $$A\cup B \supset A, \ A\cup B \supset B$$
 2. $$(C \supset A \wedge C \supset B) \rightarrow C \supset A \cup B$$
 3. $$A\cap B \subset A, \ A \cap B \subset B$$
@@ -56,6 +70,7 @@ $$A^c := \{x \in X \ | \ x \notin A\}$$
 
 1. $$A \cap A^c = \emptyset$$
 2. $$A \cup A^c = X$$
+3. $$(A\cup B)^c = A^c \cap B^c, \ (A\cap B)^c = A^c \cup B^c$$（ド・モルガンの法則）
 
 ## 集合差（difference）
 
@@ -81,3 +96,4 @@ $$A \ominus B := (A \backslash B) \cup (B \backslash A)$$
 ### 定義
 
 $$A \times B := \{(x,y) \ | \ x \in A \wedge y \in B\}$$
+
