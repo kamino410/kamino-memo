@@ -70,6 +70,7 @@
     * [可制御性・可観測性](control/modern/controllability_observability.md)
     * [可制御正準形・可観測正準形](control/modern/canonical_form.md)
     * [正準分解](control/modern/canonical_decomposition.md)
+    * [伝達関数行列と実現](control/modern/transfer_function_matrix.md)
 * 計算機科学
   * グラフ理論
     * [概要](computer_science/graph_theory/intro.md)
