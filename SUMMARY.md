@@ -2,9 +2,11 @@
 
 * [トップ](README.md)
 * 数学
-  * 集合論
-    * [集合](mathematics/set_theory/set.md)
-    * [ZFC公理系](mathematics/set_theory/zfc_set_theory.md)
+  * 素朴集合論
+    * [集合](mathematics/native_set_theory/set.md)
+    * [集合の演算](mathematics/native_set_theory/operations.md)
+  * 公理的集合論
+    * [ZFC公理系](mathematics/axiomatic_set_theory/zfc_set_theory.md)
   * 数理論理学
     * [古典命題論理](mathematics/mathematical_logic/classical_propositional_logic.md)
     * [述語論理](mathematics/mathematical_logic/predicate_logic.md)

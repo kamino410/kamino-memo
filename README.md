@@ -3,9 +3,11 @@
 # 目次
 
 * 数学
-  * 集合論
-    * [集合](mathematics/set_theory/set.md)
-    * [ZFC公理系](mathematics/set_theory/zfc_set_theory.md)
+  * 素朴集合論
+    * [集合](mathematics/native_set_theory/set.md)
+    * [集合の演算](mathematics/native_set_theory/operations.md)
+  * 公理的集合論
+    * [ZFC公理系](mathematics/axiomatic_set_theory/zfc_set_theory.md)
   * 数理論理学
     * [古典命題論理](mathematics/mathematical_logic/classical_propositional_logic.md)
     * [述語論理](mathematics/mathematical_logic/predicate_logic.md)
@@ -127,6 +129,7 @@
 
 # 参考文献
 
+* 金子 晃, 『数理基礎論講義 ー論理・集合・位相ー』, サイエンス社, 2010
 * 中島 匠一, 『代数と数論の基礎』, 共立出版株式会社, 2000
 * 矢部 博, 『工学基礎 最適化とその応用』, 数理工学社, 2006
 * 中山 司, 『流れ解析のための有限要素法入門』, 東京大学出版会, 2008
