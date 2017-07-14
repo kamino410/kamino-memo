@@ -42,6 +42,6 @@
 
 * 内包的表現（intensional expression）
   * 集合の元の性質を記述し、それを満たす元を集めたものを集合として記述する方法
-* 外包的表現（extensional expression）
+* 外延的表現（extensional expression）
   * 集合の元を実際に書き並べる記述法
   * 元が無限個のときには厳密さに欠ける表現となる
