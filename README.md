@@ -75,6 +75,7 @@
     * [可制御正準形・可観測正準形](control/modern/canonical_form.md)
     * [正準分解](control/modern/canonical_decomposition.md)
     * [伝達関数行列と実現問題](control/modern/transfer_function_matrix.md)
+    * [リアプノフの安定性理論](control/modern/lyapunov_stability_theory.md)
 * 計算機科学
   * グラフ理論
     * [概要](computer_science/graph_theory/intro.md)
@@ -138,5 +139,5 @@
 * 吉川 恒夫/井村 順一, 『現代制御論』, コロナ社, 2014
 * 宇野 俊夫, 『独習 TCP/IP～IPv6対応～』, 翔泳社, 2010
 * 秋葉 拓哉/岩田 陽一/北川 宣稔, 『プログラミングコンテストチャレンジブック 第2版』, マイナビ出版, 2012
-* J. Glenn Brookshear (神林 靖/長尾 高宏 訳),  『入門コンピュータ科学～ITを支える技術と理論の基礎知識～』, アスキー・メディアワークス, 2014
-* 近藤 嘉雪、 『定本 Cプログラマのためのアルゴリズムとデータ構造』, SB Creative, 1998
+* J. Glenn Brookshear (神林 靖/長尾 高宏 訳), 『入門コンピュータ科学～ITを支える技術と理論の基礎知識～』, アスキー・メディアワークス, 2014
+* 近藤 嘉雪, 『定本 Cプログラマのためのアルゴリズムとデータ構造』, SB Creative, 1998

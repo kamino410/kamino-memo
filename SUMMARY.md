@@ -74,6 +74,7 @@
     * [可制御正準形・可観測正準形](control/modern/canonical_form.md)
     * [正準分解](control/modern/canonical_decomposition.md)
     * [伝達関数行列と実現](control/modern/transfer_function_matrix.md)
+    * [リアプノフの安定性理論](control/modern/lyapunov_stability_theory.md)
 * 計算機科学
   * グラフ理論
     * [概要](computer_science/graph_theory/intro.md)
