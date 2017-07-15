@@ -32,6 +32,8 @@
     * [ラグランジュ乗数法](mathematics/analysis/lagrange_multiplier.md)
   * 確率・統計
     * [データの尺度水準](mathematics/statistics/level_of_measurement.md)
+    * [統計量](mathematics/statistics/statistics.md)
+    * [要約統計量（代表値）](mathematics/statistics/summary_statistics.md)
     * [確率分布](mathematics/statistics/probability_distribution.md)
 * 計画数学
   * 線形計画法
