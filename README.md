@@ -40,6 +40,7 @@
     * [概要](mathematical_programming/linear/intro.md)
     * [シンプレックス法](mathematical_programming/linear/simplex_method.md)
     * [2段階法](mathematical_programming/linear/two_phase_method.md)
+    * [感度解析と再最適化](mathematical_programming/linear/post-optimization.md)
     * [線形計画問題を解くプログラム](mathematical_programming/linear/program.md)
   * 非線形計画法
     * [無制約最小化問題](mathematical_programming/nonlinear/unconstrained.md)
