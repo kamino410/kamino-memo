@@ -30,6 +30,7 @@
     * [凸集合・凸関数](mathematics/analysis/convex.md)
     * [ラグランジュ乗数法](mathematics/analysis/lagrange_multiplier.md)
   * 確率・統計
+    * [データの尺度水準](mathematics/statistics/level_of_measurement.md)
     * [確率分布](mathematics/statistics/probability_distribution.md)
 * 計画数学
   * 線形計画法

@@ -31,6 +31,7 @@
     * [凸集合・凸関数](mathematics/analysis/convex.md)
     * [ラグランジュ乗数法](mathematics/analysis/lagrange_multiplier.md)
   * 確率・統計
+    * [データの尺度水準](mathematics/statistics/level_of_measurement.md)
     * [確率分布](mathematics/statistics/probability_distribution.md)
 * 計画数学
   * 線形計画法
@@ -133,6 +134,7 @@
 
 * 金子 晃, 『数理基礎論講義 ー論理・集合・位相ー』, サイエンス社, 2010
 * 中島 匠一, 『代数と数論の基礎』, 共立出版株式会社, 2000
+* 宿久 洋/村上 享/原 恭彦, 『確率と統計の基礎Ⅰ 増補改訂版』, ミネルヴァ書房, 2013
 * 矢部 博, 『工学基礎 最適化とその応用』, 数理工学社, 2006
 * 中山 司, 『流れ解析のための有限要素法入門』, 東京大学出版会, 2008
 * 杉江 俊治/藤田 政之, 『フィードバック制御入門』, コロナ社, 1999
