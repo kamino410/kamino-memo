@@ -122,6 +122,8 @@
   * デバイス
     * [SteamVR / HTC Vive](develop/device/steamvr_vive.md)
     * [GPU](develop/device/gpu.md)
+  * Prolog
+    * [概要](develop/prolog/abstract.md)
   * Git
     * [自分用の設定](develop/git/environment.md)
   * Python
