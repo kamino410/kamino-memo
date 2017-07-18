@@ -89,10 +89,12 @@
     * [プログラムにおけるグラフ表現](computer_science/graph_theory/graph_expression.md)
   * アルゴリズム
     * [アルゴリズムのコスト](computer_science/algorithm/execution_cost.md)
+    * [状態空間表現](computer_science/algorithm/state_space.md)
     * [ソートアルゴリズム1](computer_science/algorithm/sort1.md)
     * [ソートアルゴリズム2](computer_science/algorithm/sort2.md)
     * [ソートアルゴリズム3](computer_science/algorithm/sort3.md)
-    * [全探索](computer_science/algorithm/exhaustive_search.md)
+    * [ナイーブな探索](computer_science/algorithm/exhaustive_search.md)
+    * [ヒューリスティック探索](computer_science/algorithm/heuristic_search.md)
     * [貪欲法](computer_science/algorithm/greedy.md)
     * [動的計画法１](computer_science/algorithm/dynamic_programming1.md)
     * [動的計画法２](computer_science/algorithm/dynamic_programming2.md)
