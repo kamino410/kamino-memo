@@ -107,6 +107,7 @@
     * [最短経路問題](computer_science/algorithm/shortest_path.md)
   * 知識表現
     * [プロダクションシステム](computer_science/knowledge_representation/production_system.md)
+    * [フレーム](computer_science/knowledge_representation/frame.md)
   * 機械学習
     * [人工知能の歴史](computer_science/machine_learning/history.md)
     * [概要](computer_science/machine_learning/abstract.md)
