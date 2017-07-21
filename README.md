@@ -31,8 +31,10 @@
     * [凸集合・凸関数](mathematics/analysis/convex.md)
     * [ラグランジュ乗数法](mathematics/analysis/lagrange_multiplier.md)
   * ベクトル解析
+    ※現状の記事は数学的に色々不正確
     * [内積・外積](mathematics/vector_calculus/scalar_vector_product.md)
     * [三重積](mathematics/vector_calculus/triple_product.md)
+    * [ベクトル値関数](mathematics/vector_calculus/vector-valued_function.md)
   * 確率・統計
     * [データの尺度水準](mathematics/statistics/level_of_measurement.md)
     * [統計量](mathematics/statistics/statistics.md)
