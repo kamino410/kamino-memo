@@ -116,6 +116,7 @@
   * 機械学習
     * [人工知能の歴史](computer_science/machine_learning/history.md)
     * [概要](computer_science/machine_learning/abstract.md)
+    * [パターン認識と機械学習1](computer_science/machine_learning/prml1.md)
     * [scikit-learnでMNIST](computer_science/machine_learning/scikit_mnist.md)
   * 言語処理
     * [言語処理100本ノック1](computer_science/language_processing/nlp100_1.md)
