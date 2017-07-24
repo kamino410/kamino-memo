@@ -25,11 +25,11 @@
 
 ## 完全加法族
 
-空でない集合 $$\Omega$$ の部分集合の族 $$\mathscr{A}$$ が次の条件を満たすとき、**加法族（additive class）**という。
+空でない集合 $$\Omega$$ の部分集合の族 $$\mathscr{A}$$ が次の条件を満たすとき、**加法族（additive class）**と呼ぶ。
 
 1. $$\Omega \in \mathscr{A}$$
 2. $$A \in \mathscr{A} \rightarrow A^c \in \mathscr{A}$$
-3. $$A \in \mathscr{A} \wedge B \in \mathscr{A} \rightarrow $$A\cup B \in \mathscr{A}$$
+3. $$A \in \mathscr{A} \wedge B \in \mathscr{A} \rightarrow A\cup B \in \mathscr{A}$$
 
 また3つ目の条件を
 

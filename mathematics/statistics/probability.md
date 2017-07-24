@@ -4,7 +4,7 @@
 
 ### 可測空間（measurable space）
 
-空でない集合 $$\Omega$$ とその完全加法族 $$\mathscr{A}$$ の組 $$(\Omega, \mathscr{A})$$ を**可測空間**という。
+空でない集合 $$\Omega$$ とその[完全加法族](event.md#完全加法族) $$\mathscr{A}$$ の組 $$(\Omega, \mathscr{A})$$ を**可測空間**という。
 
 ### 確率空間（probability space）
 
