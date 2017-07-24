@@ -42,6 +42,7 @@
     * [標本空間・事象](mathematics/statistics/event.md)
     * [確率・確率空間](mathematics/statistics/probability.md)
     * [条件付き確率](mathematics/statistics/conditional_probability.md)
+    * [確率変数](mathematics/statistics/random_variable.md)
     * [確率分布](mathematics/statistics/probability_distribution.md)
 * 計画数学
   * 線形計画法
