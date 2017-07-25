@@ -4,7 +4,7 @@
 
 ### 条件付き確率
 
-確率空間 $$(\Omega, \mathscr{A}, P)$$ において、事象 $$A,B \in \mathscr{A} \ (P(B)>0)$$ が与えられているとき、以下で定義される実数値関数は確率測度となる。
+[確率空間](probability.md) $$(\Omega, \mathscr{A}, P)$$ において、事象 $$A,B \in \mathscr{A} \ (P(B)>0)$$ が与えられているとき、以下で定義される実数値関数は確率測度となる。
 
 $$
 P(A|B) = \frac{P(A\cap B)}{P(B)}

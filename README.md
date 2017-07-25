@@ -129,6 +129,9 @@
   * セキュリティ
     * [サイバー攻撃](computer_science/security/cyber-terrorism.md)
     * [マルウェア](computer_science/security/malware.md)
+  * 情報理論
+    * [シャノンの情報理論](computer_science/information_theory/shannon_entropy.md)
+    * [ハフマン符号化](computer_science/information_theory/huffman_coding.md)
   * ネットワーク
     * [参照モデル](computer_science/network/reference_model.md)
     * [ssh](computer_science/network/ssh.md)
