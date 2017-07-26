@@ -60,7 +60,7 @@ $$
 このとき、
 
 $$
-v^T \nabla_x^2 L(x^*,z^*)v = v^T \left(\nabla^2 f(x^*) + \sum_{i=1}^l z^*_i \nabla^2 h_i(x^*) \right) \geq 0
+v^T \nabla_x^2 L(x^*,z^*)v = v^T \left(\nabla^2 f(x^*) + \sum_{i=1}^l z^*_i \nabla^2 h_i(x^*) \right)v \geq 0
 $$
 
 が成立する。

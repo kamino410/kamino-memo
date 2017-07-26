@@ -60,13 +60,22 @@ $$
 
 ### 条件付きエントロピー（conditional entropy）
 
-事象 $$B_i$$ が観測された下での確率変数 $$A$$ の[条件付き確率](../../mathematics/statistics/conditional_probability.md) $$P_{AB}(A|B_i)$$ としたとき
+事象 $$B_j$$ が観測された下での確率変数 $$A$$ の[条件付き確率](../../mathematics/statistics/conditional_probability.md) $$P_{AB}(A|B_j)$$ としたときのエントロピーは
 
 $$
-H(A|B_i) = -\sum_{A\in \Omega_A} P_{AB}(A,B_i) \log P_{AB}(A,B_i)
+H(A|B_j) = -\sum_{A_i\in \Omega_A} P_{AB}(A_i,B_j) \log P_{AB}(A_i,B_j)
 $$
 
-を事象 $$B_i$$ の下での**条件付きエントロピー**という。
+となり、これを $$B_j$$ の生起確率も考慮して期待値を取ると
+
+$$
+\begin{eqnarray}
+H(A|B) &=& \sum_{B_j \in \Omega_B}P(B_j)H(A|B_j) \\
+&=& -\sum_{A_i\in \Omega_A, B_j\in \Omega_B}P(A_i,B_j)\log P(A_i|B_j)
+\end{eqnarray}
+$$
+
+となる。これを事象 $$B_i$$ の下での**条件付きエントロピー**という。
 
 ### 結合エントロピー（joint entropy）
 

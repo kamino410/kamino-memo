@@ -132,6 +132,7 @@
   * 情報理論
     * [概要](computer_science/information_theory/abstract.md)
     * [情報量](computer_science/information_theory/entropy.md)
+    * [離散通信路](computer_science/information_theory/discrete_channel.md)
     * [符号化](computer_science/information_theory/coding.md)
     * [ハフマン符号化](computer_science/information_theory/huffman_coding.md)
   * ネットワーク
