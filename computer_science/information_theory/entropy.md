@@ -1,28 +1,19 @@
-# シャノンの情報理論
+# 情報量
 
-シャノンの情報理論とは、1948年にA.Shannonが提唱した、情報理論の起源となった情報源符号化理論のことを指す。
-シャノンは通信における情報の符号化を研究する過程で、通信を下の図のようなモデルで捉え送信できる情報の量を数学的に評価する手法を考案した。
+シャノンの情報理論の中で定義される情報量について言及する。
 
-```mermaid
-graph LR
-  情報源 -->|message| 送信器
-  送信器 -->|signal| 通信路
-  通信路 -->|signal| 受信器
-  受信器 -->|message| 受信者
-  A[ ] -->|noise| 通信路
-```
-
-## 情報量
+## 情報量（self-information）
 
 ### 定義
 
-事象 $$A_i$$ が生じる確率を $$P(A_i)$$ としたとき、「$$A_i$$ が生じた」という情報が持つ情報量 $$I(A_i)$$ は
+ある情報源記号 $$A_i$$ の生起確率を $$P(A_i)$$ としたとき
 
 $$
 I(A_i) = - \log P(A_i)
 $$
 
-と定義される。
+を $$A_i$$ の**情報量**・**選択情報量**・**自己エントロピー**という。
+
 対数の底は何を選んでも尺度が定数倍されるだけだが、ビット表現での利用を考えて $$2$$ とすることが多い。
 また、$$0 \log 0$$ は定義されない値だが、$$\lim_{x\rightarrow +0} x \log x = 0$$ であることから情報量の計算の際には $$0 \log 0 = 0$$ と定義する。
 
@@ -52,7 +43,7 @@ $$
 [確率空間](../../mathematics/statistics/probability.md) $$(\Omega, \mathscr{A}, P)$$ の下での各事象の情報量の平均値 $$H$$ を**平均情報量**・**シャノンの情報量**・**エントロピー**と呼ぶ。
 
 $$
-H(A) = \sum_{A_i \in \Omega}P(A_i)\log P(A_i)
+H(A) = -\sum_{A_i \in \Omega}P(A_i)\log P(A_i)
 $$
 
 すなわち、平均情報量はある観測によって得られる情報量の期待値を示しており、観測結果の予測しにくさを示したものとも解釈できる。
@@ -72,7 +63,7 @@ $$
 事象 $$B_i$$ が観測された下での確率変数 $$A$$ の[条件付き確率](../../mathematics/statistics/conditional_probability.md) $$P_{AB}(A|B_i)$$ としたとき
 
 $$
-H(A|B_i) = \sum_{A\in \Omega_A} P_{AB}(A,B_i) \log P_{AB}(A,B_i)
+H(A|B_i) = -\sum_{A\in \Omega_A} P_{AB}(A,B_i) \log P_{AB}(A,B_i)
 $$
 
 を事象 $$B_i$$ の下での**条件付きエントロピー**という。
@@ -86,7 +77,7 @@ $$
 $$
 \begin{eqnarray}
 H(AB) &=& \sum_{A_i\in \Omega_A, B_j\in \Omega_B} I(A_i,B_j) \\
-&=& \sum_{A_i\in \Omega_A, B_j\in \Omega_B} P_{AB}(A_i,B_j) \log P_{AB}(A_i,B_j)
+&=& -\sum_{A_i\in \Omega_A, B_j\in \Omega_B} P_{AB}(A_i,B_j) \log P_{AB}(A_i,B_j)
 \end{eqnarray}
 $$
 
