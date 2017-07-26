@@ -2,7 +2,7 @@
 
 ## OSI参照モデル
 
-1977~1984年に策定されたOSI(Open Systems Interconnection)のために提唱された通信機能を階層構造に分割したモデル。
+1977~1984年に策定されたOSI（Open Systems Interconnection）のために提唱された通信機能を階層構造に分割したモデル。
 
 OSI自体は普及しなかったもののネットワークの解説のためによく用いられる。
 
