@@ -47,6 +47,7 @@
 * 計画数学
   * 線形計画法
     * [概要](mathematical_programming/linear/intro.md)
+    * [双対問題](mathematical_programming/linear/dual_problem.md)
     * [シンプレックス法](mathematical_programming/linear/simplex_method.md)
     * [2段階法](mathematical_programming/linear/two_phase_method.md)
     * [感度解析と再最適化](mathematical_programming/linear/post-optimization.md)
