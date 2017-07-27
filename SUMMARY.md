@@ -25,6 +25,7 @@
     * [ジョルダン標準形・対角化](mathematics/linear_algebra/diagonalization.md)
     * [線形写像・線形変換](mathematics/linear_algebra/linear_mapping.md)
   * 解析学
+    * [関数の極限と連続性](mathematics/analysis/limit_continuity.md)
     * [ラプラス変換](mathematics/analysis/laplace_transform.md)
     * [フーリエ変換](mathematics/analysis/fourier_transform.md)
     * [凸集合・凸関数](mathematics/analysis/convex.md)
