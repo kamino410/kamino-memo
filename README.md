@@ -141,6 +141,7 @@
     * [離散通信路](computer_science/information_theory/discrete_channel.md)
     * [符号化](computer_science/information_theory/coding.md)
     * [ハフマン符号化](computer_science/information_theory/huffman_coding.md)
+    * [誤り検出・訂正](computer_science/information_theory/error_detection_and_correction.md)
   * ネットワーク
     * [参照モデル](computer_science/network/reference_model.md)
     * [ssh](computer_science/network/ssh.md)
