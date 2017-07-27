@@ -27,6 +27,7 @@
     * [線形写像・線形変換](mathematics/linear_algebra/linear_mapping.md)
   * 解析学
     * [関数の極限と連続性](mathematics/analysis/limit_continuity.md)
+    * [級数](mathematics/analysis/series.md)
     * [ラプラス変換](mathematics/analysis/laplace_transform.md)
     * [フーリエ変換](mathematics/analysis/fourier_transform.md)
     * [凸集合・凸関数](mathematics/analysis/convex.md)
@@ -167,6 +168,7 @@
 
 * 金子 晃, 『数理基礎論講義 ー論理・集合・位相ー』, サイエンス社, 2010
 * 中島 匠一, 『代数と数論の基礎』, 共立出版株式会社, 2000
+* 江口 正晃/久保 泉/熊原 啓作/小泉 伸, 『基礎微分積分学 第3版』, 学術図書出版社, 2007
 * 宿久 洋/村上 享/原 恭彦, 『確率と統計の基礎Ⅰ 増補改訂版』, ミネルヴァ書房, 2013
 * 矢部 博, 『工学基礎 最適化とその応用』, 数理工学社, 2006
 * 中山 司, 『流れ解析のための有限要素法入門』, 東京大学出版会, 2008
