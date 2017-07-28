@@ -109,6 +109,7 @@
     * [ハッシュ法](computer_science/algorithm/hashing.md)
     * [ヒープ・プライオリティキュー](computer_science/algorithm/heap.md)
     * [二分探索木](computer_science/algorithm/binary_search_tree.md)
+    * [文字列探索](computer_science/algorithm/string_searching.md)
     * [Union-Find木](computer_science/algorithm/union_find_tree.md)
     * [2部グラフ判定](computer_science/algorithm/bipartite_graph.md)
     * [状態空間表現](computer_science/algorithm/state_space.md)
