@@ -143,6 +143,10 @@
     * [符号化](computer_science/information_theory/coding.md)
     * [ハフマン符号化](computer_science/information_theory/huffman_coding.md)
     * [誤り検出・訂正](computer_science/information_theory/error_detection_and_correction.md)
+  * アーキテクチャ
+    * [チューリングマシン](computer_science/architecture/turing_machine.md)
+    * [ノイマン型コンピューター](computer_science/architecture/von_neumann-type_computer.md)
+    * [その他用語](computer_science/architecture/glossary.md)
   * ネットワーク
     * [参照モデル](computer_science/network/reference_model.md)
     * [ssh](computer_science/network/ssh.md)
