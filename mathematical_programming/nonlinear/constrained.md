@@ -4,8 +4,8 @@
 
 $$
 \begin{eqnarray}
-&minimize& \ f(x) \\
-&s.t.&
+minimize &\ &f(x) \\
+s.t. &\ &
 \left \{
 \begin{matrix}
 G(x) =
@@ -24,7 +24,7 @@ H(x) =
 \leq 0
 \end{matrix}
 \right. \\
-&x \in D \subseteq R^n,& \ \ \ f:D \rightarrow R, \ \ \ g_i,h_i:D \rightarrow R
+&\ &x \in D \subseteq R^n, \ \ \ f:D \rightarrow R, \ \ \ g_i,h_i:D \rightarrow R
 \end{eqnarray}
 $$
 
