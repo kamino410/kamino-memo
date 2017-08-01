@@ -31,6 +31,7 @@
     * [微分](mathematics/analysis/differential.md)
     * [高階微分](mathematics/analysis/higher-order_differential.md)
     * [級数](mathematics/analysis/series.md)
+    * [特殊な級数1](mathematics/analysis/characteristic_series1.md)
     * [ラプラス変換](mathematics/analysis/laplace_transform.md)
     * [フーリエ変換](mathematics/analysis/fourier_transform.md)
     * [凸集合・凸関数](mathematics/analysis/convex.md)
