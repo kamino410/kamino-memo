@@ -13,7 +13,7 @@
 $$
 X(\omega) = \int_{-\infty}^\infty x(t)e^{-j\omega t}dt
 $$
-</center>
+</center><br>
 
 ### フーリエ逆変換
 
@@ -21,7 +21,7 @@ $$
 $$
 x(t) = \frac{1}{2\pi}\int_{-\infty}^\infty X(\omega)e^{j\omega t}d\omega
 $$
-</center>
+</center><br>
 
 ## 性質
 

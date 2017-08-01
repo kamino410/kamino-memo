@@ -61,4 +61,4 @@ $$
 
 <center>
 $$\{b_n\}$$ が減少数列で $$n\rightarrow \infty$$ のとき $$b_n \rightarrow 0$$<br>⇒　交代級数 $$\sum a_n$$ は収束する
-</center>
+</center><br>

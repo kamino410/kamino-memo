@@ -8,7 +8,7 @@
 $$
 \sum_{k=0}^n a_n\frac{d^ky(t)}{dt^n} = \sum_{k=0}^m b_n\frac{d^ku(t)}{dt^n}
 $$
-</center>
+</center><br>
 
 線形システムは解析・設計が比較的容易かつ、現実の多くの事象に適用できるため制御理論の基礎となる。
 

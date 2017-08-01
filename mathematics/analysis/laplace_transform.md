@@ -12,7 +12,7 @@
 $$
 F(s) = \mathscr{L}[f(t)] = \int_0^\infty f(t)e^{-st} dt \ \ \ (t \geq 0)
 $$
-</center>
+</center><br>
 
 ### 逆ラプラス変換
 
@@ -20,7 +20,7 @@ $$
 $$
 f(t) = \lim_{p \to \infty} \frac{1}{2 \pi i} \int_{c-ip}^{c+ip} F(s) e^{st} ds \ \ \ (c > 0)
 $$
-</center>
+</center><br>
 
 ## 変換表
 
@@ -54,8 +54,8 @@ $$
 
 <center>
 $$\lim_{t \to 0+}f(t) = \lim_{s \to \infty}sF(s)$$
-</center>
+</center><br>
 
 <center>
 $$\lim_{t \to \infty}f(t) = \lim_{s \to 0}sF(s)$$
-</center>
+</center><br>

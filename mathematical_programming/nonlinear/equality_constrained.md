@@ -26,7 +26,7 @@ $$x^* $$ において $$f,g$$ は微分可能であるとする。
 
 <center>
 $$x^* $$ が局所的最小解　⇒　$$x^* $$ は停留点（$$\frac{\partial}{\partial x_i}f(x^* )=0$$となる点）
-</center>
+</center><br>
 
 [ラグランジュ乗数法](../../mathematics/analysis/lagrange_multiplier.md)より、停留点は次の条件を満たすため、これが局所的最小解への条件となる。
 

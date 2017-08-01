@@ -6,7 +6,7 @@
 
 <center>
 $$\lim_{x\rightarrow x_0} \frac{f(x)-f(x_0)}{x-x_0}$$ が存在する<br>⇔　右極限 $$f_+'(x_0) = \lim_{x\rightarrow x_0}\frac{f(x)-f(x_0)}{x-x_0}$$ と左極限 $$f_+'(x_0) = \lim_{x\rightarrow x_0}\frac{f(x)-f(x_0)}{x-x_0}$$ が一致する<br>⇔　微分可能である
-</center>
+</center><br>
 
 ## 導関数（derivative）
 
@@ -50,13 +50,13 @@ $$a$$ を含む開区間で微分可能な関数 $$f(x), g(x)$$ について $$g
 
 <center>
 $$f(a)=g(a)=0$$ かつ $$\lim_{x\rightarrow a} \frac{f'(x)}{g'(x)} = L$$ が存在する<br>⇔　$$\lim_{x\rightarrow a}\frac{f(x)}{g(x)} = L$$
-</center>
+</center><br>
 
 同値な定理として、開区間 $$(a,\infty)$$ で微分可能な関数 $$f(x),g(x)$$ について
 
 <center>
 $$\lim_{x \rightarrow \infty}f(x) = \lim_{x \rightarrow \infty}g(x) = 0$$ かつ $$\lim_{x \rightarrow \infty}\frac{f'(x)}{g'(x)} = L$$ が存在する<br>⇔　$$\lim_{x \rightarrow \infty}\frac{f(x)}{g(x)} = L$$
-</center>
+</center><br>
 
 がある。
 
@@ -64,7 +64,7 @@ $$\lim_{x \rightarrow \infty}f(x) = \lim_{x \rightarrow \infty}g(x) = 0$$ かつ
 
 <center>
 $$\lim_{x\rightarrow a}f(x) = \lim_{x\rightarrow a}g(x) = \infty$$ かつ $$\lim_{x\rightarrow a}\frac{f'(x)}{g'(x)} = L$$ が存在する<br>⇔　$$\lim_{x\rightarrow a}\frac{f(x)}{g(x)} = L$$
-</center>
+</center><br>
 
 が成立する。
 
