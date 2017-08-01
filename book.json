@@ -1,5 +1,5 @@
 {
-  "plugins":["mathjax-commonhtml","expandable-chapters","mermaid-2"],
+  "plugins":["mathjax-commonhtml","expandable-chapters","mermaid-2","-lunr", "-search","search-pro"],
   "styles": {
     "website": "my_style.css",
     "pdf": "my_style.css"

@@ -10,6 +10,8 @@
   * Atomのmarkdown-preview-enhancedと互換性を保つため、タグではなくコードブロックを使いたかった。
 * expandable-chapters
   * SUMMARYでインデントをつけると、レンダリングしたときに折りたたみできるようになる。
+* search-pro
+  * マルチバイト文字の検索・検索結果のハイライトの機能追加。
 
 ### 導入方法
 
@@ -21,13 +23,14 @@ GitBook version: 3.2.2
 mathjax-commonhtml: 0.0.6
 expandable-chapters: 0.2.0
 mermaid-2: 0.0.3
+search-pro: 2.0.2
 ```
 
 `book.json`に次の記述を追加する。
 
 ```json
 {
-  "plugins":["mathjax-commonhtml","expandable-chapters","mermaid-2"]
+  "plugins":["mathjax-commonhtml","expandable-chapters","mermaid-2","-lunr","-search","search-pro"]
 }
 ```
 
