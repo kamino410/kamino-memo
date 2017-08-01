@@ -59,6 +59,23 @@ $$f(x), g(x)$$ が $$x = x_0$$ の周辺で定義されており、$$\lim_{x\rig
 * $$x_0$$ について $$f(x), g(x)$$ に極限が存在する　⇒　$$\lim_{x\rightarrow x_0} f(x) \leq \lim_{x \rightarrow x_0}g(x)$$
 * $$\lim_{x\rightarrow x_0} f(x) = \lim_{x\rightarrow x_0}g(x)$$　⇒　$$\lim_{x\rightarrow x_0} f(x) = \lim_{x\rightarrow x_0}h(x) = \lim_{x\rightarrow x_0} g(x)$$
 
+## ランダウの記号（Landau symbol）
+
+十分大きな $$x$$ について定義された $$f(x), g(x)$$ に対して $$x\rightarrow \infty$$ として、
+
+* $$f(x)/g(x) \rightarrow 0$$ なら $$f(x) = o(g(x))$$ と表す
+* $$f(x)/g(x)$$ が有界であるなら $$f(x) = O(g(x))$$ と表す
+
+これはランダウの記号の一種であり、極限の大小を比較するような証明などで利用される。
+厳密な定義には $$\varepsilon-\delta$$ 論法を用いる。
+
+## 不定形の極限
+
+極限 $$\lim_{x\rightarrow a}\frac{f(x)}{g(x)}$$ について、$$\lim_{x\rightarrow a}f(x) = \infty}, \ \lim_{x\rightarrow a}g(x) = \infty$$ となる場合や、$$\lim_{x\rightarrow a}f(x) = 0, \ \lim_{x\rightarrow a}g(x) = 0$$ となる場合、また極限$$\lim_{x\rightarrow a}f(x)g(x)$$ について $$\lim_{x\rightarrow a}f(x) = \infty, \lim_{x\rightarrow a}g(x) = 0$$ の場合などは、関数の収束の速さを調べなければ極限値を得ることができない。
+
+このような極限を**不定形の極限**という。
+定形の極限を求める方法の1つとして[ロピタルの定理](differential.md#ロピタルの定理（l'Hôpital's-rule）)を利用する方法がある。
+
 ## 連続性（continuity）
 
 関数 $$f(x)$$ が定義域 $$D$$ 内の全ての点 $$x_0$$ で

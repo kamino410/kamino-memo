@@ -27,6 +27,8 @@
     * [内積空間](mathematics/linear_algebra/inner_product_space.md)
   * 解析学
     * [関数の極限と連続性](mathematics/analysis/limit_continuity.md)
+    * [微分](mathematics/analysis/differential.md)
+    * [高階微分](mathematics/analysis/higher-order_differential.md)
     * [級数](mathematics/analysis/series.md)
     * [ラプラス変換](mathematics/analysis/laplace_transform.md)
     * [フーリエ変換](mathematics/analysis/fourier_transform.md)
