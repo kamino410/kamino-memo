@@ -4,23 +4,23 @@
 
 $$
 \begin{eqnarray}
-minimize \ &f(x)& \\
-s.t. \ &G(x)& =
+minimize &\ & f(x) \\
+s.t. &\ & \begin{cases}
+G(x) =
 \begin{pmatrix}
   g_1(x_1, \dots, x_n) \\
   \vdots \\
   g_m(x_1, \dots, x_n)
 \end{pmatrix}
 =0\\
-x \in D &\subseteq R^n,&\ \ \ f:D \rightarrow R, \ \ \ g_i,h_i:D \rightarrow R
+x \in D \subseteq R^n,\ \ \ f:D \rightarrow R, \ \ \ g_i,h_i:D \rightarrow R
+\end{cases}
 \end{eqnarray}
 $$
 
 ## 最適性条件
 
-この問題における局所的最小解は $$x^* $$ は次のような条件を満たす（ただし後述するように局所的最小解の中に最適解があるとは限らない）。
-
-$$x^* $$ において $$f,g$$ は微分可能であるとする。
+$$x^* $$ で $$f,g$$ は1回微分可能であるとする。
 
 ### 1次導関数に対する条件
 
@@ -28,29 +28,25 @@ $$x^* $$ において $$f,g$$ は微分可能であるとする。
 $$x^* $$ が局所的最小解　⇒　$$x^* $$ は停留点（$$\frac{\partial}{\partial x_i}f(x^* )=0$$となる点）
 </center><br>
 
-[ラグランジュ乗数法](../../mathematics/analysis/lagrange_multiplier.md)より、停留点は次の条件を満たすため、これが局所的最小解への条件となる。
+[ラグランジュ乗数法](../../mathematics/analysis/lagrange_multiplier.md)より、停留点は次の条件を満たす。
 
 <center>
-$$L(x,\lambda) \equiv f(x) - \sum_{k=1}^M \lambda_k g_k(x)$$ として
-</center>
+$$L(x,\lambda) \equiv f(x) - \sum_{k=1}^M \lambda_k g_k(x)$$ として $$\frac{\partial L}{\partial x_k}=0,\ \frac{\partial L}{\partial \lambda_k}=0$$
+</center><br>
 
-<center>
-$$\frac{\partial F}{\partial x_k}=0, \frac{\partial F}{\partial \lambda_k}=0$$
-</center>
-
+これが局所的最小解であるための1次導関数に対する条件となる。
 ただし逆は成立しない（停留点には極大点や鞍点などが含まれるため）。
 
 ### 2次導関数に対する条件
 
 上記の方法で求めた停留点が実際に極小値であるかの判別方法は問題によって異なり、一般的に煩雑な議論が必要になる。
 
-例：目的関数 $$f(x)$$ が下に有界 ⇒ 求めた停留点で評価値が最小の点が極小解
+例：目的関数 $$f(x)$$ が下に有界　⇒　求めた停留点で評価値が最小の点が極小解
 
 ## 解法
 
 実行可能領域 $$D$$ において $$f(x)$$が 下に凸でない場合、有界でないために解が存在しなかったり、極小点でない境界上の点が解になったりするため、必ずしも局所的最小解が解になるとは限らない。
 そのため、事前に関数の凸性を調べるなどの操作が必要になる。
-
 
 ### 局所的最小解の求め方
 

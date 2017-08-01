@@ -6,7 +6,7 @@ $$
 \begin{eqnarray}
 minimize &\ &f(x) \\
 s.t. &\ &
-\left \{
+\begin{cases}
 \begin{matrix}
 G(x) =
 \begin{pmatrix}
@@ -22,15 +22,16 @@ H(x) =
   h_l(x_1, \dots, x_n)
 \end{pmatrix}
 \leq 0
-\end{matrix}
-\right. \\
-&\ &x \in D \subseteq R^n, \ \ \ f:D \rightarrow R, \ \ \ g_i,h_i:D \rightarrow R
+\end{matrix} \\
+x \in D \subseteq R^n, \ \ \ f:D \rightarrow R, \ \ \ g_i,h_i:D \rightarrow R
+\end{cases}
 \end{eqnarray}
 $$
 
 ## 有効制約式
 
 不等式制約条件について、$$h_i(x')=0$$ であるとき、この制約式を $$x'$$ での**有効制約式（active constraint）**という。
+有効制約式を条件から外せば、
 
 ## 最適性条件
 
