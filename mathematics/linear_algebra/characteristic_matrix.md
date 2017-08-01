@@ -1,5 +1,9 @@
 # 特殊な行列
 
+## 実行列・エルミート行列（real-valued matrix / Hermitian matrix）
+
+成分が実数値を取る行列を**実行列**、複素数値を取る行列を**エルミート行列**という。
+
 ## 正方行列（square matrix）
 
 サイズが $$n \times n$$ である行列。
@@ -35,3 +39,12 @@ $$a_{ij} = \left \{ \begin{matrix}\alpha_{ij} & (i \leq j) \\ 0 & else \end{matr
 全ての列・行ベクトルが一次独立（線形独立）な行列。同値の条件として、逆行列が存在する行列でもある。詳しい性質については[階数・逆行列](inverse_matrix.md)を参照。
 
 $$A^{-1}A = I$$
+
+## 正定値行列・負定値行列（positive definite matrix / negative definite matrix）
+
+実正方行列かつ $$^\forall v \in R^n \ (v^T A v > 0)$$ を満たす行列を**正定値行列**という。
+エルミート正方行列については $$^\forall v \in R^n (\mathrm{Re}(v^* A v) > 0 \wedge \mathrm{Im}(v^* A v) = 0)$$ を満たすものをいう（ただし $$v^*$$ は $$v$$ の共軛転置行列）。
+
+また不等式が $$\geq$$ になるとき、**半正定値行列（positive-semidefinite matrix）**・**非負定値行列（nonnegative-definite matrix）**という。
+
+不等号が逆転したものを**負定値業列**・**半不定地行列**・**非正定値行列**という。
