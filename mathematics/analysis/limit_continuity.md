@@ -74,7 +74,7 @@ $$f(x), g(x)$$ が $$x = x_0$$ の周辺で定義されており、$$\lim_{x\rig
 極限 $$\lim_{x\rightarrow a}\frac{f(x)}{g(x)}$$ について、$$\lim_{x\rightarrow a}f(x) = \infty, \ \lim_{x\rightarrow a}g(x) = \infty$$ となる場合や、$$\lim_{x\rightarrow a}f(x) = 0, \ \lim_{x\rightarrow a}g(x) = 0$$ となる場合、また極限$$\lim_{x\rightarrow a}f(x)g(x)$$ について $$\lim_{x\rightarrow a}f(x) = \infty, \lim_{x\rightarrow a}g(x) = 0$$ の場合などは、関数の収束の速さを調べなければ極限値を得ることができない。
 
 このような極限を**不定形の極限**という。
-定形の極限を求める方法の1つとして[ロピタルの定理](differential.md#ロピタルの定理（l'Hôpital's-rule）)を利用する方法がある。
+定形の極限を求める方法の1つとして[ロピタルの定理](differential.md#ロピタルの定理（lhôpitals-rule）)を利用する方法がある。
 
 ## 連続性（continuity）
 
