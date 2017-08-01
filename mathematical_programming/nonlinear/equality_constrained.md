@@ -12,7 +12,7 @@ G(x) =
   \vdots \\
   g_m(x_1, \dots, x_n)
 \end{pmatrix}
-=0\\
+=0\\ \\
 x \in D \subseteq R^n,\ \ \ f:D \rightarrow R, \ \ \ g_i,h_i:D \rightarrow R
 \end{cases}
 \end{eqnarray}
@@ -37,11 +37,11 @@ $$L(x,\lambda) \equiv f(x) - \sum_{k=1}^M \lambda_k g_k(x)$$ として $$\frac{\
 これが局所的最小解であるための1次導関数に対する条件となる。
 ただし逆は成立しない（停留点には極大点や鞍点などが含まれるため）。
 
-### 2次導関数に対する条件
+### 2次導関数に対する十分条件
 
-上記の方法で求めた停留点が実際に極小値であるかの判別方法は問題によって異なり、一般的に煩雑な議論が必要になる。
-
-例：目的関数 $$f(x)$$ が下に有界　⇒　求めた停留点で評価値が最小の点が極小解
+<center>
+$$x^*$$ と $$\lambda^*$$ が[KKT条件](constrained.md#KKT条件（Karush-Kuhn-Tucker-condition）)を満たし $$^\forall y \in C_\mathscr{F}(x^*) \ ((y=0) \vee (y^T \nabla^2_{xx}L(x^*, \lambda^*)y > 0))$$ を満たす<br>⇒　$$x^*$$ は局所的最小解である
+</center>
 
 ## 解法
 

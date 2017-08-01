@@ -6,9 +6,7 @@ $$
 \begin{eqnarray}
 minimize &\ & \ f(x) \ \ \ (x \in R^n) \\
 s.t. &\ &
-\begin{cases}
 x \in D \subseteq R^n, \ \ \ f:D \rightarrow R
-\end{cases}
 \end{eqnarray}
 $$
 

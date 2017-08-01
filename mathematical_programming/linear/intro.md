@@ -12,9 +12,9 @@ minimize : &\ & c^Tx \\
 s.t. &\ &
 \begin{cases}
 Ax=a\\
-Bx \leq b
-\end{cases} \\
-&\ &A \in R^{m \times n}, \ B \in R^{l \times n}, \ a \in R^m, \ b \in R^l, \ c \in R^n, \ x \in R^n
+Bx \leq b \\ \\
+A \in R^{m \times n}, \ B \in R^{l \times n}, \ a \in R^m, \ b \in R^l, \ c \in R^n, \ x \in R^n
+\end{cases}
 \end{eqnarray}
 $$
 
@@ -25,10 +25,10 @@ $$
 minimize : &\ & f(x) \\
 s.t. &\ &
 \begin{cases}
-g_i(x) = 0 & (i=1,\dots,m) \\
-h_j(x) \leq 0 & (j=1,\dots,l)
-\end{cases} \\
-&\ & f:R^n \rightarrow R,\ g_i:R^n \rightarrow R,\ h_i:R^n \rightarrow R
+g_i(x) = 0 \ \ \ (i=1,\dots,m) \\
+h_j(x) \leq 0 \ \ \ (j=1,\dots,l) \\ \\
+f:R^n \rightarrow R,\ g_i:R^n \rightarrow R,\ h_i:R^n \rightarrow R
+\end{cases}
 \end{eqnarray}
 $$
 
@@ -60,9 +60,9 @@ minimize : &\ & c^Tx \\
 s.t. &\ &
 \begin{cases}
 Ax=b\\
-x_i \geq 0
-\end{cases} \\
-&\ &A \in R^{m \times n}, \ b \in R^m, \ c \in R^n, \ x \in R^n
+x_i \geq 0 \\ \\
+A \in R^{m \times n}, \ b \in R^m, \ c \in R^n, \ x \in R^n
+\end{cases}
 \end{eqnarray}
 $$
 
@@ -70,7 +70,7 @@ $$
 
 これを線形計画問題の**標準形**という。
 
-## 解法（$$m\geq n$$のとき）
+## 解法（$$m\geq n$$ のとき）
 
 制約条件が過分に設定されている場合（$$m \geq n$$）、行列 $$A$$ の右に $$b$$ を結合した行列（**拡大係数行列**）を行に関して基本変形し、
 
@@ -80,7 +80,7 @@ $$
 を満たせば、最も右側の列ベクトルが条件を満たす唯一の解となる。
 満たさない場合は解が存在しない。
 
-## 解法（$$m<n$$のとき）
+## 解法（$$m<n$$ のとき）
 
 制約条件が不足している場合（$$m < n$$）、解は領域として存在しその中から最適な点を選択しなければならない。
 そのため、単体法などの手法を用いることになる。
