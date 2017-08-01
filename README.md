@@ -174,6 +174,8 @@
     * [.Netの歴史](develop/cs/dotnet_history.md)
   * GitBook
     * [自分用の設定](develop/gitbook/my_setting.md)
+  * Keyboard
+    * [自分用の設定](develop/keyboard/my_setting.md)
 
 # 参考文献
 
