@@ -27,7 +27,7 @@ $$u,v,w \in V$$、$$\lambda, \mu \in K = (\mathbb{R} \ \mathscr{or} \ \mathbb{C}
 
 $$V$$ を $$K$$ 上のベクトル空間とする。
 
-$$x_1, \cdots, x_m \in V, \ \ \ c_i \in K$$ について、
+$$x_1, \cdots, x_m \in V, \ \ c_i \in K$$ について、
 
 $$
 c_1x_1 + \cdots + c_mx_m
@@ -49,7 +49,7 @@ $$x_1, \cdots, x_m$$ について自明な一次関係しか成立しない場�
 複数のベクトル $$v_1, \cdots, v_n \in V$$ が一次独立であり、任意の $$v \in V$$ が $$v_1, \cdots, v_n$$ の一次結合で表されるとき、$$v_1, \cdots, v_n$$ は $$V$$ の**基底**であるという。
 
 $$
-v' = c_1x_1 + \cdots + c_mx_m \ \ \ (c_i \in K)
+v' = c_1x_1 + \cdots + c_mx_m \ \ (c_i \in K)
 $$
 
 また、基底が含むベクトルの個数 $$n$$ をベクトル空間 $$V$$ の**次元**といい $$\dim V$$ と表す。

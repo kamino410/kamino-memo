@@ -65,7 +65,7 @@ $$
 
 ## 階数と全射・単射
 
-上記の定義から、$$f$$ の階数と射影の種類の間には次のような関係が得られる。
+上記の定義から、$$f$$ の階数と[写像の種類](../native_set_theory/mapping.md#写像の分類)の間には次のような関係が得られる。
 
 * $$\mathrm{rank}(f) = \dim U$$　⇔　線形写像 $$f:U\rightarrow V$$ は単射
 * $$\mathrm{rank}(f) = \dim V$$　⇔　線形写像 $$f:U\rightarrow V$$ は全射

@@ -9,14 +9,14 @@
 
 ## 性質
 
-$$m\times n$$の行列$$A$$の階数を$$rank(A)$$とする。
+$$m\times n$$の行列$$A$$の階数を$$\mathrm{rank}(A)$$とする。
 
 * $$A \leq \min(m,n)$$
   * $$A = \min(m,n)$$ のとき **フルランク** であるという
   * $$A < \min(m,n)$$ のとき **ランク落ち**・**ランク不足** という
-* $$rank(A) = rank(A^t)$$
-* $$rank(A+B)\leq rank(A)+rank(B)$$
-* $$rank(AB)\leq \min(rank(A), rank(B))$$
+* $$\mathrm{rank}(A) = \mathrm{rank}(A^t)$$
+* $$\mathrm{rank}(A+B)\leq \mathrm{rank}(A)+\mathrm{rank}(B)$$
+* $$\mathrm{rank}(AB)\leq \min(\mathrm{rank}(A), \mathrm{rank}(B))$$
 
 # 逆行列（inverse matrix）
 
@@ -35,7 +35,7 @@ $$
 * $$AB=I$$ なる $$B$$ が存在する
 * $$BA=I$$ なる $$B$$ が存在する
 * $$A,B$$ は[正則行列](characteristic_matrix.md#正則行列（regular-matrix）)である
-* $$rank(A) = n$$
+* $$\mathrm{rank}(A) = n$$
 * $$A$$ が左基本変形（行基本変換）のみで単位行列に変換できる
 * 行ベクトルが線形独立
 * $$A$$ が右基本変形（列基本変換）のみで単位行列に変換できる
