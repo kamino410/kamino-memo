@@ -49,6 +49,9 @@
     * [確率変数](mathematics/statistics/random_variable.md)
     * [確率分布](mathematics/statistics/probability_distribution.md)
 * 計画数学
+  * グラフ理論
+    * [概要](mathematical_programming/graph_theory/intro.md)
+    * [プログラムにおけるグラフ表現](mathematical_programming/graph_theory/graph_expression.md)
   * 線形計画法
     * [概要](mathematical_programming/linear/intro.md)
     * [双対問題](mathematical_programming/linear/dual_problem.md)
@@ -99,9 +102,6 @@
     * [伝達関数行列と実現問題](control/modern/transfer_function_matrix.md)
     * [リアプノフの安定性理論](control/modern/lyapunov_stability_theory.md)
 * 計算機科学
-  * グラフ理論
-    * [概要](computer_science/graph_theory/intro.md)
-    * [プログラムにおけるグラフ表現](computer_science/graph_theory/graph_expression.md)
   * アルゴリズム
     * [アルゴリズムのコスト](computer_science/algorithm/execution_cost.md)
     * [ソートアルゴリズム1](computer_science/algorithm/sort1.md)
