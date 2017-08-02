@@ -52,6 +52,7 @@
   * グラフ理論
     * [概要](mathematical_programming/graph_theory/intro.md)
     * [フロー](mathematical_programming/graph_theory/flow.md)
+    * [最小木問題](mathematical_programming/graph_theory/minimum_spanning_tree_problem.md)
     * [プログラムにおけるグラフ表現](mathematical_programming/graph_theory/graph_expression.md)
   * 線形計画法
     * [概要](mathematical_programming/linear/intro.md)

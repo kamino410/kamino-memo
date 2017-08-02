@@ -54,6 +54,7 @@
   * グラフ理論
     * [概要](mathematical_programming/graph_theory/intro.md)
     * [フロー](mathematical_programming/graph_theory/flow.md)
+    * [最小木問題](mathematical_programming/graph_theory/minimum_spanning_tree_problem.md)
     * [プログラムにおけるグラフ表現](mathematical_programming/graph_theory/graph_expression.md)
   * 線形計画法
     * [概要](mathematical_programming/linear/intro.md)
@@ -188,6 +189,7 @@
 * 中島 匠一, 『代数と数論の基礎』, 共立出版株式会社, 2000
 * 江口 正晃/久保 泉/熊原 啓作/小泉 伸, 『基礎微分積分学 第3版』, 学術図書出版社, 2007
 * 宿久 洋/村上 享/原 恭彦, 『確率と統計の基礎Ⅰ 増補改訂版』, ミネルヴァ書房, 2013
+* 繁野 麻衣子, 『ネットワーク最適化とアルゴリズム』, 朝倉書店, 2010
 * 矢部 博, 『工学基礎 最適化とその応用』, 数理工学社, 2006
 * 山下 信雄, 『非線形計画法』, 朝倉書店, 2015
 * 中山 司, 『流れ解析のための有限要素法入門』, 東京大学出版会, 2008
