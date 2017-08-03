@@ -30,6 +30,8 @@
     * [関数の極限と連続性](mathematics/analysis/limit_continuity.md)
     * [微分と導関数](mathematics/analysis/differential.md)
     * [高階微分](mathematics/analysis/higher-order_differential.md)
+    * [偏微分と偏導関数](mathematics/analysis/partial_derivative.md)
+    * [多変数関数の極値](mathematics/analysis/extremum.md)
     * [級数](mathematics/analysis/series.md)
     * [特殊な級数1](mathematics/analysis/characteristic_series1.md)
     * [ラプラス変換](mathematics/analysis/laplace_transform.md)
