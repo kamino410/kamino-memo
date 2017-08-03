@@ -33,6 +33,7 @@
     * [多変数関数の極値](mathematics/analysis/extremum.md)
     * [級数](mathematics/analysis/series.md)
     * [特殊な級数1](mathematics/analysis/characteristic_series1.md)
+    * [微分方程式](mathematics/analysis/differential_equation.md)
     * [ラプラス変換](mathematics/analysis/laplace_transform.md)
     * [フーリエ変換](mathematics/analysis/fourier_transform.md)
     * [凸集合・凸関数](mathematics/analysis/convex.md)

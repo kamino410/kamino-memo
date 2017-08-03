@@ -33,6 +33,7 @@
     * [偏微分と偏導関数](mathematics/analysis/partial_derivative.md)
     * [多変数関数の極値](mathematics/analysis/extremum.md)
     * [級数](mathematics/analysis/series.md)
+    * [微分方程式](mathematics/analysis/differential_equation.md)
     * [特殊な級数1](mathematics/analysis/characteristic_series1.md)
     * [ラプラス変換](mathematics/analysis/laplace_transform.md)
     * [フーリエ変換](mathematics/analysis/fourier_transform.md)
