@@ -55,6 +55,7 @@
     * [概要](mathematical_programming/graph_theory/intro.md)
     * [フロー](mathematical_programming/graph_theory/flow.md)
     * [最小木問題](mathematical_programming/graph_theory/minimum_spanning_tree_problem.md)
+    * [単一始点最短経路問題](mathematical_programming/graph_theory/single_source_shortest_path_problem.md)
     * [プログラムにおけるグラフ表現](mathematical_programming/graph_theory/graph_expression.md)
   * 線形計画法
     * [概要](mathematical_programming/linear/intro.md)
@@ -124,7 +125,7 @@
     * [ナイーブな探索](computer_science/algorithm/exhaustive_search.md)
     * [ヒューリスティック探索](computer_science/algorithm/heuristic_search.md)
     * [ゲーム木の探索](computer_science/algorithm/game_tree.md)
-    * [最短経路問題](computer_science/algorithm/shortest_path.md)
+    * [単一始点最短経路問題](computer_science/algorithm/shortest_path.md)
   * 知識表現
     * [プロダクションシステム](computer_science/knowledge_representation/production_system.md)
     * [フレーム](computer_science/knowledge_representation/frame.md)

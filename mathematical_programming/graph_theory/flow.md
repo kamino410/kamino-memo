@@ -37,10 +37,10 @@ $$b(v_k)>0$$ は供給点、$$b(v_k)<0$$ は需要点、$$b(v_k)=0$$ は中継�
 
 ## フロー分解定理（flow decomposition theorem）
 
-これを用いれば次のような定理を記述できる。
+フローに関して次のような定理を記述できる。
 
 <center>
 有向グラフ $$G = (V,E)$$ 上の任意の非負のフローを $$\varphi$$ とする<br>⇒　有向閉路 $$Q_k$$ 上のフローと $$\partial \varphi(v) > 0$$ である頂点から $$\partial \varphi(v) < 0$$ である頂点への有向路 $$P_k$$ 上のフローに分解できる
-</center>
+</center><br>
 
 このように任意の非負のフロー $$\varphi$$ をいくつかの有向閉路上のフローと有向路上のフローに分けることを**フローの同符号分解（flow equisignum decomposition）**という。
