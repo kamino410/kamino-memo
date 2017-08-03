@@ -69,6 +69,8 @@
     * [等式制約付き最小化問題](mathematical_programming/nonlinear/equality_constrained.md)
     * [一般の制約付き最小化問題](mathematical_programming/nonlinear/constrained.md)
 * 力学
+  * 概論
+    * [単位系](dynamics/abstract/system_of_measurement.md)
   * 流体力学
     * [用語](dynamics/fluid/glossary.md)
 * 数値解析
