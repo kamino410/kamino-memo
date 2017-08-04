@@ -41,7 +41,7 @@ max(dp[i,j], dp[i, j-w_i]+v_i) & else
 \end{cases}
 \end{eqnarray}
 $$
-</center><br>
+</center><br />
 
 の漸化式が立てられる。
 

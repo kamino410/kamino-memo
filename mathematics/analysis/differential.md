@@ -5,8 +5,8 @@
 定義域 $$D$$ 上で定義される関数 $$f(x)$$ と $$x_0 \in D$$ について次のように定義される。
 
 <center>
-$$\lim_{x\rightarrow x_0} \frac{f(x)-f(x_0)}{x-x_0}$$ が存在する<br>⇔　右極限 $$f_+'(x_0) = \lim_{x\rightarrow x_0}\frac{f(x)-f(x_0)}{x-x_0}$$ と左極限 $$f_+'(x_0) = \lim_{x\rightarrow x_0}\frac{f(x)-f(x_0)}{x-x_0}$$ が一致する<br>⇔　微分可能である
-</center><br>
+$$\lim_{x\rightarrow x_0} \frac{f(x)-f(x_0)}{x-x_0}$$ が存在する<br />⇔　右極限 $$f_+'(x_0) = \lim_{x\rightarrow x_0}\frac{f(x)-f(x_0)}{x-x_0}$$ と左極限 $$f_+'(x_0) = \lim_{x\rightarrow x_0}\frac{f(x)-f(x_0)}{x-x_0}$$ が一致する<br />⇔　微分可能である
+</center><br />
 
 また条件を緩めて右極限のみが存在する場合を**右微分可能**、左極限のみが存在する場合を**左微分可能**という。
 
@@ -38,14 +38,14 @@ $$f(x)$$ が $$x=x_0$$ の近傍で $$f(x_0) > f(x) \ \ (x_0 \neq x)$$ を満た
 極値の必要条件は次のように与えられる。
 
 <center>
-関数 $$f(x)$$ が $$x=x_0$$ の近傍で定義され $$C^1$$ 級であり、$$x_0$$ で極値を持つ<br>⇒　$$f'(x_0) = 0$$
-</center><br>
+関数 $$f(x)$$ が $$x=x_0$$ の近傍で定義され $$C^1$$ 級であり、$$x_0$$ で極値を持つ<br />⇒　$$f'(x_0) = 0$$
+</center><br />
 
 極値の十分条件は次のように与えられる。
 
 <center>
-関数 $$f(x)$$ が $$x=x_0$$ の近傍で定義され $$C^n$$ 級かつ $$f^{(i)}(x_0)=0\ \ (i = 1,\cdots, n-1), \ f^{(n)}(x_0)\neq 0$$<br>⇒　$$n$$ が偶数かつ $$f^{(n)}(x_0) < 0$$ なら $$f(x_0)$$ は極大値<br>　$$n$$ が偶数かつ $$f^{(n)}(x_0) > 0$$ なら $$f(x_0)$$ は極小値<br>$$n$$ が奇数なら $$f(x_0)$$ は極値ではない
-</center><br>
+関数 $$f(x)$$ が $$x=x_0$$ の近傍で定義され $$C^n$$ 級かつ $$f^{(i)}(x_0)=0\ \ (i = 1,\cdots, n-1), \ f^{(n)}(x_0)\neq 0$$<br />⇒　$$n$$ が偶数かつ $$f^{(n)}(x_0) < 0$$ なら $$f(x_0)$$ は極大値<br />　$$n$$ が偶数かつ $$f^{(n)}(x_0) > 0$$ なら $$f(x_0)$$ は極小値<br />$$n$$ が奇数なら $$f(x_0)$$ は極値ではない
+</center><br />
 
 ## 平均値の定理（mean-value theorem）
 
@@ -69,22 +69,22 @@ $$a$$ を含む開区間で微分可能な関数 $$f(x), g(x)$$ について $$g
 このとき以下の性質が成り立つ。
 
 <center>
-$$f(a)=g(a)=0$$ かつ $$\lim_{x\rightarrow a} \frac{f'(x)}{g'(x)} = L$$ が存在する<br>⇔　$$\lim_{x\rightarrow a}\frac{f(x)}{g(x)} = L$$
-</center><br>
+$$f(a)=g(a)=0$$ かつ $$\lim_{x\rightarrow a} \frac{f'(x)}{g'(x)} = L$$ が存在する<br />⇔　$$\lim_{x\rightarrow a}\frac{f(x)}{g(x)} = L$$
+</center><br />
 
 同値な定理として、開区間 $$(a,\infty)$$ で微分可能な関数 $$f(x),g(x)$$ について
 
 <center>
-$$\lim_{x \rightarrow \infty}f(x) = \lim_{x \rightarrow \infty}g(x) = 0$$ かつ $$\lim_{x \rightarrow \infty}\frac{f'(x)}{g'(x)} = L$$ が存在する<br>⇔　$$\lim_{x \rightarrow \infty}\frac{f(x)}{g(x)} = L$$
-</center><br>
+$$\lim_{x \rightarrow \infty}f(x) = \lim_{x \rightarrow \infty}g(x) = 0$$ かつ $$\lim_{x \rightarrow \infty}\frac{f'(x)}{g'(x)} = L$$ が存在する<br />⇔　$$\lim_{x \rightarrow \infty}\frac{f(x)}{g(x)} = L$$
+</center><br />
 
 がある。
 
 また、$$a$$ を含む開区間で $$a$$ 以外の点で微分可能な関数 $$f(x),g(x)$$ について、
 
 <center>
-$$\lim_{x\rightarrow a}f(x) = \lim_{x\rightarrow a}g(x) = \infty$$ かつ $$\lim_{x\rightarrow a}\frac{f'(x)}{g'(x)} = L$$ が存在する<br>⇔　$$\lim_{x\rightarrow a}\frac{f(x)}{g(x)} = L$$
-</center><br>
+$$\lim_{x\rightarrow a}f(x) = \lim_{x\rightarrow a}g(x) = \infty$$ かつ $$\lim_{x\rightarrow a}\frac{f'(x)}{g'(x)} = L$$ が存在する<br />⇔　$$\lim_{x\rightarrow a}\frac{f(x)}{g(x)} = L$$
+</center><br />
 
 が成立する。
 

@@ -44,11 +44,11 @@ $$
 ### 可制御性
 
 <center>
-$$M_C = \begin{bmatrix}B & AB & \cdots & A^{n-1}B\end{bmatrix}$$ がフルランク（ $$rank(M_C) = n$$ ）<br>⇔　システムは可制御
-</center><br>
+$$M_C = \begin{bmatrix}B & AB & \cdots & A^{n-1}B\end{bmatrix}$$ がフルランク（ $$rank(M_C) = n$$ ）<br />⇔　システムは可制御
+</center><br />
 
 ### 可観測性
 
 <center>
-$$M_O = \begin{bmatrix}C \\ CA \\ \vdots \\ CA^{n-1}\end{bmatrix}$$ がフルランク（ $$rank(M_O) = n$$ ）<br>⇔　システムは可観測
-</center><br>
+$$M_O = \begin{bmatrix}C \\ CA \\ \vdots \\ CA^{n-1}\end{bmatrix}$$ がフルランク（ $$rank(M_O) = n$$ ）<br />⇔　システムは可観測
+</center><br />

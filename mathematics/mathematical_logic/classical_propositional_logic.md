@@ -47,12 +47,12 @@
 任意の命題に対して成立する恒真式は、与えられた命題の真偽を判定する際に定理として利用できる。
 
 1. $$A \wedge A \equiv A, \ A \vee A \equiv A$$（冪等性）
-2. $$(A \wedge B) \wedge C \equiv A \wedge (B \wedge C)$$<br>$$(A \vee B) \vee C \equiv A \vee (B \vee C)$$（結合律）
+2. $$(A \wedge B) \wedge C \equiv A \wedge (B \wedge C)$$<br />$$(A \vee B) \vee C \equiv A \vee (B \vee C)$$（結合律）
 3. $$A \wedge B \equiv B \wedge A, \ A \vee B \equiv B \vee A$$（交換律）
 4. $$A \wedge (A \vee B) \equiv A, \ A \vee (A \wedge B) \equiv A$$（吸収律）
-5. $$A \wedge (B \wedge C) \equiv (A \wedge B) \vee (A \wedge C)$$<br>$$A \vee (B \wedge C) \equiv (A \vee B) \wedge (A \vee C)$$（分配律）
+5. $$A \wedge (B \wedge C) \equiv (A \wedge B) \vee (A \wedge C)$$<br />$$A \vee (B \wedge C) \equiv (A \vee B) \wedge (A \vee C)$$（分配律）
 6. $$\neg \neg A \equiv A$$（2重否定律）
-7. $$\neg (A \vee B) \equiv \neg A \wedge \neg B$$<br>$$\neg(A \wedge B) \equiv \neg A \vee \neg B$$（ド・モルガンの法則）
+7. $$\neg (A \vee B) \equiv \neg A \wedge \neg B$$<br />$$\neg(A \wedge B) \equiv \neg A \vee \neg B$$（ド・モルガンの法則）
 8. $$A \rightarrow B \equiv \neg A \vee B$$
 9. $$A \wedge \neg A \equiv \bot, \ A \vee \neg A \equiv \top$$（排中律）
 10. $$A \vee \bot \equiv A, \ A \vee \top \equiv \top$$

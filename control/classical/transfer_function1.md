@@ -27,7 +27,7 @@ $$
   \right.
 \end{eqnarray}
 $$
-</center><br>
+</center><br />
 
 このままでは扱いづらい。
 

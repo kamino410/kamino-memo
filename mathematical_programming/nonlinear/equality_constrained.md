@@ -26,13 +26,13 @@ $$x^* $$ で $$f,g$$ は1回微分可能であるとする。
 
 <center>
 $$x^* $$ が局所的最小解　⇒　$$x^* $$ は停留点（$$\frac{\partial}{\partial x_i}f(x^* )=0$$となる点）
-</center><br>
+</center><br />
 
 [ラグランジュ乗数法](../../mathematics/analysis/lagrange_multiplier.md)より、停留点は次の条件を満たす。
 
 <center>
 $$L(x,\lambda) \equiv f(x) - \sum_{k=1}^M \lambda_k g_k(x)$$ として $$\frac{\partial L}{\partial x_k}=0,\ \frac{\partial L}{\partial \lambda_k}=0$$
-</center><br>
+</center><br />
 
 これが局所的最小解であるための1次導関数に対する条件となる。
 ただし逆は成立しない（停留点には極大点や鞍点などが含まれるため）。
@@ -40,8 +40,8 @@ $$L(x,\lambda) \equiv f(x) - \sum_{k=1}^M \lambda_k g_k(x)$$ として $$\frac{\
 ### 2次導関数に対する十分条件
 
 <center>
-$$x^*$$ と $$\lambda^*$$ が[KKT条件](constrained.md#KKT条件（Karush-Kuhn-Tucker-condition）)を満たし $$^\forall y \in C_\mathscr{F}(x^*) \ ((y=0) \vee (y^T \nabla^2_{xx}L(x^*, \lambda^*)y > 0))$$ を満たす<br>⇒　$$x^*$$ は局所的最小解である
-</center>
+$$x^*$$ と $$\lambda^*$$ がKKT条件を満たし $$^\forall y \in C_\mathscr{F}(x^*) \ ((y=0) \vee (y^T \nabla^2_{xx}L(x^*, \lambda^*)y > 0))$$ を満たす<br />⇒　$$x^*$$ は局所的最小解である
+</center><br />
 
 ## 解法
 

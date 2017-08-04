@@ -60,5 +60,5 @@ $$
 交代級数 $$\sum a_n = \sum(-1)^{n-i}b_n \ \ (b_n > 0, i \in \{0,1\})$$ について、次の性質が成り立つ。
 
 <center>
-$$\{b_n\}$$ が減少数列で $$n\rightarrow \infty$$ のとき $$b_n \rightarrow 0$$<br>⇒　交代級数 $$\sum a_n$$ は収束する
-</center><br>
+$$\{b_n\}$$ が減少数列で $$n\rightarrow \infty$$ のとき $$b_n \rightarrow 0$$<br />⇒　交代級数 $$\sum a_n$$ は収束する
+</center><br />

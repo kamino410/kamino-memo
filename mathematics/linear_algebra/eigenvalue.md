@@ -33,7 +33,7 @@ $$
 
 <center>
 $$\det [A - \lambda I] = 0$$　⇔　固有対が存在する
-</center><br>
+</center><br />
 
 すなわち $$A$$ の[特性方程式](characteristic_polynomial.md)を解くことで固有値が得られる。
 
@@ -49,7 +49,7 @@ $$\det [A - \lambda I] = 0$$　⇔　固有対が存在する
 
 <center>
 異なる固有値の固有ベクトルは互いに一次独立である
-</center><br>
+</center><br />
 
 ## 対角和・行列式と固有値
 

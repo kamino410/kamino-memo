@@ -10,16 +10,16 @@
 このとき以下の定理が成立する。
 
 <center>
-すべての頂点について $$d(v)$$ が始点 $$s$$ からの最短路長である<br>⇔　$$^\forall e \in E\ (d(\partial^- e) \leq d(\partial^+ e)+l(e))$$
-</center><br>
+すべての頂点について $$d(v)$$ が始点 $$s$$ からの最短路長である<br />⇔　$$^\forall e \in E\ (d(\partial^- e) \leq d(\partial^+ e)+l(e))$$
+</center><br />
 
 この式は**最短路長に関する三角不等式**と呼ばれる。
 この定理をある有向路 $$P_v$$ に限って適用すれば、次の系を得る。
 ただし、頂点 $$v$$ までの最短路長を $$d^*(v)$$ とする。
 
 <center>
-ある有向路が始点 $$s$$ から終点 $$v$$ までの最短路である<br>⇔　$$^\forall e \in E(P_v) \ (d^*(\partial^- e) = d^*(\partial^+ e)+l(e))$$
-</center><br>
+ある有向路が始点 $$s$$ から終点 $$v$$ までの最短路である<br />⇔　$$^\forall e \in E(P_v) \ (d^*(\partial^- e) = d^*(\partial^+ e)+l(e))$$
+</center><br />
 
 すなわち、その有効路に含まれるすべての辺で三角不等式が等号で成り立てば、有向路は最短路であることを示している。
 

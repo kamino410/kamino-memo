@@ -8,7 +8,7 @@
 $$
 f(x) = O(g(x))
 $$
-</center><br>
+</center><br />
 
 とする記法。
 

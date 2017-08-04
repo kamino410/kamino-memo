@@ -21,8 +21,8 @@ $$\sum a_n, \sum b_n$$ が収束するなら次の性質が成り立つ。
 数列の収束性は次の性質を検証することで確かめられる。
 
 <center>
-数列 $$\{a_n\}$$ が収束する<br>⇔　$$^\forall \varepsilon > 0 \ ^\exists N \in \mathbb{N} \ (m,n\geq N \rightarrow ||a_m - a_n|| < \varepsilon)$$<br>⇔　$$\sum_{n\rightarrow \infty}a_n$$ のとき $$a_n \rightarrow 0$$
-</center><br>
+数列 $$\{a_n\}$$ が収束する<br />⇔　$$^\forall \varepsilon > 0 \ ^\exists N \in \mathbb{N} \ (m,n\geq N \rightarrow ||a_m - a_n|| < \varepsilon)$$<br />⇔　$$\sum_{n\rightarrow \infty}a_n$$ のとき $$a_n \rightarrow 0$$
+</center><br />
 
 この性質を満たす数列すなわち収束する数列を**コーシー列（Cauchy sequence）**・**基本列（fundamental sequence）**という。
 
@@ -31,12 +31,12 @@ $$\sum a_n, \sum b_n$$ が収束するなら次の性質が成り立つ。
 コーシーの収束判定法を部分和の列 $$S_n$$ に適用すると次の定理が得られる。
 
 <center>
-級数 $$\sum a_n$$ が収束する<br>⇔　$$^\forall m,n \in \mathbb{N} \ ^\forall \varepsilon > 0\ ^\exists N \in \mathbb{N} \ (m > n > N \rightarrow |a_{n+1} + \cdots + a_m | < \varepsilon)$$
-</center><br>
+級数 $$\sum a_n$$ が収束する<br />⇔　$$^\forall m,n \in \mathbb{N} \ ^\forall \varepsilon > 0\ ^\exists N \in \mathbb{N} \ (m > n > N \rightarrow |a_{n+1} + \cdots + a_m | < \varepsilon)$$
+</center><br />
 
 この定理の応用として、次のような系が得られる。
 これは級数が収束しないことの証明に用いることができる。
 
 <center>
 級数 $$\sum a_n$$ が収束する　⇒　$$n\rightarrow \infty$$ のとき $$a_n \rightarrow 0$$
-</center><br>
+</center><br />
