@@ -60,6 +60,7 @@
     * [最小木問題](mathematical_programming/graph_theory/minimum_spanning_tree_problem.md)
     * [単一始点最短経路問題](mathematical_programming/graph_theory/single_source_shortest_path_problem.md)
     * [最大流問題](mathematical_programming/graph_theory/maximum_flow_problem.md)
+    * [2部グラフのマッチング問題](mathematical_programming/graph_theory/bipartite_matching.md)
     * [プログラムにおけるグラフ表現](mathematical_programming/graph_theory/graph_expression.md)
   * 線形計画法
     * [概要](mathematical_programming/linear/intro.md)
