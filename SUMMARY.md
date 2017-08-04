@@ -55,6 +55,7 @@
   * グラフ理論
     * [グラフ](mathematical_programming/graph_theory/intro.md)
     * [フロー](mathematical_programming/graph_theory/flow.md)
+    * [マトロイド](mathematical_programming/graph_theory/matroid.md)
     * [最小木問題](mathematical_programming/graph_theory/minimum_spanning_tree_problem.md)
     * [単一始点最短経路問題](mathematical_programming/graph_theory/single_source_shortest_path_problem.md)
     * [最大流問題](mathematical_programming/graph_theory/maximum_flow_problem.md)
