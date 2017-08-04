@@ -7,7 +7,7 @@
 
 参考：http://www.ownway.info/Home/cpp/ps/small/1.html
 
-## 構成
+## 構成要素
 
 プロダクションシステムは以下のコンポーネントから構成される。
 
