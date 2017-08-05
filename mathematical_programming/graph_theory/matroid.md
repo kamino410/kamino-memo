@@ -58,7 +58,7 @@
 任意の部分集合 $$X \subset E$$ に対してマトロイドの**階数関数** $$\rho:e^E \rightarrow \mathbb{Z}$$ を次のように定義する。
 
 $$
-\rho(X) = \max \{|I|\ | \ I\subset X, I \in \mathcal{I}\}
+\rho(X) = \max \{|I|\ | \ I\subset X \wedge I \in \mathcal{I}\} = \max \{|I|\ | \ I\in 2^X \wedge I \in \mathcal{I}\}
 $$
 
 この関数は次のような性質を満たす。
@@ -93,4 +93,34 @@ $$
 閉包関数は次の性質を満たす。
 
 1. $$^\forall B \in \mathcal{B} \ (\mathrm{cl}(B) = E)$$
-2. $$^\forall I \in \mathcal{I} \ ^\forall j \in (\mathrm{cl}(I)-I) \ (I \cup \{j\} \in 2^E \backslash \mathcal{I})$$
+2. $$^\forall I \in \mathcal{I} \ ^\forall j \in \mathrm{cl}(I)\backslash I \ (I \cup \{j\} \in 2^E \backslash \mathcal{I})$$
+
+## 例
+
+### 例1
+
+* 台集合：$$E = \{1,2,3,4\}$$
+* 独立集合：$$\mathcal{I} = \{\ \emptyset,\{1\},\{2\},\{3\},\{1,2\},\{1,3\},\{2,3\}\ \}$$
+* 従属集合：$$\begin{eqnarray}E\backslash \mathcal{I} =&\ & \{\ \{4\},\{1,4\},\{2,4\},\{3,4\},\\&\ &\ \ \ \{1,2,3\},\{1,2,4\},\{1,3,4\},\{2,3,4\},\{1,2,3,4\}\ \}\end{eqnarray}$$
+* 基：$$\mathcal{B} = \{\ \{1,2\},\{1,3\},\{2,3\}\ \}$$
+* 階数関数
+  * $$\{X \in 2^E \ | \ \rho(X) = 0\} = \{\ \emptyset,\{4\}\ \}$$
+  * $$\{X \in 2^E \ | \ \rho(X) = 1\} = \{\ \{1\},\{2\},\{3\},\{1,4\},\{2,4\},\{3,4\}\ \}$$
+  * $$\begin{eqnarray}\{X \in 2^E \ | \ \rho(X) = 2\} = \{\ \{1,2\},\{1,3\},\{2,3\},\{1,2,3\},\{1,2,4\},\\\{1,3,4\},\{2,3,4\},\{1,2,3,4\}\ \}\end{eqnarray}$$
+* サーキット：$$\mathcal{C} = \{ \ \{1,2,3\},\{4\}\ \}$$
+
+<img src="fig1.png" width=60%>
+
+### 例2
+
+* 台集合：$$E = \{1,2,3,4\}$$
+* 独立集合：$$\mathcal{I} = \{\ \emptyset,\{1\},\{2\},\{3\},\{4\},\{1,3\},\{1,4\},\{2,3\},\{2,4\}\ \}$$
+* 従属集合：$$\begin{eqnarray}E\backslash \mathcal{I} =&\ & \{\ \{1,2\},\{3,4\},\{1,2,3\},\{1,2,4\},\\&\ &\ \ \ \{1,3,4\},\{2,3,4\},\{1,2,3,4\}\ \}\end{eqnarray}$$
+* 基：$$\mathcal{B} = \{\ \{1,3\},\{1,4\},\{2,3\},\{2,4\}\ \}$$
+* 階数関数
+  * $$\{X \in 2^E \ | \ \rho(X) = 0\} = \{\ \emptyset\ \}$$
+  * $$\{X \in 2^E \ | \ \rho(X) = 1\} = \{\ \{1,2\},\{3,4\}\ \}$$
+  * $$\begin{eqnarray}\{X \in 2^E \ | \ \rho(X) = 2\} = \{\ \{1,3\},\{1,4\},\{2,3\},\{2,4\},\{1,2,3\},\\\{1,2,4\},\{1,3,4\},\{2,3,4\},\{1,2,3,4\}\ \}\end{eqnarray}$$
+* サーキット：$$\mathcal{C} = \{ \ \{1,2\},\{3,4\}\ \}$$
+
+<img src="fig2.png" width=60%>
