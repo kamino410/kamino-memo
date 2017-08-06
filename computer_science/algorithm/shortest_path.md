@@ -37,69 +37,124 @@ $$
 
 ### 問題例
 
-有向グラフ
+#### グラフ1
 
 ```mermaid
 graph LR;
-  A(A:始点)-->|2|B;
-  B-->|4|C;
+  A((A:始点))-->|2|B((B));
+  B-->|4|C((C));
   A-->|5|C;
-  B-->|10|E;
-  B-->|6|D;
+  B-->|10|E((E));
+  B-->|6|D((D));
   C-->|2|D;
-  E-->|3|F;
-  D-->|1|F;
-  E-->|5|G;
+  E-->|3|F((F));
+  D-->|-1|F;
+  E-->|5|G((G));
   F-->|9|G;
+```
+
+#### グラフ2
+
+```mermaid
+graph LR;
+  A((A:始点))-->|2|B((B))
+  A-->|3|C((C))
+  C-->|-1|B
+  B-->|-3|D((D))
+  D-->|2|C
 ```
 
 ### 実装例
 
-有向グラフを隣接リストで管理する場合。
+無向グラフを検証する場合は逆向きの辺を追加することで対応できる。
 
-無向グラフを検証する場合は逆向きの要素を隣接リストに追加する。
+```rust
+struct Edge {
+    from: usize,
+    to: usize,
+    cost: isize,
+}
 
-```cpp
-#include <iostream>
+struct Vert {
+    dist: isize,
+    updated: bool,
+}
 
-using namespace std;
+struct Graph {
+    vert_count: usize,
+    start_vert: usize,
+    edges: Vec<Edge>,
+}
 
-struct edge {
-  int from, to, cost;
-};
-
-const int INF = 100000;
-const int MAX_E = 10, MAX_V = 7;
-
-edge es[MAX_E] = {{0, 1, 2}, {1, 2, 4}, {0, 2, 5}, {1, 4, 10}, {1, 3, 6},
-                  {2, 3, 2}, {4, 5, 3}, {3, 5, 1}, {4, 6, 5},  {5, 6, 9}};
-int d[MAX_V];
-
-void shortest_path(int s) {
-  for (int i = 0; i < MAX_V; i++)
-    d[i] = INF;
-  d[s] = 0;
-
-  while (true) {
-    bool updated = false;
-    for (int i = 0; i < MAX_E; i++) {
-      edge e = es[i];
-      if (d[e.from] != INF && d[e.to] > d[e.from] + e.cost) {
-        d[e.to] = d[e.from] + e.cost;
-        updated = true;
-      }
+fn bellman_ford(graph: &Graph) -> Result<Vec<isize>, &str> {
+    let mut verts: Vec<Vert> = Vec::new();
+    for _ in 0..graph.vert_count {
+        verts.push(Vert { dist: 0, updated: false });
     }
-    if (!updated)
-      break;
-  }
+    verts[graph.start_vert].updated = true;
+
+    for _ in 0..(graph.vert_count - 1) {
+        let mut updated = false;
+        for e in graph.edges.iter() {
+            if verts[e.from].updated &&
+                (!verts[e.to].updated || verts[e.from].dist + e.cost < verts[e.to].dist)
+            {
+                verts[e.to].dist = verts[e.from].dist + e.cost;
+                verts[e.to].updated = true;
+                updated = true;
+            }
+        }
+        if !updated {
+            return Ok(verts.iter().map(|v| v.dist).collect());
+        }
+    }
+    Err("graph has negative circuit")
 }
 
-int main(void) {
-  shortest_path(0);
-  for (int i = 0; i < MAX_V; i++)
-    cout << d[i] << endl;
-  return 0;
+fn main() {
+    let mut edges: Vec<Edge> = Vec::new();
+    edges.push(Edge { from: 0, to: 1, cost: 2 });
+    edges.push(Edge { from: 1, to: 2, cost: 4 });
+    edges.push(Edge { from: 0, to: 2, cost: 5 });
+    edges.push(Edge { from: 1, to: 4, cost: 10 });
+    edges.push(Edge { from: 1, to: 3, cost: 6 });
+    edges.push(Edge { from: 2, to: 3, cost: 2 });
+    edges.push(Edge { from: 4, to: 5, cost: 3 });
+    edges.push(Edge { from: 3, to: 5, cost: -1 });
+    edges.push(Edge { from: 4, to: 6, cost: 5 });
+    edges.push(Edge { from: 5, to: 6, cost: 9 });
+
+    let graph = Graph { vert_count: 7, start_vert: 0, edges };
+
+    let res = bellman_ford(&graph);
+
+    match res {
+        Ok(v) => {
+            for d in v.iter() {
+                println!("{}", d);
+            }
+        }
+        Err(s) => println!("{}", s),
+    }
 }
+```
+
+#### グラフ1
+
+```
+0
+2
+5
+7
+12
+6
+15
+```
+
+#### グラフ2
+
+```
+graph has negative circuit
 ```
 
 ## ダイクストラ（Dijkstra）法
