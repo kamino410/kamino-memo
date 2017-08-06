@@ -133,6 +133,7 @@
     * [ヒューリスティック探索](computer_science/algorithm/heuristic_search.md)
     * [ゲーム木の探索](computer_science/algorithm/game_tree.md)
     * [単一始点最短経路問題](computer_science/algorithm/shortest_path.md)
+    * [最急降下法](computer_science/algorithm/steepest_descent_method.md)
   * 知識表現
     * [プロダクションシステム](computer_science/knowledge_representation/production_system.md)
     * [フレーム](computer_science/knowledge_representation/frame.md)
