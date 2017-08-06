@@ -40,6 +40,17 @@ $$a_{ij} = \left \{ \begin{matrix}\alpha_{ij} & (i \leq j) \\ 0 & else \end{matr
 
 $$A^{-1}A = I$$
 
+## 直交行列（orthogonal matrix）
+
+転置行列と逆行列が等しくなる正方行列。
+
+$$A^T = A^{-1}$$
+
+次のような性質がある。
+
+* 行列式は $$\pm 1$$（$$1 = \det(E) = \det(AA^T) = \det(A^2)^2$$）
+* 各行（列）ベクトルは $$n$$ 次ベクトル空間の[正規直交基底](inner_product_space.md#正規直交基底（orthonormal-basis）)
+
 ## 正定値行列・負定値行列（positive definite matrix / negative definite matrix）
 
 実正方行列かつ $$^\forall v \in R^n \ (v^T A v > 0)$$ を満たす行列を**正定値行列**という。

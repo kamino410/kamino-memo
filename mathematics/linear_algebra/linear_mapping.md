@@ -33,12 +33,12 @@ $$
 と表す。
 つまり写像によって原点に移されるようなベクトルの集まりを示している。
 
-線形写像の定義より $$\mathrm{Im}(f), \mathrm{Ker}(f)$$ は共に $$U$$ の部分空間である。
+線形写像の定義より $$\mathrm{Im}(f),\ \mathrm{Ker}(f)$$ は共に $$U$$ の部分空間である。
 また定義より $$f(\mathrm{Im}(f)) \subset V,\ f(\mathrm{Ker} (f)) \subset V$$ となるため、$$\mathrm{Im}(f),\ \mathrm{Ker}(f)$$ は共に $$f$$ の[不変部分空間](vector_space.md#不変部分空間)である。
 
 ## 階数と退化次数
 
-線形写像 $$f:U\rightarrow V$$ の像 $$\mathrm{Im}(f)$$ の次元を **$$f$$ の階数** といい
+線形写像 $$f:U\rightarrow V$$ の像 $$\mathrm{Im}(f)$$ の次元を **$$f$$ の階数**といい
 
 $$
 \mathrm{rank}(f) = \dim(\mathrm{Im}(f)) = \dim(V)
@@ -46,7 +46,7 @@ $$
 
 と表す。
 
-また、$$f$$ の核 $$\mathrm{Ker} (f)$$ の次元を **$$f$$ の退化次数** といい
+また、$$f$$ の核 $$\mathrm{Ker} (f)$$ の次元を **$$f$$ の退化次数**といい
 
 $$
 \mathrm{null}(f) = \dim (\mathrm{Ker}(f))
