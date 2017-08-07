@@ -32,6 +32,7 @@
     * [高階微分](mathematics/analysis/higher-order_differential.md)
     * [偏微分と偏導関数](mathematics/analysis/partial_derivative.md)
     * [多変数関数の極値](mathematics/analysis/extremum.md)
+    * [双曲線関数](mathematics/analysis/hyperbolic.md)
     * [級数](mathematics/analysis/series.md)
     * [微分方程式](mathematics/analysis/differential_equation.md)
     * [特殊な級数1](mathematics/analysis/characteristic_series1.md)
