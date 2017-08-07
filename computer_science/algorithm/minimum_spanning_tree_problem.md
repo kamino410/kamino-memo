@@ -65,9 +65,7 @@ struct Graph {
 }
 
 fn prim(graph: &Graph) -> Result<Vec<Edge>, &str> {
-    let mut edge_table: Vec<Vec<isize>> = (0..graph.vert_count)
-        .map(|_| (0..graph.vert_count).map(|_| -1).collect())
-        .collect();
+    let mut edge_table: Vec<Vec<isize>> = vec![vec![-1; graph.vert_count]; graph.vert_count];
 
     for e in graph.edges.iter() {
         edge_table[e.v1][e.v2] = e.cost;
