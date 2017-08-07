@@ -132,6 +132,7 @@
     * [ナイーブな探索](computer_science/algorithm/exhaustive_search.md)
     * [ヒューリスティック探索](computer_science/algorithm/heuristic_search.md)
     * [ゲーム木の探索](computer_science/algorithm/game_tree.md)
+    * [最小木問題](computer_science/algorithm/minimum_spanning_tree_problem.md)
     * [単一始点最短経路問題](computer_science/algorithm/shortest_path.md)
     * [最急降下法](computer_science/algorithm/steepest_descent_method.md)
   * 知識表現
