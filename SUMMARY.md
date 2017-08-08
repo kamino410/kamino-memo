@@ -19,6 +19,7 @@
     * [特性多項式](mathematics/linear_algebra/characteristic_polynomial.md)
     * [特殊な行列](mathematics/linear_algebra/characteristic_matrix.md)
     * [階数・逆行列](mathematics/linear_algebra/inverse_matrix.md)
+    * [零因子](mathematics/linear_algebra/zero_divisor.md)
     * [固有値問題](mathematics/linear_algebra/eigenvalue.md)
     * [相似変換](mathematics/linear_algebra/similarity_transformation.md)
     * [ジョルダン標準形・対角化](mathematics/linear_algebra/diagonalization.md)
