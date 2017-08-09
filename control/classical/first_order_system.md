@@ -1,6 +1,6 @@
 # 1次系の応答
 
-## 1次系（First Order System）
+## 1次系（first order system）
 
 伝達関数が
 

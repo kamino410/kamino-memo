@@ -92,9 +92,9 @@
     * [概要](control/abstract/intro.md)
     * [線形システム](control/abstract/linear_system.md)
   * 古典制御理論
-    * [伝達関数１](control/classical/transfer_function1.md)
-    * [伝達関数２](control/classical/transfer_function2.md)
-    * [伝達関数３](control/classical/transfer_function3.md)
+    * [伝達関数1](control/classical/transfer_function1.md)
+    * [伝達関数2](control/classical/transfer_function2.md)
+    * [伝達関数3](control/classical/transfer_function3.md)
     * [インパルス応答とステップ応答](control/classical/impulse_step_response.md)
     * [過渡応答](control/classical/transient_response.md)
     * [1次系の応答](control/classical/first_order_system.md)
