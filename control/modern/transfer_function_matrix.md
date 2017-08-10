@@ -104,18 +104,20 @@ $$
 またマルコフパラメータを用いて次のように**ハンケル行列**を定義する。
 
 $$
-H_l = \begin{bmatrix} J_0 & J_1 & \cdots & J_{l-1} \\
+\begin{eqnarray}
+H_l &=& \begin{bmatrix} J_0 & J_1 & \cdots & J_{l-1} \\
 J_1 & J_2 & \cdots & J_l \\
 \vdots & \vdots & \ddots & \vdots \\
-J_{l-1} & J_l & \cdots & J_{2l-2}\end{bmatrix} =
-\begin{bmatrix}C \\ CA \\ \vdots \\ CA^{k-1} \end{bmatrix}
+J_{l-1} & J_l & \cdots & J_{2l-2}\end{bmatrix} \\
+&=& \begin{bmatrix}C \\ CA \\ \vdots \\ CA^{k-1} \end{bmatrix}
 \begin{bmatrix}B & AB & \cdots & A^{k-1}B \end{bmatrix} = M_C M_O
+\end{eqnarray}
 $$
 
 $$\gamma(s)$$ の次数 $$\nu$$ によるハンケル行列の階数 $$\mathrm{rank} H_\nu$$ を**マクミラン次数**という。
 
 
-最小実現 ⇔ 状態方程式が可制御可観測 ⇔ $$\mathrm{rank} M_CM_O = n$$ 、であるからマクミラン次数について次の定理が成立する。
+最小実現　⇔　状態方程式が可制御可観測　⇔　$$\mathrm{rank} M_CM_O = n$$ 、であるからマクミラン次数について次の定理が成立する。
 
 <center>
 最小実現における状態変数の次元数　＝　マクミラン次数
