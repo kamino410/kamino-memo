@@ -116,9 +116,24 @@ $$
 
 $$\gamma(s)$$ の次数 $$\nu$$ によるハンケル行列の階数 $$\mathrm{rank} H_\nu$$ を**マクミラン次数**という。
 
-
 最小実現　⇔　状態方程式が可制御可観測　⇔　$$\mathrm{rank} M_CM_O = n$$ 、であるからマクミラン次数について次の定理が成立する。
 
 <center>
 最小実現における状態変数の次元数　＝　マクミラン次数
 </center><br />
+
+### Mooreのアルゴリズム
+
+最小実現を求めるアルゴリズムにMooreのアルゴリズムがある。
+
+1. 最小公倍多項式 $$\gamma(s)$$ の次数 $$\nu$$ と $$a_\nu = 1$$ で正規化した係数 $$a_0,\cdots,a_{\nu-1}$$ を求める
+2. $$G(s) = \frac{G_{\nu-1} s^{\nu-1} + \cdots + G_0}{\gamma(s)}$$ の形に変形する
+    * $$J_k = \lim_{s\rightarrow \infty} G_k(s)$$
+    * $$G_0(s) = sG(s)$$
+    * $$G_k(s) = s\{G_{k-1}(s)-J_{k-1}\}$$
+3. 可制御な実現を求める
+    * $$\tilde{A} = \begin{bmatrix} O & I_{(\nu-1)m} \\ -a_0 I_m & -a_1 I_m \ \cdots \ -a_{\nu-1}I_m \end{bmatrix}$$
+    * $$\tilde{B} = \begin{bmatrix}O \\ I_m\end{bmatrix}$$
+    * $$\tilde{C} = \begin{bmatrix}G_0 & \cdots & G_{\nu-1}\end{bmatrix}$$
+4. $$(\tilde{A}, \tilde{B}, \tilde{C})$$ が可観測なら終了
+5. カルマンの正準分解を利用して可制御可観測なサブシステムを求める
