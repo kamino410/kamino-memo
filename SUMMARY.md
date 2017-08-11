@@ -116,6 +116,7 @@
     * [正準分解](control/modern/canonical_decomposition.md)
     * [伝達関数行列と実現問題](control/modern/transfer_function_matrix.md)
     * [リアプノフの安定性理論](control/modern/lyapunov_stability_theory.md)
+    * [極配置](control/modern/pole_placement.md)
 * 計算機科学
   * アルゴリズム
     * [アルゴリズムのコスト](computer_science/algorithm/execution_cost.md)
