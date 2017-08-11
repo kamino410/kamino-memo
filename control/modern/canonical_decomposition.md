@@ -123,3 +123,14 @@ $$
 次に $$\chi_C \supset \mathrm{Im}M_C$$ を示す。
 
 （書いてる途中）
+
+## 手順まとめ
+
+1. 可制御性行列 $$M_C$$ と可観測性行列 $$M_O$$ を求める
+2. 可制御空間 $$\chi_C = \mathrm{Im}M_C$$・不可観測空間 $$\chi_\bar{O} = \mathrm{Ker}M_O$$ を求める
+3. 部分空間 $$\chi^a, \chi^b, \chi^c, \chi^d$$ の基底 $$\Xi^a, \Xi^b, \Xi^c, \Xi^d$$ を求める（以下の条件を満たすなら選び方は任意）
+    * $$\chi^a = \chi_C \cap \chi_\bar{O}$$
+    * $$\chi_C = \chi^a \oplus \chi^b$$
+    * $$\chi_\bar{O} = \chi^a \oplus \chi^c$$
+    * $$R^n = \chi^a \oplus \chi^b \oplus \chi^c \oplus \chi^d$$
+4. $$T^{-1} = \begin{bmatrix} \Xi^a & \Xi^b & \Xi^c & \Xi^d \end{bmatrix}$$ を返還行列としてシステムを同値変換する
