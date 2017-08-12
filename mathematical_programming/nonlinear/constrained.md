@@ -63,7 +63,7 @@ $$x^*$$ が局所的最小解である<br />⇒　（制約想定を満たす　
 * MF（Mangasarian-Fromovitz）の制約想定
   * $$\nabla h_i(x^*) \ \ (i = 1, \cdots, m)$$ が一次独立で $$\nabla h_i(x^*)^T y = 0 \ \ (i=1,\cdots,m), \ \nabla g_j(x^*)^T y < 0 \ \ (j\in E(x^*))$$ を満たす $$y\in R^n$$ が存在する
 
-それぞれの関係は、「LICQ　⇒　MF　⇒　Abadie」、「Slater　⇒　MF」である。
+それぞれの関係は「LICQ　⇒　MF　⇒　Abadie」、「Slater　⇒　MF」である。
 
 なお、MFの制約想定を不等式制約のみの問題に制限したものをCottleの制約想定という。
 
