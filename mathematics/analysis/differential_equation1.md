@@ -1,4 +1,4 @@
-# 微分方程式（differential equation）
+# 微分方程式1（differential equation）
 
 ## 定義
 
