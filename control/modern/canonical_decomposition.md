@@ -133,4 +133,4 @@ $$
     * $$\chi_C = \chi^a \oplus \chi^b$$
     * $$\chi_\bar{O} = \chi^a \oplus \chi^c$$
     * $$R^n = \chi^a \oplus \chi^b \oplus \chi^c \oplus \chi^d$$
-4. $$T^{-1} = \begin{bmatrix} \Xi^a & \Xi^b & \Xi^c & \Xi^d \end{bmatrix}$$ を返還行列としてシステムを同値変換する
+4. $$T^{-1} = \begin{bmatrix} \Xi^a & \Xi^b & \Xi^c & \Xi^d \end{bmatrix}$$ を変換行列としてシステムを同値変換する
