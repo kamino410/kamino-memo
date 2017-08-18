@@ -57,5 +57,5 @@ $$\lim_{t \to 0+}f(t) = \lim_{s \to \infty}sF(s)$$
 </center><br />
 
 <center>
-$$\lim_{t \to \infty}f(t) = \lim_{s \to 0}sF(s)$$
+$$f(t)$$ が 0 に収束するなら $$\lim_{t \to \infty}f(t) = \lim_{s \to 0}sF(s)$$
 </center><br />
