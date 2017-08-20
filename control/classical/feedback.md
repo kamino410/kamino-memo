@@ -85,7 +85,7 @@ $$
 
 ### ステップ入力
 
-$$r(s)=1$$のステップ入力の定常偏差（steady-state error）は
+$$r(s)=1$$のステップ入力の定常偏差（steady-state error）を入出力比で考えると
 
 $$
 \begin{eqnarray}

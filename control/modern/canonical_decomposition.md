@@ -60,7 +60,7 @@ $$
 \chi^a &=& \chi_C \cap \chi_\bar{O} \\
 \chi_C &=& \chi^a \oplus \chi^b \\
 \chi_\bar{O} &=& \chi^a \oplus \chi^c \\
-R^n &=& \chi^a \oplus \chi^b \oplus \chi^c \oplus \chi^d
+\mathbb{R}^n &=& \chi^a \oplus \chi^b \oplus \chi^c \oplus \chi^d
 \end{eqnarray}
 $$
 

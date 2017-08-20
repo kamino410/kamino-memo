@@ -116,7 +116,7 @@ $$
 d(\partial^+ e) \leq d(\partial^- e) + 1
 $$
 
-を満たし、$$d(s) = n$$ であるときフローの**距離ラベル（distance label）$$ という。
+を満たし、$$d(s) = n$$ であるときフローの**距離ラベル（distance label）** という。
 また、この式を等式で満たす辺を**可能辺（admissible arc / eligible arc）**という
 
 基本的な手順は以下のようになる。
