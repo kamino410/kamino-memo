@@ -80,6 +80,9 @@
 * 力学
   * 概論
     * [単位系](dynamics/abstract/system_of_measurement.md)
+  * 材料力学
+    * [概要](dynamics/materials/intro.md)
+    * [荷重・応力・ひずみ](dynamics/materials/stress.md)
   * 流体力学
     * [用語](dynamics/fluid/glossary.md)
 * 数値解析
