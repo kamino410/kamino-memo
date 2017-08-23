@@ -82,8 +82,9 @@
     * [単位系](dynamics/abstract/system_of_measurement.md)
   * 材料力学
     * [概要](dynamics/materials/intro.md)
-    * [荷重・応力・ひずみ](dynamics/materials/stress.md)
+    * [応力・ひずみ](dynamics/materials/stress.md)
     * [変形特性](dynamics/materials/deformation_property.md)
+    * [単純な梁の弾性応力解析](dynamics/materials/beam_elastic_stress_analysis.md)
   * 流体力学
     * [用語](dynamics/fluid/glossary.md)
 * 数値解析

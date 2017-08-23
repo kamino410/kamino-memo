@@ -29,3 +29,17 @@
 <img src="fig5.svg" width=60%>
 
 （出典：https://ja.wikipedia.org/wiki/%E5%BF%9C%E5%8A%9B-%E3%81%B2%E3%81%9A%E3%81%BF%E6%9B%B2%E7%B7%9A）
+
+## フックの法則（Hooke's law）
+
+弾性変形領域では応力とひずみの間で比例関係が成立する。
+これを**フックの法則**という。
+このときの比例定数を**ヤング率（Young's modulus）**・**縦弾性係数（modulus of longitudinal elasticity）**という。
+ヤング率は応力と同じ次元を持つ。
+
+またせん断変形に関してもフックの法則が成立する。
+このときの比例定数を**せん断弾性係数（modulus of shearing elasticity）**・**横弾性係数（modulus of transverse elasticity）**という。
+
+## 弾性定数・材料定数（elastic constants / material constants）
+
+ヤング率 $$E$$ 、せん断弾性係数 $$G$$ 、ポアソン比 $$\nu$$ をまとめて**弾性定数**・**材料定数**といい、材料固有の値として扱う。
