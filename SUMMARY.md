@@ -189,6 +189,7 @@
 * 開発関係
   * デバイス
     * [SteamVR / HTC Vive](develop/device/steamvr_vive.md)
+    * [CPU](develop/device/cpu.md)
     * [GPU](develop/device/gpu.md)
   * Prolog
     * [概要](develop/prolog/abstract.md)
