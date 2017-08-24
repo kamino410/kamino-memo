@@ -213,6 +213,8 @@
     * [自分用の設定](develop/gitbook/my_setting.md)
   * Keyboard
     * [自分用の設定](develop/keyboard/my_setting.md)
+  * その他
+    * [任意精度演算](develop/others/arbitrary-precision_arithmetic.md)
 
 # 参考文献
 
