@@ -48,6 +48,7 @@
     * [内積・外積](mathematics/vector_calculus/scalar_vector_product.md)
     * [三重積](mathematics/vector_calculus/triple_product.md)
     * [ベクトル値関数](mathematics/vector_calculus/vector-valued_function.md)
+    * [ベクトル場](mathematics/vector_calculus/vector_field.md)
   * 確率・統計
     * [データの尺度水準](mathematics/statistics/level_of_measurement.md)
     * [統計量](mathematics/statistics/statistics.md)
@@ -89,6 +90,8 @@
     * [単純な梁の弾性応力解析](dynamics/materials/beam_elastic_stress_analysis.md)
   * 流体力学
     * [用語](dynamics/fluid/glossary.md)
+    * [概要](dynamics/fluid/intro.md)
+    * [理想流体](dynamics/fluid/ideal_fluid.md)
 * 数値解析
   * 有限要素法
     * [1次元の重み付き残差法](numerical_analysis/finite_element_method/1-dimention.md)
@@ -218,6 +221,7 @@
 * 繁野 麻衣子, 『ネットワーク最適化とアルゴリズム』, 朝倉書店, 2010
 * 矢部 博, 『工学基礎 最適化とその応用』, 数理工学社, 2006
 * 山下 信雄, 『非線形計画法』, 朝倉書店, 2015
+* 杉山 弘/遠藤 剛/新井 隆景, 『流体力学 第2版』, 森北出版株式会社, 2014
 * 中山 司, 『流れ解析のための有限要素法入門』, 東京大学出版会, 2008
 * 杉江 俊治/藤田 政之, 『フィードバック制御入門』, コロナ社, 1999
 * 吉川 恒夫/井村 順一, 『現代制御論』, コロナ社, 2014

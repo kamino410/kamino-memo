@@ -46,6 +46,7 @@
     * [内積・外積](mathematics/vector_calculus/scalar_vector_product.md)
     * [三重積](mathematics/vector_calculus/triple_product.md)
     * [ベクトル値関数](mathematics/vector_calculus/vector-valued_function.md)
+    * [ベクトル場](mathematics/vector_calculus/vector_field.md)
   * 確率・統計
     * [データの尺度水準](mathematics/statistics/level_of_measurement.md)
     * [統計量](mathematics/statistics/statistics.md)
@@ -87,6 +88,8 @@
     * [単純な梁の弾性応力解析](dynamics/materials/beam_elastic_stress_analysis.md)
   * 流体力学
     * [用語](dynamics/fluid/glossary.md)
+    * [概要](dynamics/fluid/intro.md)
+    * [理想流体](dynamics/fluid/ideal_fluid.md)
 * 数値解析
   * 有限要素法
     * [1次元の重み付き残差法](numerical_analysis/finite_element_method/1-dimention.md)
