@@ -178,6 +178,7 @@
     * [ハフマン符号化](computer_science/information_theory/huffman_coding.md)
     * [誤り検出・訂正符号](computer_science/information_theory/error_detection_and_correction.md)
   * アーキテクチャ
+    * [浮動小数点数](computer_science/architecture/floating_point_number.md)
     * [チューリングマシン](computer_science/architecture/turing_machine.md)
     * [ノイマン型コンピューター](computer_science/architecture/von_neumann-type_computer.md)
     * [その他用語](computer_science/architecture/glossary.md)
