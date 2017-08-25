@@ -215,6 +215,7 @@
     * [自分用の設定](develop/keyboard/my_setting.md)
   * その他
     * [任意精度演算](develop/others/arbitrary-precision_arithmetic.md)
+    * [ANSIエスケープシーケンス](develop/others/ansi_escape_sequences.md)
 
 # 参考文献
 
