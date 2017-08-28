@@ -63,7 +63,6 @@ ESC[n1;n2;...
 
 ```cpp
 #include <iostream>
-#include <unistd.h>
 #define PROGSTEP 5
 
 using namespace std;

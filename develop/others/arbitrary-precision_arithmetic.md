@@ -43,6 +43,18 @@ fn main() {
 }
 ```
 
+```rust
+extern crate num;
+use num::bigint::BigInt;
+use num::bigint::ToBigInt;
+
+fn main() {
+    let n = 1202303.to_bigint().unwrap();
+    let m = 1134523.to_bigint().unwrap();
+    println!("{}", n * m);
+}
+```
+
 C++の場合はGMP（GNU Multiple Precision Arithmetic library）というライブラリがある。
 
 ```
