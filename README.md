@@ -168,6 +168,7 @@
     * [言語処理100本ノック4](computer_science/language_processing/nlp100_4.md)
   * グラフィック
     * [ベジェ曲線](computer_science/graphic/bezier_curve.md)
+    * [3D技術](computer_science/graphic/3d.md)
   * セキュリティ
     * [サイバー攻撃](computer_science/security/cyber-terrorism.md)
     * [マルウェア](computer_science/security/malware.md)
