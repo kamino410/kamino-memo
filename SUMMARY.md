@@ -215,5 +215,6 @@
   * Keyboard
     * [自分用の設定](develop/keyboard/my_setting.md)
   * その他
+    * [プリミティブ型のサイズ](develop/others/size_of_primitive_types.md)
     * [任意精度演算](develop/others/arbitrary-precision_arithmetic.md)
     * [ANSIエスケープシーケンス](develop/others/ansi_escape_sequences.md)
