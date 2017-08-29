@@ -14,6 +14,7 @@
   * 代数学
     * [群](mathematics/algebra/group.md)
     * [環](mathematics/algebra/ring.md)
+    * [オイラー関数とオイラーの定理](mathematics/algebra/eulers_theorem.md)
   * 線形代数
     * [行列式・対角和](mathematics/linear_algebra/determinant.md)
     * [特性多項式](mathematics/linear_algebra/characteristic_polynomial.md)
@@ -169,6 +170,7 @@
   * セキュリティ
     * [サイバー攻撃](computer_science/security/cyber-terrorism.md)
     * [マルウェア](computer_science/security/malware.md)
+    * [RSA暗号](computer_science/security/rsa.md)
   * 情報理論
     * [概要](computer_science/information_theory/abstract.md)
     * [情報量](computer_science/information_theory/entropy.md)

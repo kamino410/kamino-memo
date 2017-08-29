@@ -171,6 +171,7 @@
   * セキュリティ
     * [サイバー攻撃](computer_science/security/cyber-terrorism.md)
     * [マルウェア](computer_science/security/malware.md)
+    * [RSA暗号](computer_science/security/rsa.md)
   * 情報理論
     * [概要](computer_science/information_theory/abstract.md)
     * [情報量](computer_science/information_theory/entropy.md)
