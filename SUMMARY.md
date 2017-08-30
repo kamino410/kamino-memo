@@ -209,6 +209,8 @@
     * [matplotlib template](develop/python/matplotlib_template.md)
     * [行列演算](develop/python/matrix_operation.md)
     * [JUMAN/KNP](develop/python/juman_knp.md)
+  * C++
+    * [メモ](develop/cpp/memo.md)
   * C#
     * [.Netの歴史](develop/cs/dotnet_history.md)
   * GitBook
