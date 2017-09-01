@@ -78,7 +78,6 @@ int main (void){
   a += b;
   cout << a.get_str() << endl;
 }
-
 ```
 
 ### 任意精度浮動小数点数
@@ -94,7 +93,6 @@ b = int(32 - (54.2 - 52.0) / 0.1)
 c = 32 - (Decimal('54.2') - Decimal('52.0')) / Decimal('0.1')
 
 print(a, b, c)
-
 ```
 
 ```
@@ -102,6 +100,7 @@ print(a, b, c)
 ```
 
 C++とGMP。
+表示にはC用のAPIを使うしかないっぽい。
 
 ```cpp
 #include<iostream>
@@ -117,5 +116,4 @@ int main (void){
   mpf_out_str(stdout, 10, 0, a.get_mpf_t());
   cout << endl;
 }
-
 ```
