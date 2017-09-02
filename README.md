@@ -222,6 +222,7 @@
     * [プリミティブ型のサイズ](develop/others/size_of_primitive_types.md)
     * [任意精度演算](develop/others/arbitrary-precision_arithmetic.md)
     * [ANSIエスケープシーケンス](develop/others/ansi_escape_sequences.md)
+    * [プロセス間通信](develop/others/interprocess_communication.md)
 
 # 参考文献
 
