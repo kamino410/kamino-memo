@@ -212,6 +212,7 @@
     * [JUMAN/KNP](develop/python/juman_knp.md)
   * C/C++
     * [メモ](develop/cpp/memo.md)
+    * [ファイル・文字列](develop/cpp/file_string.md)
     * [ビット配列を用いた演算](develop/cpp/bit_array.md)
   * C#
     * [.Netの歴史](develop/cs/dotnet_history.md)
