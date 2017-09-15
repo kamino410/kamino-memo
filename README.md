@@ -214,6 +214,7 @@
     * [メモ](develop/cpp/memo.md)
     * [ファイル・文字列](develop/cpp/file_string.md)
     * [ビット配列を用いた演算](develop/cpp/bit_array.md)
+    * [シーケンシャル処理](develop/cpp/sequential_process.md)
   * C#
     * [.Netの歴史](develop/cs/dotnet_history.md)
   * GitBook
