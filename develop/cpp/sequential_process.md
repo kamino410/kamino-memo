@@ -85,3 +85,26 @@ int main() {
     std::cout << std::endl;
 }
 ```
+
+## if & erase
+
+`for`と`erase`を組み合わせる。
+
+```cpp
+#include <iostream>
+#include <vector>
+
+int main() {
+    std::vector<int> nums = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+
+    for (auto it = nums.begin(); it != nums.end();) {
+        if (*it % 2 == 0)
+            it = nums.erase(it);
+        else
+            it++;
+    }
+
+    for (auto n : nums) std::cout << n << ' ';
+    std::cout << std::endl;
+}
+```
