@@ -1,6 +1,6 @@
 # ニューラルネットの基礎
 
-## ニューラルネットワーク（neural network）
+## ニューラルネットワーク（neural network : NN）
 
 ```mermaid
 graph LR;
@@ -64,6 +64,14 @@ graph LR;
 
 よく用いられる活性化関数として次のようなものがある。
 
+### ステップ関数（step function）
+
+$$\begin{eqnarray}
+h(x) = \begin{cases}
+1 & (x>0) \\ 0 & (x \leq 0)
+\end{cases}
+\end{eqnarray}$$
+
 ### シグモイド関数（sigmoid funciton）
 
 $$\begin{eqnarray}
@@ -77,3 +85,33 @@ h(x) = \begin{cases}
 x & (x>0) \\ 0 & (x \leq 0)
 \end{cases}
 \end{eqnarray}$$
+
+### ソフトマックス関数（soft-max function）
+
+分類問題の出力層によく用いられる。
+
+$$\begin{eqnarray}
+h_k(x) = \frac{\exp(x_k)}{\sum\exp(x_k)}
+\end{eqnarray}$$
+
+次のような性質がある。
+
+* $$0<h_k(x)<1$$
+* $$\sum h_k = 1$$
+
+## ニューラルネットにおける学習
+
+教師あり学習ではパラメーター $$w$$ のNNに訓練データ $$x$$ を入力し、その結果 $$f(x;w)$$ を教師データ $$t$$ と比較し、相違に応じてパラメーター $$w$$ を調整することで学習を行う。
+このときの $$t$$ と $$f(x;w)$$ の相違の度合いを評価する関数を**損失関数（loss function）**といい、NNの学習は損失関数が最小になるようなパラメーターを探索する問題に帰着する。
+
+### バッチ学習
+
+すべての訓練データで一度に学習させる手法。
+
+### ミニバッチ学習
+
+訓練データをある程度まとめて少しずつ入力して学習させる手法
+
+### オンライン学習
+
+学習データを1つずつ入力して学習させる手法。
