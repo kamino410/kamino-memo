@@ -159,6 +159,7 @@
     * [人工知能の歴史](computer_science/machine_learning/history.md)
     * [概要](computer_science/machine_learning/abstract.md)
     * [ニューラルネットの基礎](computer_science/machine_learning/neural_network.md)
+    * [深層学習 読書メモ](computer_science/machine_learning/deep_learning1.md)
     * [パターン認識と機械学習1](computer_science/machine_learning/prml1.md)
     * [scikit-learnでMNIST](computer_science/machine_learning/scikit_mnist.md)
   * 言語処理
