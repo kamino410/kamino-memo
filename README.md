@@ -189,6 +189,7 @@
     * [ノイマン型コンピューター](computer_science/architecture/von_neumann-type_computer.md)
     * [その他用語](computer_science/architecture/glossary.md)
   * ネットワーク
+    * [Computer Networks読書メモ](computer_science/network/computer_networks.md)
     * [参照モデル](computer_science/network/reference_model.md)
     * [トポロジー](computer_science/network/topology.md)
     * [ベースバンド伝送](computer_science/network/baseband.md)
