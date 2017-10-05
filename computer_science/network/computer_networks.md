@@ -313,3 +313,76 @@ The Internetは特定のprotocolsを用いるnetworkの集合体。
 
 冷戦真っ只中の1950年代後半、アメリカ防衛省が核戦争の中でも利用可能な司令網を欲したことからARPANETの開発が始まった。
 当時は司令に公衆電話網が用いられていたが、toll office->switching office->telephoneという階層構造になっていたため重要なtoll officeが破壊されると通信網が機能しなくなるという欠点があった。
+
+* 1957 スプートニク・ショック
+* 1958 アイゼンハワー大統領の命令に従いARPA(Advanced Research Projects Agency)設立
+* 1960 DoDがRAND Corporationと契約
+* 1964 RANDのPaul Baranがデジタルなpacket-switching技術を提唱
+* ペンタゴン事務局がAT\&TとUS telephone monopolyにこれを作れないか依頼するも不可能だとされた
+* 1967 イギリスのNPL(National Physical Laboratory)がネットワークのデモシステム開発研究を発表
+* ARPAのLarry RobertsがARPANETの構築に移る
+  * IMP(Interface Message Processors)にDDP-316、56kbpsのlineを利用
+  * IMP-IMP、host-IMPの2つのprotocolを利用
+* 1968 ARPAがBBNにsubnetの構築を依頼
+* 1969 実験的ARPANETがUCLA,UCSB,SRI,Univ Utahの4拠点間で開通
+* 1972 ARPANETが数十の拠点からなるネットワークに成長
+* ARPANETに衛星回線・無線ネットワークの追加実験、プロトコルに難があることが明らかに
+* 1974 TCP/IP model / protocols開発
+* BSDにTCP/IPベースのsocket、種々のutilityが搭載される
+* 1980s ARPANETに多くのLANが接続されるようになりネットワークが成長
+* DNS(Domain Name System)の実装
+* DoDと契約していない研究機関でも利用できるネットワークへの需要が高まる
+* 1981 NSF(US National Science Foundation)が研究・教育機関を結ぶCSNET(Computer Science Network)を構築
+* 1986 CSNETを再構成しNSFNET誕生
+  * 56-kbpsのlineを利用
+  * 6台のスーパーコンピューターを内包
+  * fuzzball(LSI-11)をrouterに利用
+  * 初のTCP/IP WAN
+* NSFNETのsecond backbone開発
+  * IBM PC-RTをrouterに
+  * 光ファイバー448kbps -> 1.5Mbps
+* ネットワークの商用利用を目的にNSFがMERIT,MCI,IBMに働きかけてANS(Advanced Networks and Services)を設立
+* 1990 ANSがNSFNETを継承しANSNETに
+  * 45Mbps lineにアップグレード
+* 様々な企業がIPサービスを利用するようになり、ネットワークビジネスの民営化の要請が高まる
+* NSFがPacBell,Ameritech,MFS,Sprintと契約しNAP(Network Access Point)を構築
+* NAP各社が市場競争を繰り広げthe internetの基盤が構築されていった
+* 1990s前半 WWW登場
+* 1990s ヨーロッパでもEuropaNET,EBONEなどのネットワークが登場
+
+**Architecture of the Internet**
+
+インターネットに接続するには、コンピューターをユーザーの契約したISPと接続する。
+これによりネットワーク上の任意のコンピューターとpacketを送受できるようになる。
+
+一般的な接続の方法は、ISPである電話会社と契約すること。
+DSL(Digital Subscriber Line)の技術を用いれば既存の電話線をネット接続用のデジタル信号線として利用できる。
+コンピューターはDSL modemを介して電話線と接続され、電話会社側ではDSLAM(Digital Subscriber Line Access Multiplexer)を用いて信号をpacketに変換する。
+このネットワーク接続形態をdial upと呼ぶ。
+ダイアルアップ接続では帯域が最大でも56kbpsまでに制限される。
+逆にダイアルアップ接続を超える帯域を持つ接続方法をbroadbandと呼ぶ。
+
+他には既存のケーブルTV回線を利用するCATVがある。
+このとき家庭側のmodemはcable modem、基地局側のmodemはCMTS(Cable Modem Termination System)と呼ばれる。
+
+近年は光ファイバーケーブルを利用したFTTH(Fiber to the Home)が広まっている。
+
+モバイル回線としては3Gがある。
+
+ユーザーのpacketがISPネットワークに流れ込む地点をPOP(Point of Presence)と呼ぶ。
+POPとそれらの間を結ぶsubnetをISPのbackboneという。
+異なるISPネットワーク同士はIXP(Internet eXchange Points)で接続されている。
+このとき接続されるISPを各々peerと呼ぶ。
+IXPは世界中の都市に設けられており、アムステルダムのIXPでは数百のISPが接続されており、数百Gbpsのトラフィックがある。
+
+ISP間の契約は複雑化しており、インターネットにおいてpacketは必ずしも最短ルートを通るわけではない。
+そこと契約するだけでインターネット全体へフルアクセスできるようになるような上位一握りのISPはTier1 ISPと呼ばれる。
+
+GoogleやYahooのようなアクセスが集中する企業は内部にdata centerを持っている。
+これらのdata centerとISPのbackboneはなるべく短い距離で接続されるように配慮されている。
+近年、仮想マシンの普及などによりdata centerは集約される傾向も現れている。
+また電気代も相当な額になるため電気代の安い土地に建設されるなどの事情もある。
+
+ISPはすべてのマシンに固有のIPアドレスを与えるわけではなく、そのとき利用されているマシンにのみIPアドレスを与えることで使いまわしをしている。
+IPアドレスが与えられたISPに接続されているマシンはすべてthe internetを構成する要素であると考えられる。
+逆にintranetのようにthe internetではないinternetも存在する（あくまでprotocolsによって複数のsubnetが相互に接続されていればinternet）。
