@@ -174,6 +174,7 @@
     * [ベジェ曲線](computer_science/graphic/bezier_curve.md)
     * [3D技術](computer_science/graphic/3d.md)
   * セキュリティ
+    * [暗号技術のすべて読書メモ](computer_science/security/cipher_and_code.md)
     * [サイバー攻撃](computer_science/security/cyber-terrorism.md)
     * [マルウェア](computer_science/security/malware.md)
     * [RSA暗号](computer_science/security/rsa.md)
@@ -246,5 +247,6 @@
 * 吉川 恒夫/井村 順一, 『現代制御論』, コロナ社, 2014
 * 宇野 俊夫, 『独習 TCP/IP～IPv6対応～』, 翔泳社, 2010
 * 秋葉 拓哉/岩田 陽一/北川 宣稔, 『プログラミングコンテストチャレンジブック 第2版』, マイナビ出版, 2012
+* IPUSIRON, 『暗号技術のすべて』, 株式会社翔泳社, 2017
 * J. Glenn Brookshear (神林 靖/長尾 高宏 訳), 『入門コンピュータ科学～ITを支える技術と理論の基礎知識～』, アスキー・メディアワークス, 2014
 * 近藤 嘉雪, 『定本 Cプログラマのためのアルゴリズムとデータ構造』, SB Creative, 1998

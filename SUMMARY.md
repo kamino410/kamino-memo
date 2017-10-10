@@ -173,6 +173,7 @@
     * [ベジェ曲線](computer_science/graphic/bezier_curve.md)
     * [3D技術](computer_science/graphic/3d.md)
   * セキュリティ
+    * [暗号技術のすべて読書メモ](computer_science/security/cipher_and_code.md)
     * [サイバー攻撃](computer_science/security/cyber-terrorism.md)
     * [マルウェア](computer_science/security/malware.md)
     * [RSA暗号](computer_science/security/rsa.md)
