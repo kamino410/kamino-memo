@@ -30,14 +30,68 @@
 シーンを記述したデータから画像・映像・音声などを生成することを**レンダリング**という。
 また、レンダリングを行うソフトウェアを**レンダリングエンジン**・**レンダラー**と呼ぶ。
 
-### レンダリングパイプライン（rendering pipeline）
+また一連のレンダリング処理の手順を**レンダリングパイプライン**・**グラフィックスパイプライン**と呼ぶ。
 
+OpenGL4.0では次のようにレンダリングパイプラインが定義されている。
 
+* Vertex Specification
+* Vertex Processing
+  * Vertex Shader
+  * Tessellation
+  * Geometry Shader
+* Vertex Post-Processing
+  * Transform Feedback
+* Primitive Assembly
+  * Face Culling
+* Rasterization
+* Fragment Shader
+* Per-Sample Processing
+  * Scissor Test
+  * Stencil Test
+  * Depth Test
+  * Blending
+  * Logical Operation
+  * Write Mask
+
+またDirectX10では次のようにレンダリングパイプラインが定義されている。
+
+* Input-Assembler Stage
+* Vertex-Shader Stage
+* Geometry-Shader Stage
+* Stream-Output Stage
+* Rasterizer Stage
+* Pixel-Shader Stage
+* Output-Merger Stage
 
 ### シェーディング（shading）
 
 光源距離・光源と面の角度などを考慮して物体表面の色を変化させ、陰影をつける処理を**シェーディング**という。
 シェーディングを施すことで、物体に奥行き感を加わり立体的な形状が把握しやすくなる。
+
+シェーディングを行うプログラムを**シェーダ**と呼ぶ。
+
+#### バーテックスシェーダ（頂点シェーダ）（vertex shader）
+
+シーン上のオブジェクトの頂点に関する座標変換の処理を行うプログラムを**バーテックスシェーダ**と呼ぶ。
+
+#### テッセレーション（tessellation）
+
+必要に応じて描画時にモデルのポリゴンを細かく分割することを**テッセレーション**という。
+テッセレーションを利用することで最初に読み込むモデルのポリゴンを粗めにし、データ量を抑制することができる。
+
+#### ジオメトリシェーダ（geometry shader）
+
+バーテックスシェーダから出力された頂点を以降の処理で利用するデータ構造（OpenGLではプリミティブと呼ぶ）に変換するシェーダ。
+必要に応じて頂点数を増減させたり利用するプリミティブの種類を変えるなどの拡張を行う。
+
+#### ラスタライズ（rasterization）
+
+セルを格子状に並べたようなデータ構造をラスタ形式（ラスタデータ）といい、あるデータをラスタ形式に変換する処理をラスタライズという。
+レンダリングパイプラインにおけるラスタライズとは、描画する平面に投影された各ポリゴンを画素に対応したフラグメントに割り当てる処理を指す（設定によっては1画素につき複数のフラグメントを持たせることができるらしい）。
+
+#### フラグメントシェーダ（fragment shader）
+
+ラスタライズによって生成されたフラグメントを画像に変換するシェーダ。
 
 #### 双方向反射率分布関数（Bidirectional reflectance distribution function : BRDF）
 
@@ -76,5 +130,3 @@
 * GLSL（OpenGL Shading Language）
 * HLSL（High Level Shading Language）
 * Cg（C for Graphics）
-
-## 表示
