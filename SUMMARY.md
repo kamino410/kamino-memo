@@ -156,6 +156,7 @@
     * [単一始点最短経路問題](computer_science/algorithm/shortest_path.md)
     * [最急降下法](computer_science/algorithm/steepest_descent_method.md)
     * [ユークリッドの互除法](computer_science/algorithm/euclidean_algorithm.md)
+    * [素数・素因数分解](computer_science/algorithm/prime_factorization.md)
     * [高速フーリエ変換](computer_science/algorithm/fast_fourier_transform.md)
   * 知識表現
     * [プロダクションシステム](computer_science/knowledge_representation/production_system.md)
