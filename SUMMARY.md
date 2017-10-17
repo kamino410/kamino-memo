@@ -14,6 +14,7 @@
   * 代数学
     * [群](mathematics/algebra/group.md)
     * [環](mathematics/algebra/ring.md)
+    * [剰余環・合同類](mathematics/algebra/residue_ring.md)
     * [オイラー関数とオイラーの定理](mathematics/algebra/eulers_theorem.md)
   * 線形代数
     * [行列式・対角和](mathematics/linear_algebra/determinant.md)
@@ -157,6 +158,7 @@
     * [最急降下法](computer_science/algorithm/steepest_descent_method.md)
     * [ユークリッドの互除法](computer_science/algorithm/euclidean_algorithm.md)
     * [素数・素因数分解](computer_science/algorithm/prime_factorization.md)
+    * [冪乗](computer_science/algorithm/exponentiation.md)
     * [高速フーリエ変換](computer_science/algorithm/fast_fourier_transform.md)
   * 知識表現
     * [プロダクションシステム](computer_science/knowledge_representation/production_system.md)
