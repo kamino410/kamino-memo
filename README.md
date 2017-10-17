@@ -39,6 +39,7 @@
     * [特殊な級数1](mathematics/analysis/characteristic_series1.md)
     * [微分方程式1](mathematics/analysis/differential_equation1.md)
     * [微分方程式2](mathematics/analysis/differential_equation2.md)
+    * [畳み込み](mathematics/analysis/convolution.md)
     * [ラプラス変換](mathematics/analysis/laplace_transform.md)
     * [フーリエ変換](mathematics/analysis/fourier_transform.md)
     * [凸集合・凸関数](mathematics/analysis/convex.md)
@@ -130,6 +131,10 @@
     * [極配置](control/modern/pole_placement.md)
     * [オブザーバ](control/modern/observer.md)
 * 計算機科学
+  * 信号処理
+    * [概要](computer_science/signal/intro.md)
+    * [連続時間信号のフーリエ解析](computer_science/signal/continuous_time_fourier.md)
+    * [離散時間信号のフーリエ解析](computer_science/signal/discrete_time_fourier.md)
   * アルゴリズム
     * [アルゴリズムのコスト](computer_science/algorithm/execution_cost.md)
     * [ソートアルゴリズム1](computer_science/algorithm/sort1.md)
@@ -152,6 +157,7 @@
     * [単一始点最短経路問題](computer_science/algorithm/shortest_path.md)
     * [最急降下法](computer_science/algorithm/steepest_descent_method.md)
     * [ユークリッドの互除法](computer_science/algorithm/euclidean_algorithm.md)
+    * [高速フーリエ変換](computer_science/algorithm/fast_fourier_transform.md)
   * 知識表現
     * [プロダクションシステム](computer_science/knowledge_representation/production_system.md)
     * [フレーム](computer_science/knowledge_representation/frame.md)
