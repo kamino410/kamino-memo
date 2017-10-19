@@ -137,6 +137,7 @@
     * [概要](computer_science/signal/intro.md)
     * [連続時間信号のフーリエ解析](computer_science/signal/continuous_time_fourier.md)
     * [離散時間信号のフーリエ解析](computer_science/signal/discrete_time_fourier.md)
+    * [離散コサイン変換](computer_science/signal/discrete_cosine_transform.md)
   * アルゴリズム
     * [アルゴリズムのコスト](computer_science/algorithm/execution_cost.md)
     * [ソートアルゴリズム1](computer_science/algorithm/sort1.md)
