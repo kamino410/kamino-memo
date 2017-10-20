@@ -92,7 +92,7 @@
   * 流体力学
     * [用語](dynamics/fluid/glossary.md)
     * [概要](dynamics/fluid/intro.md)
-    * [理想流体](dynamics/fluid/ideal_fluid.md)
+    * [流れを支配する方程式](dynamics/fluid/flow_formula.md)
 * 数値解析
   * 有限要素法
     * [1次元の重み付き残差法](numerical_analysis/finite_element_method/1-dimention.md)

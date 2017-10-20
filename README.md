@@ -94,7 +94,7 @@
   * 流体力学
     * [用語](dynamics/fluid/glossary.md)
     * [概要](dynamics/fluid/intro.md)
-    * [理想流体](dynamics/fluid/ideal_fluid.md)
+    * [流れを支配する方程式](dynamics/fluid/flow_formula.md)
 * 数値解析
   * 有限要素法
     * [1次元の重み付き残差法](numerical_analysis/finite_element_method/1-dimention.md)
@@ -253,6 +253,7 @@
 * 矢部 博, 『工学基礎 最適化とその応用』, 数理工学社, 2006
 * 山下 信雄, 『非線形計画法』, 朝倉書店, 2015
 * 杉山 弘/遠藤 剛/新井 隆景, 『流体力学 第2版』, 森北出版株式会社, 2014
+* 名古屋大学大学院工学研究科 航空宇宙工学専攻 流体力学講座, 『流体力学入門』, 2010（http://fluid.nuae.nagoya-u.ac.jp/lecture/intro.pdf）
 * 中山 司, 『流れ解析のための有限要素法入門』, 東京大学出版会, 2008
 * 杉江 俊治/藤田 政之, 『フィードバック制御入門』, コロナ社, 1999
 * 吉川 恒夫/井村 順一, 『現代制御論』, コロナ社, 2014
