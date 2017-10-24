@@ -93,6 +93,7 @@
     * [用語](dynamics/fluid/glossary.md)
     * [概要](dynamics/fluid/intro.md)
     * [流れを支配する方程式](dynamics/fluid/flow_formula.md)
+    * [ポテンシャル流れ](dynamics/fluid/postential_flow.md)
 * 数値解析
   * 有限要素法
     * [1次元の重み付き残差法](numerical_analysis/finite_element_method/1-dimention.md)
