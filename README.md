@@ -198,6 +198,7 @@
     * [符号化](computer_science/information_theory/coding.md)
     * [ハフマン符号化](computer_science/information_theory/huffman_coding.md)
     * [誤り検出・訂正符号](computer_science/information_theory/error_detection_and_correction.md)
+    * [巡回冗長検査](computer_science/information_theory/crc.md)
   * アーキテクチャ
     * [浮動小数点数](computer_science/architecture/floating_point_number.md)
     * [チューリングマシン](computer_science/architecture/turing_machine.md)
