@@ -64,7 +64,3 @@ Intelが開発したマイクロプロセッサの命令セットアーキテク
   * 4つのセグメントレジスタ＋16bitでセグメントの切り替えなしに20bitのアドレス指定が行える
 
 https://www.intel.co.jp/content/dam/www/public/ijkk/jp/ja/documents/developer/IA32_Arh_Dev_Man_Vol1_Online_i.pdf
-
-### x64
-
-Intelが開発したx86の後継。
