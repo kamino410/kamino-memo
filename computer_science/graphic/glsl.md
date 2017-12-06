@@ -39,12 +39,14 @@ OpenGLのAPIはObject単位で働きかけるよう設計されている。
 
 <details><summary>Sample code</summary>
 
+誤りあり。
+
 ```cpp
 // sample to draw static triangle polygon data with position info
 
 GLuint program = glCreateProgram;
 
-// ~~ compile shaders / link program ~~
+// ~~ compile shaders / link program here ~~
 
 std::vector<GLfloat> poss = {{0,0,0}, ....};
 
@@ -65,7 +67,7 @@ glEnableVertexAttribArray(posIndex);
 
 // in draw function
 {
-    glDrawArrays(GL_TRIANGLES, 0, 3);
+    glDrawArrays(GL_TRIANGLES, 0, poss.size());
 }
 ```
 
@@ -82,7 +84,7 @@ glEnableVertexAttribArray(posIndex);
 
 GLuint program = glCreateProgram;
 
-// ~~ compile shaders / link program ~~
+// ~~ compile shaders / link program here ~~
 
 std::vector<GLfloat> poss = {{0,0,0}, ....};
 std::vector<GLfloat> colors = {{1,0,0}, ....};
@@ -121,8 +123,9 @@ glEnableVertexAttribArray(colorIndex);
 
 ### Indexed VBO
 
-頂点情報のインデックスを使って描画すべきポリゴンを指定する方法。
+頂点情報のインデックスを指定して描画すべきポリゴンを指定する方法。
 頂点情報を重複して渡す必要がなくなるのでメモリの節約になる。
+調べたところ、法線情報のインデックスを指定することはできないので、ポリゴンごとに異なる法線を用いることはできないらしい。
 
 <details><summary>Sample code</summary>
 
@@ -145,3 +148,65 @@ glBufferData(GL_ELEMENT_ARRAY_BUFFER, indexes.size() * sizeof(GLuint), &indexes[
 ```
 
 </details>
+
+### レンダリング結果の確保・アプリケーションへの転送
+
+#### TextureObjectをFrameBufferObjectにattachしてそこにレンダリングさせる方法
+
+<details><summary>Sample code</summary>
+
+```cpp
+// sample to obtain rendered texture
+
+// generate FrameBufferObject
+GLuint fbo;
+glGenFramebuffers(1, &fbo);
+glBindFramebuffer(GL_FRAMEBUFFER, fbo);
+// generate Texture
+GLuint tex;
+glGenTextures(1, &tex);
+// simple configurations
+glBindTexture(GL_TEXTURE_2D, tex);
+glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, TWIDTH, THEIGHT, 0, GL_RGBA, GL_UNSIGNED_BYTE, NULL);
+glBindTexture(GL_TEXTURE_2D, 0);
+// attach texture to FrameBufferObject
+glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, colorBufObj, 0);
+
+// -- if you want depth test, FrameBufferObject has to contain RenderBuffer or Texture for depth map
+// following code is example with RenderBuffer
+GLuint rbo;
+glGenRenderbuffers(1, &rbo);
+glBindRenderbuffer(GL_RENDERBUFFER, rbo);
+glRenderbufferStorage(GL_RENDERBUFFER, GL_DEPTH_COMPONENT, TWIDTH, THEIGHT);
+glBindRenderbuffer(GL_RENDERBUFFER, 0);
+// bind RenderBuffer to FrameBufferObject
+glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_RENDERBUFFER, rbo);
+// --
+
+// indicate render target
+GLenum drawBufs[] = { GL_COLOR_ATTACHMENT0 };
+glDrawBuffers(1, drawBufs);
+// reset framebuffer to default
+glBindFramebuffer(GL_FRAMEBUFFER, 0);
+
+// in draw function
+{
+
+}
+```
+
+</details>
+
+#### DefaultFrameBufferないしFrameBufferObjectから直接取得する方法
+
+<details><summary>Sample code</summary>
+
+```cpp
+
+```
+
+<details>
